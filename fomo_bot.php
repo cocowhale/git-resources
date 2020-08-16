@@ -13,4 +13,9 @@ $chatId = $update["message"]["chat"]["id"];
 $message = $update["message"]["text"];
  
 function url_get_contents ($Url) {
-    if (!function_exist
+    if (!function_exists('curl_init')){ 
+        die('CURL is not installed!');
+    }
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $Url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
