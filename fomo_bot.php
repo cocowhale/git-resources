@@ -29,4 +29,9 @@ function make_comparer() {
     // Normalize criteria up front so that the comparer finds everything tidy
     $criteria = func_get_args();
     foreach ($criteria as $index => $criterion) {
-        
+        $criteria[$index] = is_array($criterion)
+            ? array_pad($criterion, 3, null)
+            : array($criterion, SORT_ASC, null);
+    }
+
+    return function($first, $second) us
