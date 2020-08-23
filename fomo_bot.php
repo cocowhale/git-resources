@@ -42,4 +42,9 @@ function make_comparer() {
 
             // If a projection was defined project the values now
             if ($projection) {
-                $lhs = call_user_func($projection, $first[$colu
+                $lhs = call_user_func($projection, $first[$column]);
+                $rhs = call_user_func($projection, $second[$column]);
+            }
+            else {
+                $lhs = $first[$column];
+                $rhs = $second[$column];
