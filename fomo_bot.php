@@ -48,3 +48,10 @@ function make_comparer() {
             else {
                 $lhs = $first[$column];
                 $rhs = $second[$column];
+            }
+
+            // Do the actual comparison; do not return if equal
+            if ($lhs < $rhs) {
+                return -1 * $sortOrder;
+            }
+            else i
