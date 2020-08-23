@@ -38,4 +38,8 @@ function make_comparer() {
         foreach ($criteria as $criterion) {
             // How will we compare this round?
             list($column, $sortOrder, $projection) = $criterion;
-            $sortOrder = $sortO
+            $sortOrder = $sortOrder === SORT_DESC ? -1 : 1;
+
+            // If a projection was defined project the values now
+            if ($projection) {
+                $lhs = call_user_func($projection, $first[$colu
