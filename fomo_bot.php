@@ -54,4 +54,16 @@ function make_comparer() {
             if ($lhs < $rhs) {
                 return -1 * $sortOrder;
             }
-            else i
+            else if ($lhs > $rhs) {
+                return 1 * $sortOrder;
+            }
+        }
+
+        return 0; // tiebreakers exhausted, so $first == $second
+    };
+}
+
+
+
+$date = date('Y-m-d H:i:s');
+$cur
