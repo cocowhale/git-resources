@@ -66,4 +66,21 @@ function make_comparer() {
 
 
 $date = date('Y-m-d H:i:s');
-$cur
+$currtimestamp=$date."(UTC)";
+
+
+// Futures premium stuff
+
+switch($message) {
+/*
+
+
+ public commands 
+
+
+
+*/
+
+/*
+    case "/getfuturespremium@FOMO_bot":p
+                $okcindex = file
