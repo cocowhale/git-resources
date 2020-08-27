@@ -83,4 +83,8 @@ switch($message) {
 
 /*
     case "/getfuturespremium@FOMO_bot":p
-                $okcindex = file
+                $okcindex = file_get_contents('https://www.okcoin.com/api/v1/future_index.do?symbol=btc_usd');
+                $okcixarray = json_decode($okcindex, true);
+                $okcixprice = $okcixarray['future_index'];
+
+ 
