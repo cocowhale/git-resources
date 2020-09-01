@@ -88,4 +88,7 @@ switch($message) {
                 $okcixprice = $okcixarray['future_index'];
 
                 $okcweekly = file_get_contents('https://www.okcoin.com/api/v1/future_ticker.do?symbol=btc_usd&contract_type=this_week');
-                $okcwkarray = json_decode($okcweekly, 
+                $okcwkarray = json_decode($okcweekly, true);
+                $okcwkprice = $okcwkarray['ticker']['last'];
+                $wkpremium = round((($okcwkprice - $okcixprice)/$okcwkprice)*100,2);
+                $wkp=round($okcwkprice - $okci
