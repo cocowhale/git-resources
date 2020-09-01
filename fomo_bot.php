@@ -94,4 +94,7 @@ switch($message) {
                 $wkp=round($okcwkprice - $okcixprice,2);
 
                 $okcbiweekly = file_get_contents('https://www.okcoin.com/api/v1/future_ticker.do?symbol=btc_usd&contract_type=next_week');
-                $okcbi
+                $okcbiwkarray = json_decode($okcbiweekly, true);
+                $okcbiwkprice = $okcbiwkarray['ticker']['last'];
+                $biwkpremium = round((($okcbiwkprice - $okcixprice)/$okcbiwkprice)*100,2);
+   
