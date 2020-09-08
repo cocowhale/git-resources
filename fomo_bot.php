@@ -113,4 +113,6 @@ switch($message) {
                 $stamp = file_get_contents('https://www.bitstamp.net/api/ticker');
                 $gaydax = url_get_contents('https://api.gdax.com/products/BTC-USD/ticker');
                 $btce = file_get_contents('https://btc-e.com/api/3/ticker/btc_usd');
-                $itbit = file_get_contents('https://ap
+                $itbit = file_get_contents('https://api.itbit.com/v1/markets/XBTUSD/ticker');
+                $okcoin = file_get_contents('https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd');
+                $gemini = file_get_contents('
