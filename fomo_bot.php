@@ -115,4 +115,10 @@ switch($message) {
                 $btce = file_get_contents('https://btc-e.com/api/3/ticker/btc_usd');
                 $itbit = file_get_contents('https://api.itbit.com/v1/markets/XBTUSD/ticker');
                 $okcoin = file_get_contents('https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd');
-                $gemini = file_get_contents('
+                $gemini = file_get_contents('https://api.gemini.com/v1/pubticker/btcusd');
+
+
+
+                $finexarray = json_decode($finex,true);
+                $stamparray = json_decode($stamp,true);
+                $gaydaxa
