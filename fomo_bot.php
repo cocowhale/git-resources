@@ -121,4 +121,7 @@ switch($message) {
 
                 $finexarray = json_decode($finex,true);
                 $stamparray = json_decode($stamp,true);
-                $gaydaxa
+                $gaydaxarray = json_decode($gaydax,true);
+                $btcearray = json_decode($btce,true);
+                $itbitarray = json_decode($itbit,true);
+                $okcoinarray = json_decode($okcoin, 
