@@ -124,4 +124,9 @@ switch($message) {
                 $gaydaxarray = json_decode($gaydax,true);
                 $btcearray = json_decode($btce,true);
                 $itbitarray = json_decode($itbit,true);
-                $okcoinarray = json_decode($okcoin, 
+                $okcoinarray = json_decode($okcoin, true);
+                $geminiarray = json_decode($gemini, true);
+
+                $finexprice = $finexarray['last_price'];
+                $stampprice = $stamparray['last'];
+  
