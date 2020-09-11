@@ -132,4 +132,8 @@ switch($message) {
                 $gaydaxprice = $gaydaxarray['price'];
                 $btceprice = $btcearray['btc_usd']['last'];
                 $itbitprice = $itbitarray['lastPrice'];
-                $okcoinprice =
+                $okcoinprice = $okcoinarray['ticker']['last'];
+                $geminiprice = $geminiarray['last'];
+
+                $finexvol = $finexarray['volume'];
+                $stampvol = $stamparray['volume'
