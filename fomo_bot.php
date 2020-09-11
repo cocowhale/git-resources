@@ -129,4 +129,7 @@ switch($message) {
 
                 $finexprice = $finexarray['last_price'];
                 $stampprice = $stamparray['last'];
-  
+                $gaydaxprice = $gaydaxarray['price'];
+                $btceprice = $btcearray['btc_usd']['last'];
+                $itbitprice = $itbitarray['lastPrice'];
+                $okcoinprice =
