@@ -143,4 +143,4 @@ switch($message) {
                 $okcoinvol = $okcoinarray['ticker']['vol'];
                 $geminivol = $geminiarray['volume']['BTC'];
 
-sendMessage($chatId, "<b>BTC/USD Ticker (24H BTC Vol)</b>\n<code>Bitf
+sendMessage($chatId, "<b>BTC/USD Ticker (24H BTC Vol)</b>\n<code>Bitfinrek: </code>$".number_format($finexprice,"2")." (".number_format($finexvol,"0").")\n<code>Bearstamp: </code>$".number_format($stampprice,"2")." (".number_format($stampvol,"0").")\n<code>OKCas
