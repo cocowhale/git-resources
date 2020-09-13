@@ -140,4 +140,7 @@ switch($message) {
                 $gaydaxvol = $gaydaxarray['volume'];
                 $btcevol = $btcearray['btc_usd']['vol_cur'];
                 $itbitvol = $itbitarray['volume24h'];
-                $okcoi
+                $okcoinvol = $okcoinarray['ticker']['vol'];
+                $geminivol = $geminiarray['volume']['BTC'];
+
+sendMessage($chatId, "<b>BTC/USD Ticker (24H BTC Vol)</b>\n<code>Bitf
