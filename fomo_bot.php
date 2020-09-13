@@ -136,4 +136,8 @@ switch($message) {
                 $geminiprice = $geminiarray['last'];
 
                 $finexvol = $finexarray['volume'];
-                $stampvol = $stamparray['volume'
+                $stampvol = $stamparray['volume'];
+                $gaydaxvol = $gaydaxarray['volume'];
+                $btcevol = $btcearray['btc_usd']['vol_cur'];
+                $itbitvol = $itbitarray['volume24h'];
+                $okcoi
