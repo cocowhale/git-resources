@@ -147,4 +147,9 @@ sendMessage($chatId, "<b>BTC/USD Ticker (24H BTC Vol)</b>\n<code>Bitfinrek: </co
 
 			break;
 case "/getchinaticker@FOMO_bot":
-                $huobifetch = file_get_contents('http://api.hu
+                $huobifetch = file_get_contents('http://api.huobi.com/staticmarket/ticker_btc_json.js');
+                $huobiarray = json_decode($huobifetch, true);
+                $huobiprice = $huobiarray['ticker']['last'];
+
+
+                $chinafetc
