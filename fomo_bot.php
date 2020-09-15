@@ -157,4 +157,7 @@ case "/getchinaticker@FOMO_bot":
                 $chinaprice = $chinaarray['ticker']['last'];
 
                 $btcchinafetch = file_get_contents('https://data.btcchina.com/data/ticker?market=btccny');
-                $btcchinaarray = json_decode($btcc
+                $btcchinaarray = json_decode($btcchinafetch, true);
+                $btcchinaprice = $btcchinaarray['ticker']['last'];
+
+                sendMessage($chatId, "<b>CNY Bitcoin Exchange Ticker</b>\n<code>Huobi : </code>¥".number_format($huobiprice,"0
