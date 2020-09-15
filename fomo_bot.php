@@ -154,4 +154,7 @@ case "/getchinaticker@FOMO_bot":
 
                 $chinafetch = file_get_contents('https://www.okcoin.cn/api/v1/ticker.do?symbol=btc_cny');
                 $chinaarray = json_decode($chinafetch, true);
-                $c
+                $chinaprice = $chinaarray['ticker']['last'];
+
+                $btcchinafetch = file_get_contents('https://data.btcchina.com/data/ticker?market=btccny');
+                $btcchinaarray = json_decode($btcc
