@@ -160,4 +160,8 @@ case "/getchinaticker@FOMO_bot":
                 $btcchinaarray = json_decode($btcchinafetch, true);
                 $btcchinaprice = $btcchinaarray['ticker']['last'];
 
-                sendMessage($chatId, "<b>CNY Bitcoin Exchange Ticker</b>\n<code>Huobi : </code>¥".number_format($huobiprice,"0
+                sendMessage($chatId, "<b>CNY Bitcoin Exchange Ticker</b>\n<code>Huobi : </code>¥".number_format($huobiprice,"0")."\n<code>OKCoin: </code>¥".number_format($chinaprice,"0")."\n<code>BTCC  : </code>¥".number_format($btcchinaprice,"0"));
+			break;
+
+case "/getchinapremium@FOMO_bot":
+                $huobifetch
