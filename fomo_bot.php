@@ -164,4 +164,6 @@ case "/getchinaticker@FOMO_bot":
 			break;
 
 case "/getchinapremium@FOMO_bot":
-                $huobifetch
+                $huobifetch = file_get_contents('http://api.huobi.com/staticmarket/ticker_btc_json.js');
+                $huobiarray = json_decode($huobifetch, true);
+                $huobiprice = $h
