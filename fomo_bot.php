@@ -166,4 +166,7 @@ case "/getchinaticker@FOMO_bot":
 case "/getchinapremium@FOMO_bot":
                 $huobifetch = file_get_contents('http://api.huobi.com/staticmarket/ticker_btc_json.js');
                 $huobiarray = json_decode($huobifetch, true);
-                $huobiprice = $h
+                $huobiprice = $huobiarray['ticker']['last'];
+                $huobipricer = round($huobiarray['ticker']['last'],0);
+
+                $chinafetch = file_get_contents('https://www.okcoin.cn/api/v1/ticker.do?s
