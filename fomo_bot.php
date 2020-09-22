@@ -172,4 +172,8 @@ case "/getchinapremium@FOMO_bot":
                 $chinafetch = file_get_contents('https://www.okcoin.cn/api/v1/ticker.do?symbol=btc_cny');
                 $chinaarray = json_decode($chinafetch, true);
                 $chinaprice = $chinaarray['ticker']['last'];
-                $chinapricer = round($chinapric
+                $chinapricer = round($chinaprice,0);
+
+                $usdcny = file_get_contents('http://free.currencyconverterapi.com/api/v3/convert?q=USD_CNY');
+                $usdcnydec = json_decode($usdcny, true);
+                $cnyconv = $usdcnydec['
