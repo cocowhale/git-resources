@@ -179,4 +179,8 @@ case "/getchinapremium@FOMO_bot":
                 $cnyconv = $usdcnydec['results']['USD_CNY']['val'];
 
                 #$finex = file_get_contents('https://api.bitfinex.com/v1/pubticker/BTCUSD');
-                $finex = file_get_contents('https://www.bitstamp.net/api/ti
+                $finex = file_get_contents('https://www.bitstamp.net/api/ticker');
+                $finexarray = json_decode($finex,true);
+                #$finexprice = $finexarray['last_price'];
+                $finexprice = $finexarray['last'];
+ 
