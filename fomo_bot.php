@@ -186,4 +186,5 @@ case "/getchinapremium@FOMO_bot":
                 $chinausd=round($huobiprice/$cnyconv,2);
                 $bfxcny=round($finexprice*$cnyconv,0);
                 $chinadiff =round($chinausd - $finexprice,2);
-                $chinap
+                $chinaprem=round(($chinadiff/$finexprice)*100,2);
+                //sendMessage($chatId, "<b>China vs. Western Exchange Balance</b>\nPremium in Huobi China \nCurrent Price: (¥".$huobipr
