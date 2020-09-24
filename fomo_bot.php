@@ -183,4 +183,7 @@ case "/getchinapremium@FOMO_bot":
                 $finexarray = json_decode($finex,true);
                 #$finexprice = $finexarray['last_price'];
                 $finexprice = $finexarray['last'];
- 
+                $chinausd=round($huobiprice/$cnyconv,2);
+                $bfxcny=round($finexprice*$cnyconv,0);
+                $chinadiff =round($chinausd - $finexprice,2);
+                $chinap
