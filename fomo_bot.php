@@ -188,4 +188,4 @@ case "/getchinapremium@FOMO_bot":
                 $chinadiff =round($chinausd - $finexprice,2);
                 $chinaprem=round(($chinadiff/$finexprice)*100,2);
                 //sendMessage($chatId, "<b>China vs. Western Exchange Balance</b>\nPremium in Huobi China \nCurrent Price: (¥".$huobipricer."->$".$chinausd.")\nRelative to Finex ($".$finexprice."): $".$chinadiff." (".$chinaprem."%)");
-                sendMessage($chatId, "<b>CNY vs. USD (".$cnyconv.") Sp
+                sendMessage($chatId, "<b>CNY vs. USD (".$cnyconv.") Spot Prices</b>\n<code>Huobi        :</code> ¥".$huobipricer." ($".$chinausd.")\n<code>Bitstamp     :</code> $".$finexprice." (¥".$bfxcny.")\n<code>China Premium:</code> $".number_format($chinadiff,"2")." (".number_f
