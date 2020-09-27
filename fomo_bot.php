@@ -194,4 +194,9 @@ case "/getchinapremium@FOMO_bot":
 case "/getsettlementtime@FOMO_bot":
                 $currenttime=gmdate(time());
                 $daytoday = date( "w", $currenttime);
-          
+                $hw = date( "H", $currenttime);
+
+                if ($daytoday == 5 && $hw < 8):
+                    $date = strtotime("today, 8:00 AM UTC");
+                else:
+                    $date = strtotime("ne
