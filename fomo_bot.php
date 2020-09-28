@@ -215,4 +215,6 @@ case "/getsettlementtime@FOMO_bot":
                 elseif ($min != 0 && $sec != 0):
                     $timeleft = "$min Minutes $sec Seconds";
                 elseif ($sec != 0):
-           
+                    $timeleft = "$sec Seconds ";
+                endif;
+                sendMessage($chatId, "<b>Bitcoin Futures Settlement Countdown</b>\nOKCoin (Friday 8 UTC): \n"
