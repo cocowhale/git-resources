@@ -217,4 +217,12 @@ case "/getsettlementtime@FOMO_bot":
                 elseif ($sec != 0):
                     $timeleft = "$sec Seconds ";
                 endif;
-                sendMessage($chatId, "<b>Bitcoin Futures Settlement Countdown</b>\nOKCoin (Friday 8 UTC): \n"
+                sendMessage($chatId, "<b>Bitcoin Futures Settlement Countdown</b>\nOKCoin (Friday 8 UTC): \n".$timeleft);
+                break;
+
+
+case "/getfinexlongshort@FOMO_bot":
+                           #bitcoin
+
+                #BTCUSD long
+                $finexlong = file_get_contents('https://api.bitfine
