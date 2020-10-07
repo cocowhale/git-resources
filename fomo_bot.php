@@ -231,4 +231,7 @@ case "/getfinexlongshort@FOMO_bot":
 
                 #BTCUSD short
                 $finexshort = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_short_BTCUSD');
-                $finexshortarray = j
+                $finexshortarray = json_decode($finexshort,true);
+                $finexshortprice = intval($finexshortarray[0]['v']);
+
+                $btcpctlong=$finexlongprice/($finexlongprice+$finexsho
