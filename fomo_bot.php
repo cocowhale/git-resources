@@ -244,4 +244,9 @@ case "/getfinexlongshort@FOMO_bot":
                 $finexZECusdlongprice = intval($finexZECusdlongarray[0]['v']);
 
                 #ZECBTC long
-                $finexZECbtclong = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_long_ZECBT
+                $finexZECbtclong = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_long_ZECBTC');
+                $finexZECbtclongarray = json_decode($finexZECbtclong,true);
+                $finexZECbtclongprice = intval($finexZECbtclongarray[0]['v']);
+
+                #total ZEC longs
+    
