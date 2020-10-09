@@ -249,4 +249,7 @@ case "/getfinexlongshort@FOMO_bot":
                 $finexZECbtclongprice = intval($finexZECbtclongarray[0]['v']);
 
                 #total ZEC longs
-    
+                $totalZEClong=$finexZECbtclongprice+$finexZECusdlongprice;
+
+                #ZECBTC short
+                $finexZECbtcshort = file_get_contents('https://a
