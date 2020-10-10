@@ -258,4 +258,8 @@ case "/getfinexlongshort@FOMO_bot":
 
                 #ZECUSD short
                 $finexZECusdshort = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_short_ZECUSD');
-     
+                $finexZECusdshortarray = json_decode($finexZECusdshort,true);
+                $finexZECusdshortprice = intval($finexZECusdshortarray[0]['v']);
+
+                #total ZEC shorts
+         
