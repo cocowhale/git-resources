@@ -265,4 +265,8 @@ case "/getfinexlongshort@FOMO_bot":
                 $totalZECshort=$finexZECbtcshortprice+$finexZECusdshortprice;
                 $totalZEC=$totalZECshort+$totalZEClong;
                 $ZECpctshort=$totalZECshort/$totalZEC;
-                $ZECpctlong
+                $ZECpctlong=$totalZEClong/$totalZEC;
+                #litecoin
+
+                #LTCUSD long
+                $finexLTCusdlong = file_get_contents('https://api.bitfinex.com/v1/stats_history/
