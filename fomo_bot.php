@@ -269,4 +269,8 @@ case "/getfinexlongshort@FOMO_bot":
                 #litecoin
 
                 #LTCUSD long
-                $finexLTCusdlong = file_get_contents('https://api.bitfinex.com/v1/stats_history/
+                $finexLTCusdlong = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_long_LTCUSD');
+                $finexLTCusdlongarray = json_decode($finexLTCusdlong,true);
+                $finexLTCusdlongprice = intval($finexLTCusdlongarray[0]['v']);
+
+                #L
