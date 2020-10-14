@@ -275,4 +275,8 @@ case "/getfinexlongshort@FOMO_bot":
 
                 #LTCBTC long
                 $finexLTCbtclong = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_long_LTCBTC');
-                $finexLTCbtclongarray = json_decode($finexLTCbtclon
+                $finexLTCbtclongarray = json_decode($finexLTCbtclong,true);
+                $finexLTCbtclongprice = intval($finexLTCbtclongarray[0]['v']);
+
+                #total LTC longs
+                $totalLTClong=$finexLTCbtclongprice+$finexLTCusd
