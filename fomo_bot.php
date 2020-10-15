@@ -283,4 +283,8 @@ case "/getfinexlongshort@FOMO_bot":
 
                 #LTCBTC short
                 $finexLTCbtcshort = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_short_LTCBTC');
-                $finex
+                $finexLTCbtcshortarray = json_decode($finexLTCbtcshort,true);
+                $finexLTCbtcshortprice = intval($finexLTCbtcshortarray[0]['v']);
+
+                #LTCUSD short
+                
