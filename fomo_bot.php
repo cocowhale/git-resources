@@ -298,4 +298,6 @@ case "/getfinexlongshort@FOMO_bot":
                 $LTCpctlong=$totalLTClong/$totalLTC;
                 #bfxcoin
 
-              
+                #BFXUSD long
+                $finexBFXusdlong = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_long_BFXUSD');
+                $finexBFXusdlongarray = json_decode($finexB
