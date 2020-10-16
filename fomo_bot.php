@@ -293,4 +293,9 @@ case "/getfinexlongshort@FOMO_bot":
 
                 #total LTC shorts
                 $totalLTCshort=$finexLTCbtcshortprice+$finexLTCusdshortprice;
+                $totalLTC=$totalLTCshort+$totalLTClong;
+                $LTCpctshort=$totalLTCshort/$totalLTC;
+                $LTCpctlong=$totalLTClong/$totalLTC;
+                #bfxcoin
+
               
