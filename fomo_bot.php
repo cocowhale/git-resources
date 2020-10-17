@@ -304,4 +304,6 @@ case "/getfinexlongshort@FOMO_bot":
                 $finexBFXusdlongprice = intval($finexBFXusdlongarray[0]['v']);
 
                 #BFXBTC long
-                $finexBFXbtclong = file_get_contents('https://api.bit
+                $finexBFXbtclong = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_long_BFXBTC');
+                $finexBFXbtclongarray = json_decode($finexBFXbtclong,true);
+                $finexBFXbtclongprice = intval($finexBFXbtclongarray[0]['v']
