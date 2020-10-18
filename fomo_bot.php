@@ -312,4 +312,6 @@ case "/getfinexlongshort@FOMO_bot":
                 $totalBFXlong=$finexBFXbtclongprice+$finexBFXusdlongprice;
 
                 #BFXBTC short
-                $finexBFXbtcshort = file_get_con
+                $finexBFXbtcshort = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_short_BFXBTC');
+                $finexBFXbtcshortarray = json_decode($finexBFXbtcshort,true);
+                $finexBFXbtcshortp
