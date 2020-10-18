@@ -317,4 +317,8 @@ case "/getfinexlongshort@FOMO_bot":
                 $finexBFXbtcshortprice = intval($finexBFXbtcshortarray[0]['v']);
 
                 #BFXUSD short
-                $finexBFXusdshort = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_
+                $finexBFXusdshort = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_short_BFXUSD');
+                $finexBFXusdshortarray = json_decode($finexBFXusdshort,true);
+                $finexBFXusdshortprice = intval($finexBFXusdshortarray[0]['v']);
+
+  
