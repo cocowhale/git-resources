@@ -321,4 +321,7 @@ case "/getfinexlongshort@FOMO_bot":
                 $finexBFXusdshortarray = json_decode($finexBFXusdshort,true);
                 $finexBFXusdshortprice = intval($finexBFXusdshortarray[0]['v']);
 
+                #total BFX shorts
+                $totalBFXshort=$finexBFXbtcshortprice+$finexBFXusdshortprice;
+                $totalBFX=$totalBFXshort+$totalBFXlong;
   
