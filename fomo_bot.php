@@ -329,4 +329,6 @@ case "/getfinexlongshort@FOMO_bot":
                 #ethereum
 
                 #ETHUSD long
-                $finexethusdlong = file_get_content
+                $finexethusdlong = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_long_ETHUSD');
+                $finexethusdlongarray = json_decode($finexethusdlong,true);
+                $finexethus
