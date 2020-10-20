@@ -324,4 +324,9 @@ case "/getfinexlongshort@FOMO_bot":
                 #total BFX shorts
                 $totalBFXshort=$finexBFXbtcshortprice+$finexBFXusdshortprice;
                 $totalBFX=$totalBFXshort+$totalBFXlong;
-  
+                $BFXpctshort=$totalBFXshort/$totalBFX;
+                $BFXpctlong=$totalBFXlong/$totalBFX;
+                #ethereum
+
+                #ETHUSD long
+                $finexethusdlong = file_get_content
