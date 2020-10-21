@@ -335,4 +335,8 @@ case "/getfinexlongshort@FOMO_bot":
 
                 #ETHBTC long
                 $finexethbtclong = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_long_ETHBTC');
-            
+                $finexethbtclongarray = json_decode($finexethbtclong,true);
+                $finexethbtclongprice = intval($finexethbtclongarray[0]['v']);
+
+                #total eth longs
+       
