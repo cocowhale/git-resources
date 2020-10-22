@@ -342,4 +342,8 @@ case "/getfinexlongshort@FOMO_bot":
                 $totalethlong=$finexethbtclongprice+$finexethusdlongprice;
 
                 #ETHBTC short
-                $finexethbtcshort = file_get_contents('https://api.bitfinex.com/v1/stats_history/po
+                $finexethbtcshort = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_short_ETHBTC');
+                $finexethbtcshortarray = json_decode($finexethbtcshort,true);
+                $finexethbtcshortprice = intval($finexethbtcshortarray[0]['v']);
+
+             
