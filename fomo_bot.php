@@ -352,4 +352,6 @@ case "/getfinexlongshort@FOMO_bot":
                 $finexethusdshortprice = intval($finexethusdshortarray[0]['v']);
 
                 #total eth shorts
-                $totalethshor
+                $totalethshort=$finexethbtcshortprice+$finexethusdshortprice;
+                $totaleth=$totalethshort+$totalethlong;
+                $ethpctshort=$totalethshort/$totaleth
