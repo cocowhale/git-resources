@@ -348,4 +348,8 @@ case "/getfinexlongshort@FOMO_bot":
 
                 #ETHUSD short
                 $finexethusdshort = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_short_ETHUSD');
-                $finexethusdshortarray = json
+                $finexethusdshortarray = json_decode($finexethusdshort,true);
+                $finexethusdshortprice = intval($finexethusdshortarray[0]['v']);
+
+                #total eth shorts
+                $totalethshor
