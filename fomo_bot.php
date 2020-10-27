@@ -354,4 +354,8 @@ case "/getfinexlongshort@FOMO_bot":
                 #total eth shorts
                 $totalethshort=$finexethbtcshortprice+$finexethusdshortprice;
                 $totaleth=$totalethshort+$totalethlong;
-                $ethpctshort=$totalethshort/$totaleth
+                $ethpctshort=$totalethshort/$totaleth;
+                $ethpctlong=$totalethlong/$totaleth;
+
+                #ETCUSD long
+                $finexetcusdlong = file_get_contents('https://api.bitfinex.com/v1/stats_history/
