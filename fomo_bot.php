@@ -358,4 +358,8 @@ case "/getfinexlongshort@FOMO_bot":
                 $ethpctlong=$totalethlong/$totaleth;
 
                 #ETCUSD long
-                $finexetcusdlong = file_get_contents('https://api.bitfinex.com/v1/stats_history/
+                $finexetcusdlong = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_long_ETCUSD');
+                $finexetcusdlongarray = json_decode($finexetcusdlong,true);
+                $finexetcusdlongprice = intval($finexetcusdlongarray[0]['v']);
+
+   
