@@ -364,4 +364,10 @@ case "/getfinexlongshort@FOMO_bot":
 
                 #ETCBTC long
                 $finexetcbtclong = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_long_ETCBTC');
-                $finexetcbtclongarray = json_decode($fi
+                $finexetcbtclongarray = json_decode($finexetcbtclong,true);
+                $finexetcbtclongprice = intval($finexetcbtclongarray[0]['v']);
+
+                #total etc longs
+                $totaletclong=$finexetcbtclongprice+$finexetcusdlongprice;
+
+       
