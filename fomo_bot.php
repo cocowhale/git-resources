@@ -370,4 +370,6 @@ case "/getfinexlongshort@FOMO_bot":
                 #total etc longs
                 $totaletclong=$finexetcbtclongprice+$finexetcusdlongprice;
 
-       
+                #ETCUSD short
+                $finexetcusdshort = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_short_ETCUSD');
+                $finexetcusdshortarray = json_decode($finexe
