@@ -372,4 +372,8 @@ case "/getfinexlongshort@FOMO_bot":
 
                 #ETCUSD short
                 $finexetcusdshort = file_get_contents('https://api.bitfinex.com/v1/stats_history/pos_open_short_ETCUSD');
-                $finexetcusdshortarray = json_decode($finexe
+                $finexetcusdshortarray = json_decode($finexetcusdshort,true);
+                $finexetcusdshortprice = intval($finexetcusdshortarray[0]['v']);
+
+                #ETCBTC short
+                $finexetcbtcshort = file_get_contents('https:/
