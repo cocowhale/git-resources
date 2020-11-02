@@ -382,4 +382,8 @@ case "/getfinexlongshort@FOMO_bot":
 
                 #total etc shorts
                 $totaletcshort=$finexetcbtcshortprice+$finexetcusdshortprice;
-                $totaletc=$totaletcs
+                $totaletc=$totaletcshort+$totaletclong;
+                $etcpctshort=$totaletcshort/$totaletc;
+                $etcpctlong=$totaletclong/$totaletc;
+
+                sendMessage($chatId, "<b>Bfx Positions     LONG SHORT</b>
