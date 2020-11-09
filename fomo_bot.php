@@ -395,4 +395,8 @@ case "/getmarginfunding@FOMO_bot":
                 $usdmarglent = intval($usdmargarray[0]['amount_lent']);
                 $usdmargused = intval($usdmargarray[0]['amount_used']);
                 $margts = gmdate("Y-m-d\TH:i:s\Z",$usdmargarray[0]['timestamp']);
-                $usduseddiff=$usdmarglent - $usdmar
+                $usduseddiff=$usdmarglent - $usdmargused;
+                $usdusedperc=round(($usdmargused/$usdmarglent)*100,1);
+
+
+                $finexlong=file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/cre
