@@ -407,4 +407,6 @@ case "/getmarginfunding@FOMO_bot":
                 $finexlongarray = json_decode($finexlong,true);
                 $finexusdmargethusd = intval($finexlongarray[0][1]);
 
-                $finexlong=file_get_contents('https://api2.bitfi
+                $finexlong=file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/credits.size.sym:1m:fUSD:tETCUSD/hist');
+                $finexlongarray = json_decode($finexlong,true);
+                $finexusdmargetcusd = intval($finexlongarray
