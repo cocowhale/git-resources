@@ -419,4 +419,6 @@ case "/getmarginfunding@FOMO_bot":
                 $finexlongarray = json_decode($finexlong,true);
                 $finexusdmargbfxusd = intval($finexlongarray[0][1]);
 
-                $usdusedbt
+                $usdusedbtcusdperc=($finexusdmargbtcusd/$usdmargused)*100;
+                $usdusedethusdperc=($finexusdmargethusd/$usdmargused)*100;
+                $usdusedetcusdperc=($finexusdmargetcu
