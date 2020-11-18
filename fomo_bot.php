@@ -421,4 +421,8 @@ case "/getmarginfunding@FOMO_bot":
 
                 $usdusedbtcusdperc=($finexusdmargbtcusd/$usdmargused)*100;
                 $usdusedethusdperc=($finexusdmargethusd/$usdmargused)*100;
-                $usdusedetcusdperc=($finexusdmargetcu
+                $usdusedetcusdperc=($finexusdmargetcusd/$usdmargused)*100;
+                $usdusedltcusdperc=($finexusdmargltcusd/$usdmargused)*100;
+                $usdusedbfxusdperc=($finexusdmargbfxusd/$usdmargused)*100;
+
+          
