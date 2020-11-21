@@ -425,4 +425,6 @@ case "/getmarginfunding@FOMO_bot":
                 $usdusedltcusdperc=($finexusdmargltcusd/$usdmargused)*100;
                 $usdusedbfxusdperc=($finexusdmargbfxusd/$usdmargused)*100;
 
-          
+                $grabbtcmarg = file_get_contents('https://api.bitfinex.com/v1/lends/btc');
+                $btcmargarray = json_decode($grabbtcmarg, true);
+                $btcmarglent = in
