@@ -427,4 +427,7 @@ case "/getmarginfunding@FOMO_bot":
 
                 $grabbtcmarg = file_get_contents('https://api.bitfinex.com/v1/lends/btc');
                 $btcmargarray = json_decode($grabbtcmarg, true);
-                $btcmarglent = in
+                $btcmarglent = intval($btcmargarray[0]['amount_lent']);
+                $btcmargused = intval($btcmargarray[0]['amount_used']);
+                $btcuseddiff=$btcmarglent - $btcmargused;
+                $btcusedperc=
