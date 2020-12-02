@@ -457,4 +457,8 @@ case "/getmarginfunding@FOMO_bot":
                 $btcusedethbtcperc=($finexbtcmargethbtc/$btcmargused)*100;
                 $btcusedetcbtcperc=($finexbtcmargetcbtc/$btcmargused)*100;
                 $btcusedltcbtcperc=($finexbtcmargltcbtc/$btcmargused)*100;
-                $btcusedbfxbtcperc=($finexbtcmargbfxbtc/$btcma
+                $btcusedbfxbtcperc=($finexbtcmargbfxbtc/$btcmargused)*100;
+
+                $finex = file_get_contents('https://api.bitfinex.com/v1/pubticker/BTCUSD');
+                $finexarray = json_decode($finex,true);
+          
