@@ -455,4 +455,6 @@ case "/getmarginfunding@FOMO_bot":
 
                 $btcusedbtcusdperc=($finexbtcmargbtcusd/$btcmargused)*100;
                 $btcusedethbtcperc=($finexbtcmargethbtc/$btcmargused)*100;
-                $btcusedetcbtcper
+                $btcusedetcbtcperc=($finexbtcmargetcbtc/$btcmargused)*100;
+                $btcusedltcbtcperc=($finexbtcmargltcbtc/$btcmargused)*100;
+                $btcusedbfxbtcperc=($finexbtcmargbfxbtc/$btcma
