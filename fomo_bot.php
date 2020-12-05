@@ -465,4 +465,8 @@ case "/getmarginfunding@FOMO_bot":
                 $btcmarglentusd=$btcmarglent*$finexprice;
                 $ratiolend=round($btcmarglentusd/$usdmarglent,2);
             
-                sendMessage($chatId, "<b>Bitfinex Margin Funding Statistics</b>\n<code>USD lent: </code>$".number_format($usdmarglent)."\n<code>USD used: </code>$".number_format($usdmargused)." (<b>".$usdusedperc."%</b>)\nBTC: ".number_format($usdusedbtcusdperc)."% ETH: ".number_format($usdusedethusdperc)."% ETC: ".number_format($usdusedetcusdperc)."% LTC: ".number_format($usdusedltcusdperc)."% BFX: ".number_format($usdusedbfxusdperc)."% \n<code>BTC lent: </code>Ƀ".number_format($btcmarglent)."\n<code>BTC used: </code>Ƀ".number_format($btcmargused)." (<b>".$btcusedperc."%</b>)\nBTC: ".number_format($btcusedbtcusdperc)."% ETH: ".number_format($btcusedethbtcperc)."% ETC: ".number_format($btcusedetcbtcperc)."% LTC: ".number_format($btcusedltcbtcperc)."% BFX: ".number_format($bt
+                sendMessage($chatId, "<b>Bitfinex Margin Funding Statistics</b>\n<code>USD lent: </code>$".number_format($usdmarglent)."\n<code>USD used: </code>$".number_format($usdmargused)." (<b>".$usdusedperc."%</b>)\nBTC: ".number_format($usdusedbtcusdperc)."% ETH: ".number_format($usdusedethusdperc)."% ETC: ".number_format($usdusedetcusdperc)."% LTC: ".number_format($usdusedltcusdperc)."% BFX: ".number_format($usdusedbfxusdperc)."% \n<code>BTC lent: </code>Ƀ".number_format($btcmarglent)."\n<code>BTC used: </code>Ƀ".number_format($btcmargused)." (<b>".$btcusedperc."%</b>)\nBTC: ".number_format($btcusedbtcusdperc)."% ETH: ".number_format($btcusedethbtcperc)."% ETC: ".number_format($btcusedetcbtcperc)."% LTC: ".number_format($btcusedltcbtcperc)."% BFX: ".number_format($btcusedbfxbtcperc)."% \nRatio of BTC to USD Lent: <b>".$ratiolend."</b>");
+                break;
+
+case "/topminers@FOMO_bot":
+                $grabtopminers = file_get_contents('https://api.block
