@@ -469,4 +469,9 @@ case "/getmarginfunding@FOMO_bot":
                 break;
 
 case "/topminers@FOMO_bot":
-                $grabtopminers = file_get_contents('https://api.block
+                $grabtopminers = file_get_contents('https://api.blockchain.info/pools?timespan=1days');
+                $topminers = json_decode($grabtopminers, true);
+                arsort($topminers);
+                $minercount=count($topminers);
+
+             
