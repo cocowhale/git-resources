@@ -474,4 +474,8 @@ case "/topminers@FOMO_bot":
                 arsort($topminers);
                 $minercount=count($topminers);
 
-             
+                #sum the blocks mined in past 24 hr
+                $blocksinday=0;
+                $minercount2=$minercount-1;
+                foreach(range(0,$minercount2) as $x) { 
+        
