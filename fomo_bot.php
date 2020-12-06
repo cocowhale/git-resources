@@ -478,4 +478,7 @@ case "/topminers@FOMO_bot":
                 $blocksinday=0;
                 $minercount2=$minercount-1;
                 foreach(range(0,$minercount2) as $x) { 
-        
+                $blocksinday=$blocksinday+$topminers[array_keys($topminers)[$x]]; 
+                }
+	            #build tg string
+                $minerstring="<b>Miners of Bitco
