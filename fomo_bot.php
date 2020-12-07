@@ -487,4 +487,8 @@ case "/topminers@FOMO_bot":
                 $minername=array_keys($topminers)[$x];
                 if ($minershare<10):
                     $minername=str_pad($minername, 16);
-                els
+                else:
+                    $minername=str_pad($minername, 15);   
+                endif;
+                $numblocks=$topminers[array_keys($topminers)[$x]];
+                if (
