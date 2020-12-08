@@ -496,4 +496,7 @@ case "/topminers@FOMO_bot":
                 else:
                     $numblocks=str_pad($numblocks,11);
                 endif;
-   
+                if ($minershare<5):
+                $minerstring=$minerstring; 
+                else:
+                $minerstring=$minerstring."<code>".$minername."</code>".$numblocks."    ".number_format(
