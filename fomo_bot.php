@@ -491,4 +491,9 @@ case "/topminers@FOMO_bot":
                     $minername=str_pad($minername, 15);   
                 endif;
                 $numblocks=$topminers[array_keys($topminers)[$x]];
-                if (
+                if (intval($numblocks)<10):
+                    $numblocks=str_pad($numblocks,12);
+                else:
+                    $numblocks=str_pad($numblocks,11);
+                endif;
+   
