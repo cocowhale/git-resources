@@ -499,4 +499,10 @@ case "/topminers@FOMO_bot":
                 if ($minershare<5):
                 $minerstring=$minerstring; 
                 else:
-                $minerstring=$minerstring."<code>".$minername."</code>".$numblocks."    ".number_format(
+                $minerstring=$minerstring."<code>".$minername."</code>".$numblocks."    ".number_format($minershare,"0")."%\n"; 
+                endif;
+                }
+                sendMessage($chatId, $minerstring);
+                break;
+        case "/toptenaltcoins@FOMO_bot":
+           
