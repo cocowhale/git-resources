@@ -508,4 +508,10 @@ case "/topminers@FOMO_bot":
                 $coinmarketcap = file_get_contents('https://api.coinmarketcap.com/v1/ticker/?limit=11');
                 $wsi = json_decode($coinmarketcap, true);
 
-                $marketcaptota
+                $marketcaptotal=0;
+                #sum the marketcaps
+                foreach(range(1,10) as $x) { 
+                $marketcaptotal=$marketcaptotal+$wsi[$x]['market_cap_usd']; 
+                }
+	
+                $marketcapt
