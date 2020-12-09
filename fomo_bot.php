@@ -505,4 +505,7 @@ case "/topminers@FOMO_bot":
                 sendMessage($chatId, $minerstring);
                 break;
         case "/toptenaltcoins@FOMO_bot":
-           
+                $coinmarketcap = file_get_contents('https://api.coinmarketcap.com/v1/ticker/?limit=11');
+                $wsi = json_decode($coinmarketcap, true);
+
+                $marketcaptota
