@@ -516,4 +516,9 @@ case "/topminers@FOMO_bot":
 	
                 $marketcaptotal=floor($marketcaptotal);
                 #WSI is just marketcap standardized to 1 billion to 1000 pts
-                $wsivalue=($marketcaptotal/100000
+                $wsivalue=($marketcaptotal/1000000000)*1000;
+
+
+                $weightedpct=0;
+                foreach(range(1,10) as $x) { 
+                $weightedpct=$weightedpct+( ($wsi[$x]['percent_change_24h'])*($wsi[$x][
