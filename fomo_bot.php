@@ -514,4 +514,6 @@ case "/topminers@FOMO_bot":
                 $marketcaptotal=$marketcaptotal+$wsi[$x]['market_cap_usd']; 
                 }
 	
-                $marketcapt
+                $marketcaptotal=floor($marketcaptotal);
+                #WSI is just marketcap standardized to 1 billion to 1000 pts
+                $wsivalue=($marketcaptotal/100000
