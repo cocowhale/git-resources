@@ -521,4 +521,9 @@ case "/topminers@FOMO_bot":
 
                 $weightedpct=0;
                 foreach(range(1,10) as $x) { 
-                $weightedpct=$weightedpct+( ($wsi[$x]['percent_change_24h'])*($wsi[$x][
+                $weightedpct=$weightedpct+( ($wsi[$x]['percent_change_24h'])*($wsi[$x]['market_cap_usd'])/$marketcaptotal);
+                }
+
+                #build individual message
+                if ($weightedpct < 0):
+                    $wsistring="<b>Whalepool Shitcoin Index (WSI
