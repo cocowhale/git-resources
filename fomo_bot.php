@@ -533,4 +533,5 @@ case "/topminers@FOMO_bot":
 
                 foreach(range(1,10) as $x) { 
                 $wsirank=$wsi[$x]['rank']-1;
-                if ($wsi[$x]['percent_change_24h'] < 
+                if ($wsi[$x]['percent_change_24h'] < 0):
+                    $wsistring=$wsistring.$wsirank.". <code>".$wsi[$x]['symbol']."</code>: ".number_format($wsi[$x]['price_btc'],8)." (".number_format($wsi[$x]['pe
