@@ -536,4 +536,9 @@ case "/topminers@FOMO_bot":
                 if ($wsi[$x]['percent_change_24h'] < 0):
                     $wsistring=$wsistring.$wsirank.". <code>".$wsi[$x]['symbol']."</code>: ".number_format($wsi[$x]['price_btc'],8)." (".number_format($wsi[$x]['percent_change_24h'],2)."%)\n";
                 else:
-                    $wsistring=$wsistring.$wsirank.". <code>".$wsi[$x]['symbol']."</code>: ".number_format($wsi[$x]['price_btc'],8)
+                    $wsistring=$wsistring.$wsirank.". <code>".$wsi[$x]['symbol']."</code>: ".number_format($wsi[$x]['price_btc'],8)." (+".number_format($wsi[$x]['percent_change_24h'],2)."%)\n";
+                endif;
+                
+                }
+
+                sendMessage($chatId, $wsistri
