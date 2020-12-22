@@ -541,4 +541,8 @@ case "/topminers@FOMO_bot":
                 
                 }
 
-                sendMessage($chatId, $wsistri
+                sendMessage($chatId, $wsistring);
+                break;
+
+case "/getfutureslongshort@FOMO_bot":
+                $grabratios = file_get_contents('https://www.okcoin.com/future/getFuturePositionRatio.do?type
