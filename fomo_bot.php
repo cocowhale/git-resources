@@ -545,4 +545,7 @@ case "/topminers@FOMO_bot":
                 break;
 
 case "/getfutureslongshort@FOMO_bot":
-                $grabratios = file_get_contents('https://www.okcoin.com/future/getFuturePositionRatio.do?type
+                $grabratios = file_get_contents('https://www.okcoin.com/future/getFuturePositionRatio.do?type=1&symbol=0');
+                $grabratiosarray = json_decode($grabratios, true);
+                $latestshort = $grabratiosarray['selldata'][19]*100;
+                $min90short = $grabratio
