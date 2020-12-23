@@ -548,4 +548,7 @@ case "/getfutureslongshort@FOMO_bot":
                 $grabratios = file_get_contents('https://www.okcoin.com/future/getFuturePositionRatio.do?type=1&symbol=0');
                 $grabratiosarray = json_decode($grabratios, true);
                 $latestshort = $grabratiosarray['selldata'][19]*100;
-                $min90short = $grabratio
+                $min90short = $grabratiosarray['selldata'][0]*100;
+                $min45short = $grabratiosarray['selldata'][10]*100;
+                $latestlong = $grabratiosarray['buydata'][19]*100;
+                $min90long = $grabrat
