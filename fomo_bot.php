@@ -551,4 +551,8 @@ case "/getfutureslongshort@FOMO_bot":
                 $min90short = $grabratiosarray['selldata'][0]*100;
                 $min45short = $grabratiosarray['selldata'][10]*100;
                 $latestlong = $grabratiosarray['buydata'][19]*100;
-                $min90long = $grabrat
+                $min90long = $grabratiosarray['buydata'][0]*100;
+                $min45long = $grabratiosarray['buydata'][10]*100;
+                
+
+                sendMessage($chatId, "<b>OKCoin  LONG    
