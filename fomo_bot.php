@@ -555,4 +555,4 @@ case "/getfutureslongshort@FOMO_bot":
                 $min45long = $grabratiosarray['buydata'][10]*100;
                 
 
-                sendMessage($chatId, "<b>OKCoin  LONG    
+                sendMessage($chatId, "<b>OKCoin  LONG     SHORT</b>\n<code>Now  :</code> ".number_format($latestlong,"2")."%   ".number_format($latestshort,"2")."%\n<code>45min:</code> ".number_format($min45long,"2")."%   ".number_format($min45short,"2")."%
