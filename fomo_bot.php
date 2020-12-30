@@ -558,4 +558,8 @@ case "/getfutureslongshort@FOMO_bot":
                 sendMessage($chatId, "<b>OKCoin  LONG     SHORT</b>\n<code>Now  :</code> ".number_format($latestlong,"2")."%   ".number_format($latestshort,"2")."%\n<code>45min:</code> ".number_format($min45long,"2")."%   ".number_format($min45short,"2")."%\n<code>90min:</code> ".number_format($min90long,"2")."%   ".number_format($min90short,"2")."%");
                 break;
         case "/getfuturestoptrader@FOMO_bot":
-                $
+                $grabratiosarray = json_decode($grabratios, true);
+                $latestshort = $grabratiosarray['selldata'][49]*100;
+                $latestlong = $grabratiosarray['buydata'][49]*100;
+
+             
