@@ -562,4 +562,7 @@ case "/getfutureslongshort@FOMO_bot":
                 $latestshort = $grabratiosarray['selldata'][49]*100;
                 $latestlong = $grabratiosarray['buydata'][49]*100;
 
-             
+                
+
+                sendMessage($chatId, "<b>OKCoin Top Trader Sentiment</b>\n<code>Long :</code> ".number_format($latestlong,"2")."%\n<code>Short:</code> ".number_format($latestshort,"2")."%");
+    
