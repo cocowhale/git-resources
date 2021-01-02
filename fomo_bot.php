@@ -575,4 +575,8 @@ case "/getfutureslongshort@FOMO_bot":
                 $predictedfundingrate = $grabmexarray[0]['indicativeFundingRate']*100;
                 $fundingrateannual = (pow((1+($fundingrate8hr/100)),1095)-1)*100;
                 $nextfunding = strtotime($grabmexarray[0]['fundingTimestamp']);
-                $currentts = strtotime($grabmexarray[0]
+                $currentts = strtotime($grabmexarray[0]['timestamp']);
+                $timetofunding = $nextfunding-$currentts;
+                $strtimetofunding=gmdate("H:i:s", $timetofunding);
+                $thehours=floor($timetofunding/60/60);
+          
