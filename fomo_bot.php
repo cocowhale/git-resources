@@ -582,4 +582,4 @@ case "/getfutureslongshort@FOMO_bot":
                 $theminutes=floor($timetofunding/60)-($thehours*60);
                 $predictedtime=($timetofunding/60/60)+8;               
 
-                sendMessage($chatId, "<b>BitMEX BTC/USD Swap Funding</b>\nPositive
+                sendMessage($chatId, "<b>BitMEX BTC/USD Swap Funding</b>\nPositive rate -> Longs pay shorts\nCurrent payment in: ".$thehours." hr ".$theminutes." min\n<code>Nominal(8-hour):</code> ".number_format($fundingrate8hr,"4")."%\n<code>Daily Rate     :<
