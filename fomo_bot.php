@@ -579,4 +579,7 @@ case "/getfutureslongshort@FOMO_bot":
                 $timetofunding = $nextfunding-$currentts;
                 $strtimetofunding=gmdate("H:i:s", $timetofunding);
                 $thehours=floor($timetofunding/60/60);
-          
+                $theminutes=floor($timetofunding/60)-($thehours*60);
+                $predictedtime=($timetofunding/60/60)+8;               
+
+                sendMessage($chatId, "<b>BitMEX BTC/USD Swap Funding</b>\nPositive
