@@ -586,4 +586,6 @@ case "/getfutureslongshort@FOMO_bot":
                 break;
 
 case "/getswaprates@FOMO_bot":
-                $bt
+                $btcffrjson = file_get_contents('https://api.bitfinex.com/v1/lendbook/BTC?limit_bids=1&limit_asks=0');
+                $btcffrarray = json_decode($btcffrjson, true);
+                $btc
