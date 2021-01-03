@@ -590,4 +590,9 @@ case "/getswaprates@FOMO_bot":
                 $btcffrarray = json_decode($btcffrjson, true);
                 $btcffrjson2 = file_get_contents('https://api.bitfinex.com/v1/lendbook/BTC?limit_bids=0&limit_asks=1');
                 $btcffrarray2 = json_decode($btcffrjson2, true);
-                if (isset($btcffrar
+                if (isset($btcffrarray)) {
+                $btcffr1 = round($btcffrarray['bids'][0]['rate'],1);
+                $btcffr1d=round($btcffr1/365,4);
+                } else {
+                $btcffr1 = "N/A";
+             
