@@ -595,4 +595,8 @@ case "/getswaprates@FOMO_bot":
                 $btcffr1d=round($btcffr1/365,4);
                 } else {
                 $btcffr1 = "N/A";
+                }
+                if (isset($btcffrarray2)) {
+                $btcffr2 = round($btcffrarray2['asks'][0]['rate'],1);
+                $btcffr2d=round($btcffr2/365,4);
              
