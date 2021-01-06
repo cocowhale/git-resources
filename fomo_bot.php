@@ -599,4 +599,9 @@ case "/getswaprates@FOMO_bot":
                 if (isset($btcffrarray2)) {
                 $btcffr2 = round($btcffrarray2['asks'][0]['rate'],1);
                 $btcffr2d=round($btcffr2/365,4);
-             
+                } else {
+                $btcffr2 = "N/A";
+                }
+
+                $grabbtcmarg = file_get_contents('https://api.bitfinex.com/v1/lends/btc');
+                $btcmargarray = json_deco
