@@ -610,4 +610,6 @@ case "/getswaprates@FOMO_bot":
 
                 // USD swaps
 
-                $usdff
+                $usdffrjson = file_get_contents('https://api.bitfinex.com/v1/lendbook/USD?limit_bids=0&limit_asks=1');
+                $usdffrarray = json_decode($usdffrjson, true);
+            
