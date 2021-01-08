@@ -612,4 +612,8 @@ case "/getswaprates@FOMO_bot":
 
                 $usdffrjson = file_get_contents('https://api.bitfinex.com/v1/lendbook/USD?limit_bids=0&limit_asks=1');
                 $usdffrarray = json_decode($usdffrjson, true);
+                if (isset($usdffrarray)) {
+                $usdffr = round($usdffrarray['asks'][0]['rate'],1);
+                $usdffrd=round($usdffr/365,4);
+                } else {
             
