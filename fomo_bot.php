@@ -622,4 +622,10 @@ case "/getswaprates@FOMO_bot":
                 $usdffrarray2 = json_decode($usdffrjson2, true);
                 if (isset($usdffrarray2)) {
                 $usdffr2 = round($usdffrarray2['bids'][0]['rate'],1);
-                $usdffr2d=round($usdffr
+                $usdffr2d=round($usdffr2/365,4);
+                } else {
+                $usdffr2 = "N/A";
+                }
+
+                $grabusdmarg = file_get_contents('https://api.bitfinex.com/v1/lends/usd');
+               
