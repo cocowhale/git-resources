@@ -633,3 +633,6 @@ case "/getswaprates@FOMO_bot":
                 $theusdffr1=round($theusdffr/365,4);
 
                 // LTC swaps
+
+                $ltcffrjson = file_get_contents('https://api.bitfinex.com/v1/lendbook/LTC?limit_bids=0&limit_asks=1');
+                $ltcffrarray = json_decode($ltc
