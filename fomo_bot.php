@@ -646,4 +646,8 @@ case "/getswaprates@FOMO_bot":
                 $ltcffrarray2 = json_decode($ltcffrjson2, true);
                 if (isset($ltcffrarray2)) {
                 $ltcffr2 = round($ltcffrarray2['bids'][0]['rate'],1);
-               
+                $ltcffr2d=round($ltcffr2/365,4);
+                } else {
+                $ltcffr2 = "N/A";
+                }
+                $grabltcmarg = file_get_contents('https://api.bitfinex.com/v1/lends/ltc'
