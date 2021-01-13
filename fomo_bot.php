@@ -650,4 +650,9 @@ case "/getswaprates@FOMO_bot":
                 } else {
                 $ltcffr2 = "N/A";
                 }
-                $grabltcmarg = file_get_contents('https://api.bitfinex.com/v1/lends/ltc'
+                $grabltcmarg = file_get_contents('https://api.bitfinex.com/v1/lends/ltc');
+                $ltcmargarray = json_decode($grabltcmarg, true);
+                $theltcffr = $ltcmargarray[0]['rate'];
+                $theltcffr1=round($theltcffr/365,4);
+
+                /
