@@ -655,4 +655,7 @@ case "/getswaprates@FOMO_bot":
                 $theltcffr = $ltcmargarray[0]['rate'];
                 $theltcffr1=round($theltcffr/365,4);
 
-                /
+                // ETH swaps
+
+                $ethffrjson = file_get_contents('https://api.bitfinex.com/v1/lendbook/ETH?limit_bids=0&limit_asks=1');
+                $ethffrarray = json_decode($ethffrjson, true);
