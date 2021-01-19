@@ -663,4 +663,7 @@ case "/getswaprates@FOMO_bot":
                 $ethffr = round($ethffrarray['asks'][0]['rate'],1);
                 $ethffrd=round($ethffr/365,4);
                 } else {
-            
+                $ethffr = "N/A";
+                }
+                $ethffrjson2 = file_get_contents('https://api.bitfinex.com/v1/lendbook/ETH?limit_bids=1&limit_asks=0');
+                $ethffrarray2 = json_
