@@ -675,4 +675,9 @@ case "/getswaprates@FOMO_bot":
                 }
 
                 $grabethmarg = file_get_contents('https://api.bitfinex.com/v1/lends/eth');
-           
+                $ethmargarray = json_decode($grabethmarg, true);
+                $theethffr = $ethmargarray[0]['rate'];
+                $theethffr1=round($theethffr/365,4);
+                // ETC swaps
+
+            
