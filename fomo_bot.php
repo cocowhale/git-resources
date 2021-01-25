@@ -696,4 +696,8 @@ case "/getswaprates@FOMO_bot":
                 } else {
                 $etcffr2 = "N/A";
                 }
-                $grabetcmarg = file_get_contents('https://api.bitfinex.com/v1/lends/etc')
+                $grabetcmarg = file_get_contents('https://api.bitfinex.com/v1/lends/etc');
+                $etcmargarray = json_decode($grabetcmarg, true);
+                $theetcffr = $etcmargarray[0]['rate'];
+                $theetcffr1=round($theetcffr/365,4);
+ 
