@@ -722,4 +722,15 @@ sendMessageTypingAction($chatId);
 $topconts=file_get_html('https://www.okcoin.com/future/futureTop.do?type=0&symbol=0');
 $tdcount=0;
 foreach($topconts->find('div.futureIndexTable') as $table) {
-foreach($t
+foreach($table->find('table') as $tr) {
+foreach($tr->find('td') as $td) {
+
+$tdcount++;
+
+if ($tdcount==14) {
+$top1=$td->text();
+}
+elseif ($tdcount==26) {
+$top2=$td->text();
+}
+elseif ($tdcount==38
