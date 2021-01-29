@@ -718,4 +718,8 @@ private commands
 */
  case "/futures_okcoin_top_holders":
 sendMessageTypingAction($chatId);
-         include_once('/usr/share/nginx/html/simplehtml/si
+         include_once('/usr/share/nginx/html/simplehtml/simple_html_dom.php');
+$topconts=file_get_html('https://www.okcoin.com/future/futureTop.do?type=0&symbol=0');
+$tdcount=0;
+foreach($topconts->find('div.futureIndexTable') as $table) {
+foreach($t
