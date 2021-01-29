@@ -701,4 +701,21 @@ case "/getswaprates@FOMO_bot":
                 $theetcffr = $etcmargarray[0]['rate'];
                 $theetcffr1=round($theetcffr/365,4);
                 sendMessage($chatId, "<b>Bitfinex Margin Funding Daily Rates</b>\n<code>     Borrow  Lend    FFR</code>\n<code>BTC: </code>".number_format($btcffr2d, "4")."% : ".number_format($btcffr1d, "4")."% : ".number_format($thebtcffr1, "4")."%\n<code>USD: </code>".number_format($usdffrd, "4")."% : ".number_format($usdffr2d, "4")."% : ".number_format($theusdffr1, "4")."%\n<code>LTC: </code>".number_format($ltcffrd, "4")."% : ".number_format($ltcffr2d, "4")."% : ".number_format($theltcffr1, "4")."%\n<code>ETC: </code>".number_format($etcffrd, "4")."% : ".number_format($etcffr2d, "4")."% : ".number_format($theetcffr1, "4")."%\n<code>ETH: </code>".number_format($ethffrd, "4")."% : ".number_format($ethffr2d, "4")."% : ".number_format($theethffr1, "4")."% ");
-                
+                break;
+
+*/
+
+/*
+
+
+
+private commands 
+
+
+
+
+
+*/
+ case "/futures_okcoin_top_holders":
+sendMessageTypingAction($chatId);
+         include_once('/usr/share/nginx/html/simplehtml/si
