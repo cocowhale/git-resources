@@ -733,4 +733,16 @@ $top1=$td->text();
 elseif ($tdcount==26) {
 $top2=$td->text();
 }
-elseif ($tdcount==38
+elseif ($tdcount==38) {
+$top3=$td->text();
+}
+elseif ($tdcount==50) {
+$top4=$td->text();
+}
+elseif ($tdcount==62) {
+$top5=$td->text();
+}
+elseif ($tdcount==74) {
+$top6=$td->text();
+}
+elseif ($tdcount==86
