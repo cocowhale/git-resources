@@ -745,4 +745,22 @@ $top5=$td->text();
 elseif ($tdcount==74) {
 $top6=$td->text();
 }
-elseif ($tdcount==86
+elseif ($tdcount==86) {
+$top7=$td->text();
+}
+elseif ($tdcount==98) {
+$top8=$td->text();
+}
+elseif ($tdcount==110) {
+$top9=$td->text();
+}
+elseif ($tdcount==122) {
+$top10=$td->text();
+}
+
+}
+}
+}
+
+
+       
