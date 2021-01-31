@@ -763,4 +763,4 @@ $top10=$td->text();
 }
 
 
-       
+           sendMessage($chatId, "<b>Top Futures Contract Holders (OKCoin)</b>\n<code> 1: </code>".number_format($top1)." BTC\n<code> 2: </code>".number_format($top2)." BTC\n<code> 3: </code>".number_format($top3)." BTC
