@@ -764,4 +764,9 @@ $top10=$td->text();
 
 
            sendMessage($chatId, "<b>Top Futures Contract Holders (OKCoin)</b>\n<code> 1: </code>".number_format($top1)." BTC\n<code> 2: </code>".number_format($top2)." BTC\n<code> 3: </code>".number_format($top3)." BTC\n<code> 4: </code>".number_format($top4)." BTC\n<code> 5: </code>".number_format($top5)." BTC\n<code> 6: </code>".number_format($top6)." BTC\n<code> 7: </code>".number_format($top7)." BTC\n<code> 8: </code>".number_format($top8)." BTC\n<code> 9: </code>".number_format($top9)." BTC\n<code>10: </code>".number_format($top10)." BTC\n".$currtimestamp);
-           
+                break;
+
+
+          case "/futures_okcoin_premium":
+sendMessageTypingAction($chatId);
+                $okcindex = file_get_contents('https://www.okcoin.com/api/v1/future_index.do?symb
