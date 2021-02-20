@@ -769,4 +769,8 @@ $top10=$td->text();
 
           case "/futures_okcoin_premium":
 sendMessageTypingAction($chatId);
-                $okcindex = file_get_contents('https://www.okcoin.com/api/v1/future_index.do?symb
+                $okcindex = file_get_contents('https://www.okcoin.com/api/v1/future_index.do?symbol=btc_usd');
+                $okcixarray = json_decode($okcindex, true);
+                $okcixprice = $okcixarray['future_index'];
+
+                $okcweekly = file_get_contents
