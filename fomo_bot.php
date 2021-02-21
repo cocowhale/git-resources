@@ -779,4 +779,6 @@ sendMessageTypingAction($chatId);
                 $wkpremium = round((($okcwkprice - $okcixprice)/$okcwkprice)*100,2);
                 $wkp=round($okcwkprice - $okcixprice,2);
 
-                $okcbiwee
+                $okcbiweekly = file_get_contents('https://www.okcoin.com/api/v1/future_ticker.do?symbol=btc_usd&contract_type=next_week');
+                $okcbiwkarray = json_decode($okcbiweekly, true);
+                $okcbi
