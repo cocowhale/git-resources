@@ -786,4 +786,7 @@ sendMessageTypingAction($chatId);
                 $bip=round($okcbiwkprice - $okcixprice,2);
 
                 $okcqtly = file_get_contents('https://www.okcoin.com/api/v1/future_ticker.do?symbol=btc_usd&contract_type=quarter');
-                $okcqtarray = 
+                $okcqtarray = json_decode($okcqtly, true);
+                $okcqtprice = $okcqtarray['ticker']['last'];
+                $qtp=round($okcqtprice - $okcixprice,2);
+                $qtpremium = round((($okcqtpric
