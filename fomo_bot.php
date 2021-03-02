@@ -793,4 +793,4 @@ sendMessageTypingAction($chatId);
 
                 //sendMessage($chatId, "<b>Bitcoin Futures Premiums (OKCoin)</b>\n<code>Index    : </code>$".$okcixprice."\n<code>Weekly   : </code>$".$okcwkprice." ($".$wkp." ; ".$wkpremium."%)\n<code>Biweekly : </code>$".$okcbiwkprice." ($".$bip." ; ".$biwkpremium."%)\n<code>Quarterly: </code>$".$okcqtprice." ($".$qtp." ; ".$qtpremium."%)");
 
-            
+                sendMessage($chatId, "<b>Bitcoin Futures Premiums (OKCoin)</b>\n<code>Index : </code>$".number_format($okcixprice,"2")."\n<code>Weekly: </code>$".number_format($okcwkprice,"2")." ($".number
