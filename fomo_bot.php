@@ -799,4 +799,6 @@ sendMessageTypingAction($chatId);
         case "/btcusd_ticker":
 sendMessageTypingAction($chatId);
                 $finex = file_get_contents('https://api.bitfinex.com/v1/pubticker/BTCUSD');
-    
+                $stamp = file_get_contents('https://www.bitstamp.net/api/ticker');
+                $gaydax = url_get_contents('https://api.gdax.com/products/BTC-USD/ticker');
+                $b
