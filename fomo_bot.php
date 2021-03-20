@@ -809,4 +809,8 @@ sendMessageTypingAction($chatId);
 		$quoine = file_get_contents('https://api.quoine.com/products/');
 
                 $finexarray = json_decode($finex,true);
-                $stamparray = json_decode($stam
+                $stamparray = json_decode($stamp,true);
+                $gaydaxarray = json_decode($gaydax,true);
+                $btcearray = json_decode($btce,true);
+                $itbitarray = json_decode($itbit,true);
+                $okcoinar
