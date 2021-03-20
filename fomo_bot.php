@@ -813,4 +813,10 @@ sendMessageTypingAction($chatId);
                 $gaydaxarray = json_decode($gaydax,true);
                 $btcearray = json_decode($btce,true);
                 $itbitarray = json_decode($itbit,true);
-                $okcoinar
+                $okcoinarray = json_decode($okcoin, true);
+                $geminiarray = json_decode($gemini, true);
+		$krakenarray = json_decode($kraken, true);
+		$quoinearray = json_decode($quoine, true);
+
+
+ 
