@@ -805,4 +805,8 @@ sendMessageTypingAction($chatId);
                 $itbit = file_get_contents('https://api.itbit.com/v1/markets/XBTUSD/ticker');
                 $okcoin = file_get_contents('https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd');
                 $gemini = file_get_contents('https://api.gemini.com/v1/pubticker/btcusd');
-		$kraken = file_get_contents('https://a
+		$kraken = file_get_contents('https://api.kraken.com/0/public/Ticker?pair=XBTUSD');
+		$quoine = file_get_contents('https://api.quoine.com/products/');
+
+                $finexarray = json_decode($finex,true);
+                $stamparray = json_decode($stam
