@@ -819,4 +819,7 @@ sendMessageTypingAction($chatId);
 		$quoinearray = json_decode($quoine, true);
 
 
- 
+                $finexprice = $finexarray['last_price'];
+                $stampprice = $stamparray['last'];
+                $gaydaxprice = $gaydaxarray['price'];
+                $btcepr
