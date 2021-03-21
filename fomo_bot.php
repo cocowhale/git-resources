@@ -822,4 +822,7 @@ sendMessageTypingAction($chatId);
                 $finexprice = $finexarray['last_price'];
                 $stampprice = $stamparray['last'];
                 $gaydaxprice = $gaydaxarray['price'];
-                $btcepr
+                $btceprice = $btcearray['btc_usd']['last'];
+                $itbitprice = $itbitarray['lastPrice'];
+                $okcoinprice = $okcoinarray['ticker']['last'];
+                $geminiprice = $gemi
