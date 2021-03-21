@@ -825,4 +825,9 @@ sendMessageTypingAction($chatId);
                 $btceprice = $btcearray['btc_usd']['last'];
                 $itbitprice = $itbitarray['lastPrice'];
                 $okcoinprice = $okcoinarray['ticker']['last'];
-                $geminiprice = $gemi
+                $geminiprice = $geminiarray['last'];
+                $krakenprice = $krakenarray['result']['XXBTZUSD']['c'][0];
+		$quoineprice = $quoinearray[0]['last_traded_price'];
+
+
+                $finexvol = $finexarray['v
