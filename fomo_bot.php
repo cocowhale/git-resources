@@ -830,4 +830,8 @@ sendMessageTypingAction($chatId);
 		$quoineprice = $quoinearray[0]['last_traded_price'];
 
 
-                $finexvol = $finexarray['v
+                $finexvol = $finexarray['volume'];
+                $stampvol = $stamparray['volume'];
+                $gaydaxvol = $gaydaxarray['volume'];
+                $btcevol = $btcearray['btc_usd']['vol_cur'];
+                $itbitvol = 
