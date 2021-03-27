@@ -843,4 +843,6 @@ sendMessageTypingAction($chatId);
 
 		$data = array(
 		    array('name' => 'Bitfinex', 'price' => $finexprice, 'vol' => $finexvol),
-		    array('name' => 'Bitstamp', 'p
+		    array('name' => 'Bitstamp', 'price' => $stampprice, 'vol' => $stampvol),
+		    array('name' => 'GDAX    ', 'price' => $gaydaxprice, 'vol' => $gaydaxvol),
+		    array('name' => 'BTC-e   ', 'price' => $btceprice, 'vol'
