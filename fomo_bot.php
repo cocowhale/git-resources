@@ -845,4 +845,7 @@ sendMessageTypingAction($chatId);
 		    array('name' => 'Bitfinex', 'price' => $finexprice, 'vol' => $finexvol),
 		    array('name' => 'Bitstamp', 'price' => $stampprice, 'vol' => $stampvol),
 		    array('name' => 'GDAX    ', 'price' => $gaydaxprice, 'vol' => $gaydaxvol),
-		    array('name' => 'BTC-e   ', 'price' => $btceprice, 'vol'
+		    array('name' => 'BTC-e   ', 'price' => $btceprice, 'vol' => $btcevol),
+		    array('name' => 'itBit   ', 'price' => $itbitprice, 'vol' => $itbitvol),
+		    array('name' => 'OKCoin  ', 'price' => $okcoinprice, 'vol' => $okcoinvol),
+		    arra
