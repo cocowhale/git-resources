@@ -857,4 +857,5 @@ sendMessageTypingAction($chatId);
 
 
 
-           $totalvol = $finexvol
+           $totalvol = $finexvol+$stampvol+$gaydaxvol+$btcevol+$itbitvol+$okcoinvol+$geminivol+$krakenvol+$quoinevol;
+                $volwgtavg=($finexprice*($finexvol/$totalvol))+($stampprice*($stampvol/$totalvol))+($gaydaxprice*($ga
