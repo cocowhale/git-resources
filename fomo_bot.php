@@ -850,4 +850,11 @@ sendMessageTypingAction($chatId);
 		    array('name' => 'OKCoin  ', 'price' => $okcoinprice, 'vol' => $okcoinvol),
 		    array('name' => 'Gemini  ', 'price' => $geminiprice, 'vol' => $geminivol),
 		    array('name' => 'Kraken  ', 'price' => $krakenprice, 'vol' => $krakenvol),
-		    a
+		    array('name' => 'Quoine  ', 'price' => $quoineprice, 'vol' => $quoinevol),
+		);
+
+		usort($data, make_comparer(['vol', SORT_DESC]));
+
+
+
+           $totalvol = $finexvol
