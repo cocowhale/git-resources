@@ -848,4 +848,6 @@ sendMessageTypingAction($chatId);
 		    array('name' => 'BTC-e   ', 'price' => $btceprice, 'vol' => $btcevol),
 		    array('name' => 'itBit   ', 'price' => $itbitprice, 'vol' => $itbitvol),
 		    array('name' => 'OKCoin  ', 'price' => $okcoinprice, 'vol' => $okcoinvol),
-		    arra
+		    array('name' => 'Gemini  ', 'price' => $geminiprice, 'vol' => $geminivol),
+		    array('name' => 'Kraken  ', 'price' => $krakenprice, 'vol' => $krakenvol),
+		    a
