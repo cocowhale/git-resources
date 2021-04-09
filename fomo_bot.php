@@ -858,4 +858,6 @@ sendMessageTypingAction($chatId);
 
 
            $totalvol = $finexvol+$stampvol+$gaydaxvol+$btcevol+$itbitvol+$okcoinvol+$geminivol+$krakenvol+$quoinevol;
-                $volwgtavg=($finexprice*($finexvol/$totalvol))+($stampprice*($stampvol/$totalvol))+($gaydaxprice*($gaydaxvol/$totalvol))+($btceprice*($btcevol/$totalvol))+($itbitprice*($itbitvol/$totalvol))+($okcoinprice*($okcoinvol/$totalvol))+($geminiprice*($geminivol/$totalvol))+($krakenprice*($kra
+                $volwgtavg=($finexprice*($finexvol/$totalvol))+($stampprice*($stampvol/$totalvol))+($gaydaxprice*($gaydaxvol/$totalvol))+($btceprice*($btcevol/$totalvol))+($itbitprice*($itbitvol/$totalvol))+($okcoinprice*($okcoinvol/$totalvol))+($geminiprice*($geminivol/$totalvol))+($krakenprice*($krakenvol/$totalvol))+($quoineprice*($quoinevol/$totalvol));
+
+#sendMessage($chatId, "<b>BTC/USD Ticker (24H BTC Vol)</b>\n<code>".$data[0]['name'].": </code>$".number_format($data[0]['price
