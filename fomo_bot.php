@@ -867,4 +867,6 @@ sendMessage($chatId, "<b>BTC/USD Ticker (24H BTC Vol)</b>\n<code>".$data[0]['nam
                 break;
 case "/btceur_ticker":
 sendMessageTypingAction($chatId);
-                $gaydax = url_get_contents('https://api.gdax.com/products/BTC-EUR/ticker')
+                $gaydax = url_get_contents('https://api.gdax.com/products/BTC-EUR/ticker');
+                $stamp = file_get_contents('https://www.bitstamp.net/api/v2/ticker/btceur/');
+		$kraken = file_get_contents('https://api.kraken.com/0/public/Ticker?pair=XBTEUR')
