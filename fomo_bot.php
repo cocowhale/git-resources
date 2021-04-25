@@ -869,4 +869,10 @@ case "/btceur_ticker":
 sendMessageTypingAction($chatId);
                 $gaydax = url_get_contents('https://api.gdax.com/products/BTC-EUR/ticker');
                 $stamp = file_get_contents('https://www.bitstamp.net/api/v2/ticker/btceur/');
-		$kraken = file_get_contents('https://api.kraken.com/0/public/Ticker?pair=XBTEUR')
+		$kraken = file_get_contents('https://api.kraken.com/0/public/Ticker?pair=XBTEUR');
+
+                $gaydaxarray = json_decode($gaydax,true);
+                $stamparray = json_decode($stamp,true);
+		$krakenarray = json_decode($kraken, true);
+
+                $gaydax
