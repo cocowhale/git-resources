@@ -875,4 +875,8 @@ sendMessageTypingAction($chatId);
                 $stamparray = json_decode($stamp,true);
 		$krakenarray = json_decode($kraken, true);
 
-                $gaydax
+                $gaydaxprice = $gaydaxarray['price'];
+                $stampprice = $stamparray['last'];
+                $krakenprice = $krakenarray['result']['XXBTZEUR']['c'][0];
+
+                $gaydaxv
