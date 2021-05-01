@@ -884,4 +884,6 @@ sendMessageTypingAction($chatId);
                 $krakenvol = $krakenarray['result']['XXBTZEUR']['v'][1];
 
 		$data = array(
-		    arr
+		    array('name' => 'GDAX    ', 'price' => $gaydaxprice, 'vol' => $gaydaxvol),
+		    array('name' => 'Bitstamp', 'price' => $stampprice, 'vol' => $stampvol),
+		    array('name' => 'Kraken  '
