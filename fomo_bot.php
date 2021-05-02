@@ -886,4 +886,12 @@ sendMessageTypingAction($chatId);
 		$data = array(
 		    array('name' => 'GDAX    ', 'price' => $gaydaxprice, 'vol' => $gaydaxvol),
 		    array('name' => 'Bitstamp', 'price' => $stampprice, 'vol' => $stampvol),
-		    array('name' => 'Kraken  '
+		    array('name' => 'Kraken  ', 'price' => $krakenprice, 'vol' => $krakenvol),
+		);
+
+		usort($data, make_comparer(['vol', SORT_DESC]));
+
+
+
+           $totalvol = $gaydaxvol+$stampvol+$krakenvol;
+  
