@@ -894,4 +894,6 @@ sendMessageTypingAction($chatId);
 
 
            $totalvol = $gaydaxvol+$stampvol+$krakenvol;
-  
+                $volwgtavg=($gaydaxprice*($gaydaxvol/$totalvol))+($stampprice*($stampvol/$totalvol))+($krakenprice*($krakenvol/$totalvol));
+
+sendMessage($chatId, "<b>BTC/EUR Ticker (24H BTC 
