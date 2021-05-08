@@ -896,4 +896,4 @@ sendMessageTypingAction($chatId);
            $totalvol = $gaydaxvol+$stampvol+$krakenvol;
                 $volwgtavg=($gaydaxprice*($gaydaxvol/$totalvol))+($stampprice*($stampvol/$totalvol))+($krakenprice*($krakenvol/$totalvol));
 
-sendMessage($chatId, "<b>BTC/EUR Ticker (24H BTC Vol)</b>\n<code>".$data[0]['name'].": </code>€".number_format($data[0]['price'],"2")." (".number_format($data[0]['vol'],"0").")\n<code>".$data[1]['name'].": </code>€".number_format($data[1]['price'],"2")." (".numbe
+sendMessage($chatId, "<b>BTC/EUR Ticker (24H BTC Vol)</b>\n<code>".$data[0]['name'].": </code>€".number_format($data[0]['price'],"2")." (".number_format($data[0]['vol'],"0").")\n<code>".$data[1]['name'].": </code>€".number_format($data[1]['price'],"2")." (".number_format($data[1]['vol'],"0").")\n<code>".$data[2]['name'].": </code>€".number_format($data[2]['price'],"2")." (".number_format($data[2]['vol'],"0").")\n<code>-------------
