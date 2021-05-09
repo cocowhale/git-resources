@@ -900,4 +900,6 @@ sendMessage($chatId, "<b>BTC/EUR Ticker (24H BTC Vol)</b>\n<code>".$data[0]['nam
  
                 break;
       case "/coinpit":
-sendMessageTyp
+sendMessageTypingAction($chatId);
+                $finex = file_get_contents('https://api.bitfinex.com/v1/pubticker/BTCUSD');
+                $stamp = file_get_contents('https://www.bitsta
