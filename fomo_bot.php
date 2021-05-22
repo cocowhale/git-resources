@@ -912,4 +912,7 @@ sendMessageTypingAction($chatId);
 		$quoine = file_get_contents('https://api.quoine.com/products/');
 
                 $finexarray = json_decode($finex,true);
-                $stamparray = j
+                $stamparray = json_decode($stamp,true);
+                $gaydaxarray = json_decode($gaydax,true);
+                $okcoinarray = json_decode($okcoin, true);
+                $geminiarray = json_decode($gemini, tru
