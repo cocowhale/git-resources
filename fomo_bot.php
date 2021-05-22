@@ -915,4 +915,10 @@ sendMessageTypingAction($chatId);
                 $stamparray = json_decode($stamp,true);
                 $gaydaxarray = json_decode($gaydax,true);
                 $okcoinarray = json_decode($okcoin, true);
-                $geminiarray = json_decode($gemini, tru
+                $geminiarray = json_decode($gemini, true);
+                $itbitarray = json_decode($itbit, true);
+                $krakenarray = json_decode($kraken, true);
+
+
+                $finexprice = $finexarray['last_price'];
+                $stampprice = $sta
