@@ -931,4 +931,7 @@ sendMessageTypingAction($chatId);
               
 		$data = array(
 		    array('name' => 'Bitfinex', 'price' => $finexprice),
-		    array('na
+		    array('name' => 'Bitstamp', 'price' => $stampprice),
+		    array('name' => 'GDAX    ', 'price' => $gaydaxprice),
+		    array('name' => 'OKCoin  ', 'price' => $okcoinprice),
+		    
