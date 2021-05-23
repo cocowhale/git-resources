@@ -921,4 +921,8 @@ sendMessageTypingAction($chatId);
 
 
                 $finexprice = $finexarray['last_price'];
-                $stampprice = $sta
+                $stampprice = $stamparray['last'];
+                $gaydaxprice = $gaydaxarray['price'];
+                $okcoinprice = $okcoinarray['ticker']['last'];
+                $geminiprice = $geminiarray['last'];
+		$itbitprice =
