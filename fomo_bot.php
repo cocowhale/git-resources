@@ -925,4 +925,10 @@ sendMessageTypingAction($chatId);
                 $gaydaxprice = $gaydaxarray['price'];
                 $okcoinprice = $okcoinarray['ticker']['last'];
                 $geminiprice = $geminiarray['last'];
-		$itbitprice =
+		$itbitprice = $itbitarray['lastPrice'];
+                $krakenprice = $krakenarray['result']['XXBTZUSD']['c'][0];
+
+              
+		$data = array(
+		    array('name' => 'Bitfinex', 'price' => $finexprice),
+		    array('na
