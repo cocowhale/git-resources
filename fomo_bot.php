@@ -934,4 +934,9 @@ sendMessageTypingAction($chatId);
 		    array('name' => 'Bitstamp', 'price' => $stampprice),
 		    array('name' => 'GDAX    ', 'price' => $gaydaxprice),
 		    array('name' => 'OKCoin  ', 'price' => $okcoinprice),
-		    
+		    array('name' => 'Gemini  ', 'price' => $geminiprice),
+		    array('name' => 'Itbit  ', 'price' => $itbitprice),
+		    array('name' => 'Kraken  ', 'price' => $krakenprice),
+		);
+
+		usort($data, 
