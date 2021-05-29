@@ -939,4 +939,6 @@ sendMessageTypingAction($chatId);
 		    array('name' => 'Kraken  ', 'price' => $krakenprice),
 		);
 
-		usort($data, 
+		usort($data, make_comparer('price'));
+
+sendMessage($chatId, "<b>Coinpit Index: </b>".number_format($data[3]['price'],"2")."\n<code>".$data[0]['name'].": </code>$".number_format($data[0]['price'],"2
