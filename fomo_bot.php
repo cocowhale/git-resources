@@ -941,4 +941,9 @@ sendMessageTypingAction($chatId);
 
 		usort($data, make_comparer('price'));
 
-sendMessage($chatId, "<b>Coinpit Index: </b>".number_format($data[3]['price'],"2")."\n<code>".$data[0]['name'].": </code>$".number_format($data[0]['price'],"2")."\n<code>".$data[1]['name'].": </code>$".number_format($data[1]['price'],"2")."\n<code>".$data[2]['name'].": </code>$".number_format($data[2]['price'],"2")."\n<code>".$data[3]['name'].": </code>$".number_format($data[3]['price'],"2")."\n<code>".$data[4]['name'].": </code>$".number_format($data[4]['price'],"2")."\n<code>".$data[5]['name'].": </code>$".number_format($data[5]
+sendMessage($chatId, "<b>Coinpit Index: </b>".number_format($data[3]['price'],"2")."\n<code>".$data[0]['name'].": </code>$".number_format($data[0]['price'],"2")."\n<code>".$data[1]['name'].": </code>$".number_format($data[1]['price'],"2")."\n<code>".$data[2]['name'].": </code>$".number_format($data[2]['price'],"2")."\n<code>".$data[3]['name'].": </code>$".number_format($data[3]['price'],"2")."\n<code>".$data[4]['name'].": </code>$".number_format($data[4]['price'],"2")."\n<code>".$data[5]['name'].": </code>$".number_format($data[5]['price'],"2")."\n<code>".$data[6]['name'].": </code>$".number_format($data[6]['price'],"2")."\n".$currtimestamp);
+ 
+                break;
+        case "/china_ticker":
+sendMessageTypingAction($chatId);
+      
