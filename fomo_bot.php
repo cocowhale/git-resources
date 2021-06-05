@@ -946,4 +946,6 @@ sendMessage($chatId, "<b>Coinpit Index: </b>".number_format($data[3]['price'],"2
                 break;
         case "/china_ticker":
 sendMessageTypingAction($chatId);
-      
+                $huobifetch = file_get_contents('http://api.huobi.com/staticmarket/ticker_btc_json.js');
+                $huobiarray = json_decode($huobifetch, true);
+                $
