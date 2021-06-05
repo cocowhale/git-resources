@@ -948,4 +948,8 @@ sendMessage($chatId, "<b>Coinpit Index: </b>".number_format($data[3]['price'],"2
 sendMessageTypingAction($chatId);
                 $huobifetch = file_get_contents('http://api.huobi.com/staticmarket/ticker_btc_json.js');
                 $huobiarray = json_decode($huobifetch, true);
-                $
+                $huobiprice = $huobiarray['ticker']['last'];
+                $huobivol = $huobiarray['ticker']['vol'];
+
+
+                $chinafetch = file_get_contents('https://www.okcoin.cn/api/v1/ticker.do?symbol=btc_c
