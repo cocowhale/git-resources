@@ -957,4 +957,6 @@ sendMessageTypingAction($chatId);
                 $chinaprice = $chinaarray['ticker']['last'];
                 $chinavol = $chinaarray['ticker']['vol'];
 
-               
+                $btcchinafetch = file_get_contents('https://data.btcchina.com/data/ticker?market=btccny');
+                $btcchinaarray = json_decode($btcchinafetch, true);
+                $btcchinaprice = $btcchinaarr
