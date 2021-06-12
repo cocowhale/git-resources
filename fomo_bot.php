@@ -952,4 +952,9 @@ sendMessageTypingAction($chatId);
                 $huobivol = $huobiarray['ticker']['vol'];
 
 
-                $chinafetch = file_get_contents('https://www.okcoin.cn/api/v1/ticker.do?symbol=btc_c
+                $chinafetch = file_get_contents('https://www.okcoin.cn/api/v1/ticker.do?symbol=btc_cny');
+                $chinaarray = json_decode($chinafetch, true);
+                $chinaprice = $chinaarray['ticker']['last'];
+                $chinavol = $chinaarray['ticker']['vol'];
+
+               
