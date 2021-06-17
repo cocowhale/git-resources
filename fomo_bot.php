@@ -964,4 +964,6 @@ sendMessageTypingAction($chatId);
 
 
 		$totalvol=$huobivol+$chinavol+$btcchinavol;
-		$volwgtprice=($huobivol/$totalvol
+		$volwgtprice=($huobivol/$totalvol)*$huobiprice+($chinavol/$totalvol)*$chinaprice+($btcchinavol/$totalvol)*$btcchinaprice;
+
+                sendMessage($chatId, "<b>CNY Bitcoin Exchange Ticker</b>\n<code>Huobi : </code>¥".num
