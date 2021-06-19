@@ -973,4 +973,8 @@ sendMessageTypingAction($chatId);
 sendMessageTypingAction($chatId);
                 $huobifetch = file_get_contents('http://api.huobi.com/staticmarket/ticker_btc_json.js');
                 $huobiarray = json_decode($huobifetch, true);
-                $huobiprice = $huobiarray['ticker']
+                $huobiprice = $huobiarray['ticker']['last'];
+                $huobipricer = round($huobiarray['ticker']['last'],0);
+
+                $chinafetch = file_get_contents('https://www.okcoin.cn/api/v1/ticker.do?symbol=btc_cny');
+                $chinaarr
