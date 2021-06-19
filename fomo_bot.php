@@ -971,4 +971,6 @@ sendMessageTypingAction($chatId);
         
         case "/china_premium":
 sendMessageTypingAction($chatId);
-                $huobifetch = file_get_con
+                $huobifetch = file_get_contents('http://api.huobi.com/staticmarket/ticker_btc_json.js');
+                $huobiarray = json_decode($huobifetch, true);
+                $huobiprice = $huobiarray['ticker']
