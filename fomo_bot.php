@@ -977,4 +977,8 @@ sendMessageTypingAction($chatId);
                 $huobipricer = round($huobiarray['ticker']['last'],0);
 
                 $chinafetch = file_get_contents('https://www.okcoin.cn/api/v1/ticker.do?symbol=btc_cny');
-                $chinaarr
+                $chinaarray = json_decode($chinafetch, true);
+                $chinaprice = $chinaarray['ticker']['last'];
+                $chinapricer = round($chinaprice,0);
+
+                $usdcny = file
