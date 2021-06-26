@@ -1000,4 +1000,7 @@ return;
 $finexprice = $cfbpi;
 
 #$finexprice = $finexarray['last'];
-      
+                $chinausd=round($chinaprice/$cnyconv,2);
+                $bfxcny=round($finexprice*$cnyconv,0);
+                $chinadiff =round($chinausd - $finexprice,2);
+                $chinap
