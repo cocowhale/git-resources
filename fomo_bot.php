@@ -983,4 +983,7 @@ sendMessageTypingAction($chatId);
 
                 $usdcny = file_get_contents('http://free.currencyconverterapi.com/api/v3/convert?q=USD_CNY');
                 $usdcnydec = json_decode($usdcny, true);
-                $cnyconv = $usdcnydec['results']['U
+                $cnyconv = $usdcnydec['results']['USD_CNY']['val'];
+$cfbpijson = file_get_contents('https://www.cryptofacilities.com/derivatives/api/cfbpi');
+$cfbpiarray = json_decode($cfbpijson, true);
+if (isset($cfbpiarray)
