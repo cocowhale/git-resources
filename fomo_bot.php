@@ -981,4 +981,6 @@ sendMessageTypingAction($chatId);
                 $chinaprice = $chinaarray['ticker']['last'];
                 $chinapricer = round($chinaprice,0);
 
-                $usdcny = file
+                $usdcny = file_get_contents('http://free.currencyconverterapi.com/api/v3/convert?q=USD_CNY');
+                $usdcnydec = json_decode($usdcny, true);
+                $cnyconv = $usdcnydec['results']['U
