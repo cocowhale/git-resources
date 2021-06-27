@@ -1004,4 +1004,4 @@ $finexprice = $cfbpi;
                 $bfxcny=round($finexprice*$cnyconv,0);
                 $chinadiff =round($chinausd - $finexprice,2);
                 $chinaprem=round(($chinadiff/$finexprice)*100,2);
-                sendMessage($chatId, "<b>CNY vs. USD (".$cnyconv.") Spot Prices</b>\n<code>OKCoin       :</code> ¥".number_format($chinaprice,"0")." ($".n
+                sendMessage($chatId, "<b>CNY vs. USD (".$cnyconv.") Spot Prices</b>\n<code>OKCoin       :</code> ¥".number_format($chinaprice,"0")." ($".number_format($chinausd,"0").")\n<code>CF-BPI       :</code> $".number_format($finexprice,"0")." (¥".number_format($bfxcny,"0").")\n<code>China Premium:</code> $".number_format($chinad
