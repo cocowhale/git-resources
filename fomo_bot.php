@@ -1011,4 +1011,9 @@ $finexprice = $cfbpi;
 sendMessageTypingAction($chatId);
                 $coincheckfetch = file_get_contents('https://coincheck.com/api/ticker');
                 $coincheckarray = json_decode($coincheckfetch, true);
-                $coincheckprice 
+                $coincheckprice = $coincheckarray['last'];
+                $coincheckvol = $coincheckarray['volume'];
+
+
+                $quoinefetch = file_get_contents('https://api.quoine.com/products/');
+                $qu
