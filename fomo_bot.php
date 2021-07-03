@@ -1009,4 +1009,6 @@ $finexprice = $cfbpi;
 
         case "/japan_ticker":
 sendMessageTypingAction($chatId);
-                $c
+                $coincheckfetch = file_get_contents('https://coincheck.com/api/ticker');
+                $coincheckarray = json_decode($coincheckfetch, true);
+                $coincheckprice 
