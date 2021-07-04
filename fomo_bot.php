@@ -1022,4 +1022,8 @@ sendMessageTypingAction($chatId);
 
                 $bitflyerfetch = file_get_contents('https://api.bitflyer.jp/v1/ticker?productcode=BTC_JPY');
                 $bitflyerarray = json_decode($bitflyerfetch, true);
-             
+                $bitflyerprice = $bitflyerarray['ltp'];
+                $bitflyervol = $bitflyerarray['volume_by_product'];
+
+		$totalvol=$coincheckvol+$quoinevol+$bitflyervol;
+		$volwgtprice=($coincheckvol/$totalvol)*$c
