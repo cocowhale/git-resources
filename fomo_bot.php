@@ -1020,4 +1020,6 @@ sendMessageTypingAction($chatId);
                 $quoineprice = $quoinearray[2]['last_traded_price'];
                 $quoinevol = $quoinearray[2]['volume_24h'];
 
-            
+                $bitflyerfetch = file_get_contents('https://api.bitflyer.jp/v1/ticker?productcode=BTC_JPY');
+                $bitflyerarray = json_decode($bitflyerfetch, true);
+             
