@@ -1026,4 +1026,7 @@ sendMessageTypingAction($chatId);
                 $bitflyervol = $bitflyerarray['volume_by_product'];
 
 		$totalvol=$coincheckvol+$quoinevol+$bitflyervol;
-		$volwgtprice=($coincheckvol/$totalvol)*$c
+		$volwgtprice=($coincheckvol/$totalvol)*$coincheckprice+($quoinevol/$totalvol)*$quoineprice+($bitflyervol/$totalvol)*$bitflyerprice;
+
+
+                sendMessage($chatId, "<b>JPY Bitcoin Exchange Ticker</b>\n<code>CoinCheck: </code>¥".number_format($coincheckpri
