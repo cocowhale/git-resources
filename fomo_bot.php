@@ -1029,4 +1029,9 @@ sendMessageTypingAction($chatId);
 		$volwgtprice=($coincheckvol/$totalvol)*$coincheckprice+($quoinevol/$totalvol)*$quoineprice+($bitflyervol/$totalvol)*$bitflyerprice;
 
 
-                sendMessage($chatId, "<b>JPY Bitcoin Exchange Ticker</b>\n<code>CoinCheck: </code>¥".number_format($coincheckprice,"0")." (".number_format($coincheckvol)." BTC)\n<code>Quoine   : </code>¥".number_format($quoineprice,"0")." (".number_format($quoinevol)." BTC)\n<code>BitFlyer : </code>¥".number_format($bitflyerprice,"0")." (".number_format($bitflyervol)." BTC)\n<code>------------------------</code>\n<code>VolWgtPr: </code>¥".number_format($volwgtprice,"0")." (".number_form
+                sendMessage($chatId, "<b>JPY Bitcoin Exchange Ticker</b>\n<code>CoinCheck: </code>¥".number_format($coincheckprice,"0")." (".number_format($coincheckvol)." BTC)\n<code>Quoine   : </code>¥".number_format($quoineprice,"0")." (".number_format($quoinevol)." BTC)\n<code>BitFlyer : </code>¥".number_format($bitflyerprice,"0")." (".number_format($bitflyervol)." BTC)\n<code>------------------------</code>\n<code>VolWgtPr: </code>¥".number_format($volwgtprice,"0")." (".number_format($totalvol)." BTC)\n".$currtimestamp);
+                break;
+        
+        case "/japan_premium":
+sendMessageTypingAction($chatId);
+                $quoinefetch = file_get_contents
