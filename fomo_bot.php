@@ -1034,4 +1034,8 @@ sendMessageTypingAction($chatId);
         
         case "/japan_premium":
 sendMessageTypingAction($chatId);
-                $quoinefetch = file_get_contents
+                $quoinefetch = file_get_contents('https://api.quoine.com/products/');
+                $quoinearray = json_decode($quoinefetch, true);
+                $quoineprice = $quoinearray[2]['last_traded_price'];
+
+                $usdjpy = file_
