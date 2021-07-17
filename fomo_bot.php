@@ -1038,4 +1038,6 @@ sendMessageTypingAction($chatId);
                 $quoinearray = json_decode($quoinefetch, true);
                 $quoineprice = $quoinearray[2]['last_traded_price'];
 
-                $usdjpy = file_
+                $usdjpy = file_get_contents('http://free.currencyconverterapi.com/api/v3/convert?q=USD_JPY');
+                $usdjpydec = json_decode($usdjpy, true);
+                $jpyconv = $usdj
