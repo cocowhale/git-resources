@@ -1040,4 +1040,9 @@ sendMessageTypingAction($chatId);
 
                 $usdjpy = file_get_contents('http://free.currencyconverterapi.com/api/v3/convert?q=USD_JPY');
                 $usdjpydec = json_decode($usdjpy, true);
-                $jpyconv = $usdj
+                $jpyconv = $usdjpydec['results']['USD_JPY']['val'];
+
+
+$cfbpijson = file_get_contents('https://www.cryptofacilities.com/derivatives/api/cfbpi');
+$cfbpiarray = json_decode($cfbpijson, true);
+if (isset($cf
