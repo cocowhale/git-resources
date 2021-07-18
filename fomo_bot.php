@@ -1045,4 +1045,17 @@ sendMessageTypingAction($chatId);
 
 $cfbpijson = file_get_contents('https://www.cryptofacilities.com/derivatives/api/cfbpi');
 $cfbpiarray = json_decode($cfbpijson, true);
-if (isset($cf
+if (isset($cfbpiarray)) {
+if ($cfbpiarray['result'] == "success") {
+$cfbpi = $cfbpiarray['cf-bpi'];
+} else {
+$cfbpi = "0";
+return;
+} 
+} else {
+$cfbpi = "0";
+return;
+}
+$finexprice = $cfbpi;
+
+#$finexpric
