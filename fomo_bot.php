@@ -1058,4 +1058,7 @@ return;
 }
 $finexprice = $cfbpi;
 
-#$finexpric
+#$finexprice = $finexarray['last'];
+                $chinausd=round($quoineprice/$jpyconv,2);
+                $bfxjpy=round($finexprice*$jpyconv,0);
+                $chinadiff =round($chinausd - $finexpric
