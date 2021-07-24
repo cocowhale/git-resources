@@ -1061,4 +1061,6 @@ $finexprice = $cfbpi;
 #$finexprice = $finexarray['last'];
                 $chinausd=round($quoineprice/$jpyconv,2);
                 $bfxjpy=round($finexprice*$jpyconv,0);
-                $chinadiff =round($chinausd - $finexpric
+                $chinadiff =round($chinausd - $finexprice,2);
+                $chinaprem=round(($chinadiff/$finexprice)*100,2);
+                //sendMessage($chatId, "<b>China vs. Western Exchange Balance</b>\nPremium in
