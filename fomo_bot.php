@@ -1065,4 +1065,4 @@ $finexprice = $cfbpi;
                 $chinaprem=round(($chinadiff/$finexprice)*100,2);
                 //sendMessage($chatId, "<b>China vs. Western Exchange Balance</b>\nPremium in Huobi China \nCurrent Price: (¥".$huobipricer."->$".$chinausd.")\nRelative to Finex ($".$finexprice."): $".$chinadiff." (".$chinaprem."%)");
 
-                sendMessage($chatId, "<b>JPY vs. USD (".$jpyconv.") Spot Pri
+                sendMessage($chatId, "<b>JPY vs. USD (".$jpyconv.") Spot Prices</b>\n<code>Quoine       :</code> ¥".number_format($quoineprice,"0")." ($".number_format($chinausd,"0").")\n<code>CF-BPI       :</code> $".number_format($finexprice,"0")." (¥".n
