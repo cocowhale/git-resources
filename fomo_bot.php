@@ -1066,4 +1066,9 @@ $finexprice = $cfbpi;
                 //sendMessage($chatId, "<b>China vs. Western Exchange Balance</b>\nPremium in Huobi China \nCurrent Price: (¥".$huobipricer."->$".$chinausd.")\nRelative to Finex ($".$finexprice."): $".$chinadiff." (".$chinaprem."%)");
 
                 sendMessage($chatId, "<b>JPY vs. USD (".$jpyconv.") Spot Prices</b>\n<code>Quoine       :</code> ¥".number_format($quoineprice,"0")." ($".number_format($chinausd,"0").")\n<code>CF-BPI       :</code> $".number_format($finexprice,"0")." (¥".number_format($bfxjpy,"0").")\n<code>Japan Premium:</code> $".number_format($chinadiff,"2")." (".number_format($chinaprem,"2")."%)\n".$currtimestamp);
-                bre
+                break;
+        
+  case "/korea_ticker":
+sendMessageTypingAction($chatId);
+                $coinonefetch = file_get_contents('https://api.coinone.co.kr/ticker/?format=json');
+                $coinone
