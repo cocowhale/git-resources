@@ -1071,4 +1071,9 @@ $finexprice = $cfbpi;
   case "/korea_ticker":
 sendMessageTypingAction($chatId);
                 $coinonefetch = file_get_contents('https://api.coinone.co.kr/ticker/?format=json');
-                $coinone
+                $coinonearray = json_decode($coinonefetch, true);
+                $coinoneprice = $coinonearray['last'];
+                $coinonevol = $coinonearray['volume'];
+
+
+                $korbitfetch = file_get
