@@ -1076,4 +1076,7 @@ sendMessageTypingAction($chatId);
                 $coinonevol = $coinonearray['volume'];
 
 
-                $korbitfetch = file_get
+                $korbitfetch = file_get_contents('https://api.korbit.co.kr/v1/ticker/detailed');
+                $korbitarray = json_decode($korbitfetch, true);
+                $korbitprice = $korbitarray['last'];
+                $korbitvo
