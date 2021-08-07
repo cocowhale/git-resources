@@ -1079,4 +1079,8 @@ sendMessageTypingAction($chatId);
                 $korbitfetch = file_get_contents('https://api.korbit.co.kr/v1/ticker/detailed');
                 $korbitarray = json_decode($korbitfetch, true);
                 $korbitprice = $korbitarray['last'];
-                $korbitvo
+                $korbitvol = $korbitarray['volume'];
+
+                $bithumbfetch = file_get_contents('https://api.bithumb.com/public/ticker');
+                $bithumbarray = json_decode($bithumbfetch, true);
+                $bithum
