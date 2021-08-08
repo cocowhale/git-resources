@@ -1087,4 +1087,6 @@ sendMessageTypingAction($chatId);
                 $bithumbvol = $bithumbarray['data']['volume_1day'];
 
 		$totalvol=$coinonevol+$korbitvol+$bithumbvol;
-		$volwgtprice=($coinonevol/$
+		$volwgtprice=($coinonevol/$totalvol)*$coinoneprice+($korbitvol/$totalvol)*$korbitprice+($bithumbvol/$totalvol)*$bithumbprice;
+
+                sendMessage($chatId, "<b>KRW Bitcoin Exchange Ticker</b>\n<code>CoinOne: </code>₩".number_format($coi
