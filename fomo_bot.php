@@ -1083,4 +1083,8 @@ sendMessageTypingAction($chatId);
 
                 $bithumbfetch = file_get_contents('https://api.bithumb.com/public/ticker');
                 $bithumbarray = json_decode($bithumbfetch, true);
-                $bithum
+                $bithumbprice = $bithumbarray['data']['sell_price'];
+                $bithumbvol = $bithumbarray['data']['volume_1day'];
+
+		$totalvol=$coinonevol+$korbitvol+$bithumbvol;
+		$volwgtprice=($coinonevol/$
