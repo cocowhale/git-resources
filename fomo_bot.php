@@ -1094,4 +1094,8 @@ sendMessageTypingAction($chatId);
         
         case "/korea_premium":
 sendMessageTypingAction($chatId);
-                $coinonefetch = file_get_contents('https://api.coinone.co.
+                $coinonefetch = file_get_contents('https://api.coinone.co.kr/ticker/?format=json');
+                $coinonearray = json_decode($coinonefetch, true);
+                $coinoneprice = $coinonearray['last'];
+
+                $usdkrw = file_get_contents('http://fre
