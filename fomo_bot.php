@@ -1098,4 +1098,9 @@ sendMessageTypingAction($chatId);
                 $coinonearray = json_decode($coinonefetch, true);
                 $coinoneprice = $coinonearray['last'];
 
-                $usdkrw = file_get_contents('http://fre
+                $usdkrw = file_get_contents('http://free.currencyconverterapi.com/api/v3/convert?q=USD_KRW');
+                $usdkrwdec = json_decode($usdkrw, true);
+                $krwconv = $usdkrwdec['results']['USD_KRW']['val'];
+
+
+$cfbpijs
