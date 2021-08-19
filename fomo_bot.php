@@ -1103,4 +1103,7 @@ sendMessageTypingAction($chatId);
                 $krwconv = $usdkrwdec['results']['USD_KRW']['val'];
 
 
-$cfbpijs
+$cfbpijson = file_get_contents('https://www.cryptofacilities.com/derivatives/api/cfbpi');
+$cfbpiarray = json_decode($cfbpijson, true);
+if (isset($cfbpiarray)) {
+if ($cfbpiarray['result'] == "s
