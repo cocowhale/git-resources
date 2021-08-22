@@ -1123,4 +1123,6 @@ $finexprice = $cfbpi;
                 $bfxkrw=round($finexprice*$krwconv,0);
                 $chinadiff =round($chinausd - $finexprice,2);
                 $chinaprem=round(($chinadiff/$finexprice)*100,2);
-                //sendMessage($chatId, "<b>China vs. Western Exchange Balance</b>\nPremium in Huobi China \nCurrent Price: (¥".$huobipricer."->$".$chinausd.")\nRelat
+                //sendMessage($chatId, "<b>China vs. Western Exchange Balance</b>\nPremium in Huobi China \nCurrent Price: (¥".$huobipricer."->$".$chinausd.")\nRelative to Finex ($".$finexprice."): $".$chinadiff." (".$chinaprem."%)");
+
+                sendMessage($chatId, "<b>KRW vs. USD (".$krwconv.") Spot Prices</b>\n<code>CoinOne      :</code> ₩"
