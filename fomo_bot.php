@@ -1122,4 +1122,5 @@ $finexprice = $cfbpi;
                 $chinausd=round($coinoneprice/$krwconv,2);
                 $bfxkrw=round($finexprice*$krwconv,0);
                 $chinadiff =round($chinausd - $finexprice,2);
-                $chinaprem=round
+                $chinaprem=round(($chinadiff/$finexprice)*100,2);
+                //sendMessage($chatId, "<b>China vs. Western Exchange Balance</b>\nPremium in Huobi China \nCurrent Price: (¥".$huobipricer."->$".$chinausd.")\nRelat
