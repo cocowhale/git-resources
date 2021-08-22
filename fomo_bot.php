@@ -1119,4 +1119,7 @@ return;
 $finexprice = $cfbpi;
 
 #$finexprice = $finexarray['last'];
-                $chinausd=
+                $chinausd=round($coinoneprice/$krwconv,2);
+                $bfxkrw=round($finexprice*$krwconv,0);
+                $chinadiff =round($chinausd - $finexprice,2);
+                $chinaprem=round
