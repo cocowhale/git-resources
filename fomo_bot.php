@@ -1125,4 +1125,8 @@ $finexprice = $cfbpi;
                 $chinaprem=round(($chinadiff/$finexprice)*100,2);
                 //sendMessage($chatId, "<b>China vs. Western Exchange Balance</b>\nPremium in Huobi China \nCurrent Price: (¥".$huobipricer."->$".$chinausd.")\nRelative to Finex ($".$finexprice."): $".$chinadiff." (".$chinaprem."%)");
 
-                sendMessage($chatId, "<b>KRW vs. USD (".$krwconv.") Spot Prices</b>\n<code>CoinOne      :</code> ₩".number_format($coinoneprice,"0")." ($".number_format($chinausd,"0").")\n<code>CF-BPI       :</code> $".number_format($finexprice,"0")." (₩".number_format($bfxkrw,"0")
+                sendMessage($chatId, "<b>KRW vs. USD (".$krwconv.") Spot Prices</b>\n<code>CoinOne      :</code> ₩".number_format($coinoneprice,"0")." ($".number_format($chinausd,"0").")\n<code>CF-BPI       :</code> $".number_format($finexprice,"0")." (₩".number_format($bfxkrw,"0").")\n<code>Korea Premium:</code> $".number_format($chinadiff,"2")." (".number_format($chinaprem,"2")."%)\n".$currtimestamp);
+                break;
+
+
+        case "/futures_okcoin_settlement_tim
