@@ -1129,4 +1129,8 @@ $finexprice = $cfbpi;
                 break;
 
 
-        case "/futures_okcoin_settlement_tim
+        case "/futures_okcoin_settlement_time":
+sendMessageTypingAction($chatId);
+                $currenttime=gmdate(time());
+                $daytoday = date( "w", $currenttime);
+                $hw = date( "H", $current
