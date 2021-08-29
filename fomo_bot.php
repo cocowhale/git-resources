@@ -1133,4 +1133,9 @@ $finexprice = $cfbpi;
 sendMessageTypingAction($chatId);
                 $currenttime=gmdate(time());
                 $daytoday = date( "w", $currenttime);
-                $hw = date( "H", $current
+                $hw = date( "H", $currenttime);
+
+                if ($daytoday == 5 && $hw < 8):
+                    $date = strtotime("today, 8:00 AM UTC");
+                else:
+                    $date = strtotime("next Friday, 8:00 AM U
