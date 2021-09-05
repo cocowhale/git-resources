@@ -1144,4 +1144,8 @@ sendMessageTypingAction($chatId);
                 $rem = $date - time();
                 $day = floor($rem / 86400);
                 $hr  = floor(($rem % 86400) / 3600);
-                
+                $min = floor(($rem % 3600) / 60);
+                $sec = ($rem % 60);
+
+                if ($day != 0 && $hr != 0 && $min != 0 && $sec != 0):
+                    $timeleft = 
