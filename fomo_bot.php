@@ -1138,4 +1138,10 @@ sendMessageTypingAction($chatId);
                 if ($daytoday == 5 && $hw < 8):
                     $date = strtotime("today, 8:00 AM UTC");
                 else:
-                    $date = strtotime("next Friday, 8:00 AM U
+                    $date = strtotime("next Friday, 8:00 AM UTC");
+                endif;
+
+                $rem = $date - time();
+                $day = floor($rem / 86400);
+                $hr  = floor(($rem % 86400) / 3600);
+                
