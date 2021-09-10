@@ -1150,4 +1150,8 @@ sendMessageTypingAction($chatId);
                 if ($day != 0 && $hr != 0 && $min != 0 && $sec != 0):
                     $timeleft = "$day Days $hr Hours $min Minutes $sec Seconds";
                 elseif ($hr != 0 && $min != 0 && $sec != 0): 
-                    $timeleft = "$hr Hours $min Minutes $sec Seconds"
+                    $timeleft = "$hr Hours $min Minutes $sec Seconds";
+                elseif ($min != 0 && $sec != 0):
+                    $timeleft = "$min Minutes $sec Seconds";
+                elseif ($sec != 0):
+                    $timeleft = "$sec Seconds "
