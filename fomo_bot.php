@@ -1154,4 +1154,8 @@ sendMessageTypingAction($chatId);
                 elseif ($min != 0 && $sec != 0):
                     $timeleft = "$min Minutes $sec Seconds";
                 elseif ($sec != 0):
-                    $timeleft = "$sec Seconds "
+                    $timeleft = "$sec Seconds ";
+                endif;
+                sendMessage($chatId, "<b>Bitcoin Futures Settlement Countdown</b>\nOKCoin (Friday 8 UTC): \n".$timeleft."\n".$currtimestamp);
+                break;
+    
