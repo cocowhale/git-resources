@@ -1158,4 +1158,10 @@ sendMessageTypingAction($chatId);
                 endif;
                 sendMessage($chatId, "<b>Bitcoin Futures Settlement Countdown</b>\nOKCoin (Friday 8 UTC): \n".$timeleft."\n".$currtimestamp);
                 break;
-    
+        
+case "/bitfinex_longshort":
+sendMessageTypingAction($chatId);
+                      #bitcoin
+
+                #BTCUSD long
+                $finexlong = file_get_contents('https
