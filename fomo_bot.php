@@ -1170,4 +1170,7 @@ sendMessageTypingAction($chatId);
 
                 #BTCUSD short
                 $finexshort = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tBTCUSD:short/hist');
-        
+                $finexshortarray = json_decode($finexshort,true);
+                $finexshortprice = intval($finexshortarray[0][1]);
+
+                $btcpctlong=$finexlongprice/
