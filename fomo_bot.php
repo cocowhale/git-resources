@@ -1173,4 +1173,11 @@ sendMessageTypingAction($chatId);
                 $finexshortarray = json_decode($finexshort,true);
                 $finexshortprice = intval($finexshortarray[0][1]);
 
-                $btcpctlong=$finexlongprice/
+                $btcpctlong=$finexlongprice/($finexlongprice+$finexshortprice);
+                $btcpctshort=$finexshortprice/($finexlongprice+$finexshortprice);
+
+
+                #zcash
+
+                #ZECUSD long
+                $f
