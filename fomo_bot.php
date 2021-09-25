@@ -1185,4 +1185,8 @@ sendMessageTypingAction($chatId);
                 $finexZECusdlongprice = intval($finexZECusdlongarray[0][1]);
 
                 #ZECBTC long
-                $finexZECbtclong = file_get_contents('https://api2.bitfinex.com:3000/api/v2
+                $finexZECbtclong = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tZECBTC:long/hist');
+                $finexZECbtclongarray = json_decode($finexZECbtclong,true);
+                $finexZECbtclongprice = intval($finexZECbtclongarray[0][1]);
+
+                
