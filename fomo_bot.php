@@ -1202,4 +1202,7 @@ sendMessageTypingAction($chatId);
                 $finexZECusdshortarray = json_decode($finexZECusdshort,true);
                 $finexZECusdshortprice = intval($finexZECusdshortarray[0][1]);
 
-                #tota
+                #total ZEC shorts
+                $totalZECshort=$finexZECbtcshortprice+$finexZECusdshortprice;
+                $totalZEC=$totalZECshort+$totalZEClong;
+                $ZECpctsho
