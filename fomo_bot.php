@@ -1199,4 +1199,7 @@ sendMessageTypingAction($chatId);
 
                 #ZECUSD short
                 $finexZECusdshort = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tZECUSD:short/hist');
-     
+                $finexZECusdshortarray = json_decode($finexZECusdshort,true);
+                $finexZECusdshortprice = intval($finexZECusdshortarray[0][1]);
+
+                #tota
