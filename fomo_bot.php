@@ -1205,4 +1205,11 @@ sendMessageTypingAction($chatId);
                 #total ZEC shorts
                 $totalZECshort=$finexZECbtcshortprice+$finexZECusdshortprice;
                 $totalZEC=$totalZECshort+$totalZEClong;
-                $ZECpctsho
+                $ZECpctshort=$totalZECshort/$totalZEC;
+                $ZECpctlong=$totalZEClong/$totalZEC;
+
+
+                #litecoin
+
+                #LTCUSD long
+                $finexLTCusdlong = file_get_contents('https
