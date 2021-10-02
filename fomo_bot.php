@@ -1221,4 +1221,8 @@ sendMessageTypingAction($chatId);
                 $finexLTCbtclongarray = json_decode($finexLTCbtclong,true);
                 $finexLTCbtclongprice = intval($finexLTCbtclongarray[0][1]);
 
-         
+                #total LTC longs
+                $totalLTClong=$finexLTCbtclongprice+$finexLTCusdlongprice;
+
+                #LTCBTC short
+                $finexLTCbtcshort = file_get_contents('https:/
