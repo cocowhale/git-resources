@@ -1227,4 +1227,8 @@ sendMessageTypingAction($chatId);
                 #LTCBTC short
                 $finexLTCbtcshort = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tLTCBTC:short/hist');
                 $finexLTCbtcshortarray = json_decode($finexLTCbtcshort,true);
-                $finexLTCbtcshortprice = intval($finexLTCbtc
+                $finexLTCbtcshortprice = intval($finexLTCbtcshortarray[0][1]);
+
+                #LTCUSD short
+                $finexLTCusdshort = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tLTCUSD:short/hist');
+                $finex
