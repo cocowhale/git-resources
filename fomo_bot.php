@@ -1235,4 +1235,7 @@ sendMessageTypingAction($chatId);
                 $finexLTCusdshortprice = intval($finexLTCusdshortarray[0][1]);
 
                 #total LTC shorts
-                $total
+                $totalLTCshort=$finexLTCbtcshortprice+$finexLTCusdshortprice;
+                $totalLTC=$totalLTCshort+$totalLTClong;
+                $LTCpctshort=$totalLTCshort/$totalLTC;
+                $LTC
