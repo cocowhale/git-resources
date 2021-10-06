@@ -1231,4 +1231,8 @@ sendMessageTypingAction($chatId);
 
                 #LTCUSD short
                 $finexLTCusdshort = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tLTCUSD:short/hist');
-                $finex
+                $finexLTCusdshortarray = json_decode($finexLTCusdshort,true);
+                $finexLTCusdshortprice = intval($finexLTCusdshortarray[0][1]);
+
+                #total LTC shorts
+                $total
