@@ -1238,4 +1238,8 @@ sendMessageTypingAction($chatId);
                 $totalLTCshort=$finexLTCbtcshortprice+$finexLTCusdshortprice;
                 $totalLTC=$totalLTCshort+$totalLTClong;
                 $LTCpctshort=$totalLTCshort/$totalLTC;
-                $LTC
+                $LTCpctlong=$totalLTClong/$totalLTC;
+                #bfxcoin
+
+                #BFXUSD long
+                $finexBFXusdlong = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/
