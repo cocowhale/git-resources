@@ -1242,4 +1242,8 @@ sendMessageTypingAction($chatId);
                 #bfxcoin
 
                 #BFXUSD long
-                $finexBFXusdlong = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/
+                $finexBFXusdlong = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tBFXUSD:long/hist');
+                $finexBFXusdlongarray = json_decode($finexBFXusdlong,true);
+                $finexBFXusdlongprice = intval($finexBFXusdlongarray[0][1]);
+
+                #BFXB
