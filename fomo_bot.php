@@ -1265,4 +1265,9 @@ sendMessageTypingAction($chatId);
                 $finexBFXusdshortprice = intval($finexBFXusdshortarray[0][1]);
 
                 #total BFX shorts
-                $totalBFXshort=$finexBFXbtcshortprice+$finexBFXusd
+                $totalBFXshort=$finexBFXbtcshortprice+$finexBFXusdshortprice;
+                $totalBFX=$totalBFXshort+$totalBFXlong;
+                $BFXpctshort=$totalBFXshort/$totalBFX;
+                $BFXpctlong=$totalBFXlong/$totalBFX;
+
+           
