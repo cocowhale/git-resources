@@ -1283,4 +1283,8 @@ sendMessageTypingAction($chatId);
                 $finexethbtclongprice = intval($finexethbtclongarray[0][1]);
 
                 #total eth longs
-                $totalethlong=$finexethbtclongprice+$finexethusdlongpric
+                $totalethlong=$finexethbtclongprice+$finexethusdlongprice;
+
+                #ETHBTC short
+                $finexethbtcshort = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tETHBTC:short/hist');
+                $finexethbtcshortarray = json
