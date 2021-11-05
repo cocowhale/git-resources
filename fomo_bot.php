@@ -1279,4 +1279,8 @@ sendMessageTypingAction($chatId);
 
                 #ETHBTC long
                 $finexethbtclong = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tETHBTC:long/hist');
-                $finexethbtclongarray = json_decode(
+                $finexethbtclongarray = json_decode($finexethbtclong,true);
+                $finexethbtclongprice = intval($finexethbtclongarray[0][1]);
+
+                #total eth longs
+                $totalethlong=$finexethbtclongprice+$finexethusdlongpric
