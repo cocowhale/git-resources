@@ -1293,4 +1293,8 @@ sendMessageTypingAction($chatId);
                 #ETHUSD short
                 $finexethusdshort = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tETHUSD:short/hist');
                 $finexethusdshortarray = json_decode($finexethusdshort,true);
-                $finexethusd
+                $finexethusdshortprice = intval($finexethusdshortarray[0][1]);
+
+                #total eth shorts
+                $totalethshort=$finexethbtcshortprice+$finexethusdshortprice;
+                $total
