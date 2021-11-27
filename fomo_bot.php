@@ -1297,4 +1297,12 @@ sendMessageTypingAction($chatId);
 
                 #total eth shorts
                 $totalethshort=$finexethbtcshortprice+$finexethusdshortprice;
-                $total
+                $totaleth=$totalethshort+$totalethlong;
+                $ethpctshort=$totalethshort/$totaleth;
+                $ethpctlong=$totalethlong/$totaleth;
+
+
+                #monero
+
+                #XMRUSD long
+    
