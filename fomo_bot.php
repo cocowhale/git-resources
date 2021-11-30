@@ -1310,4 +1310,6 @@ sendMessageTypingAction($chatId);
                 $finexxmrusdlongprice = intval($finexxmrusdlongarray[0][1]);
 
                 #XMRBTC long
-                $finexxmrbtclong = file_get_contents('https://api2.
+                $finexxmrbtclong = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tXMRBTC:long/hist');
+                $finexxmrbtclongarray = json_decode($finexxmrbtclong,true);
+                $finexxmrbtclongprice = in
