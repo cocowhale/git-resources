@@ -1324,4 +1324,8 @@ sendMessageTypingAction($chatId);
 
                 #xmrUSD short
                 $finexxmrusdshort = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tXMRUSD:short/hist');
-                $finexxmrusdshortarray = json_decode($finexxmrusds
+                $finexxmrusdshortarray = json_decode($finexxmrusdshort,true);
+                $finexxmrusdshortprice = intval($finexxmrusdshortarray[0][1]);
+
+                #total xmr shorts
+                $totalxmrshort=$finexxmrbtcshortprice+$finexxmrusdsho
