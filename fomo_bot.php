@@ -1328,4 +1328,9 @@ sendMessageTypingAction($chatId);
                 $finexxmrusdshortprice = intval($finexxmrusdshortarray[0][1]);
 
                 #total xmr shorts
-                $totalxmrshort=$finexxmrbtcshortprice+$finexxmrusdsho
+                $totalxmrshort=$finexxmrbtcshortprice+$finexxmrusdshortprice;
+                $totalxmr=$totalxmrshort+$totalxmrlong;
+                $xmrpctshort=$totalxmrshort/$totalxmr;
+                $xmrpctlong=$totalxmrlong/$totalxmr;
+
+          
