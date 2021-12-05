@@ -1333,4 +1333,6 @@ sendMessageTypingAction($chatId);
                 $xmrpctshort=$totalxmrshort/$totalxmr;
                 $xmrpctlong=$totalxmrlong/$totalxmr;
 
-          
+                #ETCUSD long
+                $finexetcusdlong = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tETCUSD:long/hist');
+                $finexetcusdlongarray = json_decode($fi
