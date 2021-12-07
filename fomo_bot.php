@@ -1339,4 +1339,6 @@ sendMessageTypingAction($chatId);
                 $finexetcusdlongprice = intval($finexetcusdlongarray[0][1]);
 
                 #ETCBTC long
-                $finexetcbtclong = file_get_contents('https://api2.bitfi
+                $finexetcbtclong = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tETCBTC:long/hist');
+                $finexetcbtclongarray = json_decode($finexetcbtclong,true);
+                $finex
