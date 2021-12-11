@@ -1352,4 +1352,6 @@ sendMessageTypingAction($chatId);
                 $finexetcusdshortprice = intval($finexetcusdshortarray[0][1]);
 
                 #ETCBTC short
-                $finexetcbtcshort = file_get_contents('https:/
+                $finexetcbtcshort = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tETCBTC:short/hist');
+                $finexetcbtcshortarray = json_decode($finexetcbtcshort,true);
+                $finexetcbtcshortprice = intval($fi
