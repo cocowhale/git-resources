@@ -1359,3 +1359,9 @@ sendMessageTypingAction($chatId);
                 #total etc shorts
                 $totaletcshort=$finexetcbtcshortprice+$finexetcusdshortprice;
                 $totaletc=$totaletcshort+$totaletclong;
+                $etcpctshort=$totaletcshort/$totaletc;
+                $etcpctlong=$totaletclong/$totaletc;
+
+
+                #dshUSD long
+                $finexdshusdlong = file_get_contents('https://api
