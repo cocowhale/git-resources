@@ -1370,4 +1370,8 @@ sendMessageTypingAction($chatId);
 
                 #dshBTC long
                 $finexdshbtclong = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tDSHBTC:long/hist');
-   
+                $finexdshbtclongarray = json_decode($finexdshbtclong,true);
+                $finexdshbtclongprice = intval($finexdshbtclongarray[0][1]);
+
+                #total dsh longs
+           
