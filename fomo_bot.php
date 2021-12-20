@@ -1374,4 +1374,7 @@ sendMessageTypingAction($chatId);
                 $finexdshbtclongprice = intval($finexdshbtclongarray[0][1]);
 
                 #total dsh longs
-           
+                $totaldshlong=$finexdshbtclongprice+$finexdshusdlongprice;
+
+                #dshUSD short
+                $finexdshusdshort = file_get_contents('https://api2.bitfinex.com:3000/api/v
