@@ -1379,4 +1379,7 @@ sendMessageTypingAction($chatId);
                 #dshUSD short
                 $finexdshusdshort = file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/pos.size:1m:tDSHUSD:short/hist');
                 $finexdshusdshortarray = json_decode($finexdshusdshort,true);
-                $finexdshusdshortpri
+                $finexdshusdshortprice = intval($finexdshusdshortarray[0][1]);
+
+                #dshBTC short
+                $finexdshbtcshort = file_get_contents('https://api2.bitfinex.com:3000/api/v2/
