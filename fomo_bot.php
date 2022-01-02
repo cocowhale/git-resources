@@ -1389,4 +1389,8 @@ sendMessageTypingAction($chatId);
                 #total dsh shorts
                 $totaldshshort=$finexdshbtcshortprice+$finexdshusdshortprice;
                 $totaldsh=$totaldshshort+$totaldshlong;
-                $dshp
+                $dshpctshort=$totaldshshort/$totaldsh;
+                $dshpctlong=$totaldshlong/$totaldsh;
+
+
+                sendMessage($chatId, "<b>Bfx Positions     LONG SHORT</b>\n<code>Bitcoin (BTC):</code> ".number_format($btcp
