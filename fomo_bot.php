@@ -1393,4 +1393,4 @@ sendMessageTypingAction($chatId);
                 $dshpctlong=$totaldshlong/$totaldsh;
 
 
-                sendMessage($chatId, "<b>Bfx Positions     LONG SHORT</b>\n<code>Bitcoin (BTC):</code> ".number_format($btcpctlong*100)."%   ".number_format($btcpctshort*100)."%\nLong: <b>".number_format($finexlongprice)." BTC</b>; Short: <b>".number_format($finexshortprice)." BTC</b>\n<code>-----------------------
+                sendMessage($chatId, "<b>Bfx Positions     LONG SHORT</b>\n<code>Bitcoin (BTC):</code> ".number_format($btcpctlong*100)."%   ".number_format($btcpctshort*100)."%\nLong: <b>".number_format($finexlongprice)." BTC</b>; Short: <b>".number_format($finexshortprice)." BTC</b>\n<code>--------------------------</code>\n<code>Monero  (XMR):</code> ".number_format($xmrpctlong*100)."%   ".number_format($xmrpctshort*100)."%\n<code>Ethereum(ETH):</code> ".number_format($ethpctlong*100)."%   ".number_format($ethpc
