@@ -1398,4 +1398,6 @@ sendMessageTypingAction($chatId);
 
         case "/bitfinex_margin_funding":
 sendMessageTypingAction($chatId);
-  
+                $grabusdmarg = file_get_contents('https://api.bitfinex.com/v1/lends/usd');
+                $usdmargarray = json_decode($grabusdmarg, true);
+                $usdmarglen
