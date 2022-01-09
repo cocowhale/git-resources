@@ -1400,4 +1400,6 @@ sendMessageTypingAction($chatId);
 sendMessageTypingAction($chatId);
                 $grabusdmarg = file_get_contents('https://api.bitfinex.com/v1/lends/usd');
                 $usdmargarray = json_decode($grabusdmarg, true);
-                $usdmarglen
+                $usdmarglent = intval($usdmargarray[0]['amount_lent']);
+                $usdmargused = intval($usdmargarray[0]['amount_used']);
+                $margts = gmdate("Y-m-d\TH:i:s\Z",$usd
