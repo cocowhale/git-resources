@@ -1393,4 +1393,9 @@ sendMessageTypingAction($chatId);
                 $dshpctlong=$totaldshlong/$totaldsh;
 
 
-                sendMessage($chatId, "<b>Bfx Positions     LONG SHORT</b>\n<code>Bitcoin (BTC):</code> ".number_format($btcpctlong*100)."%   ".number_format($btcpctshort*100)."%\nLong: <b>".number_format($finexlongprice)." BTC</b>; Short: <b>".number_format($finexshortprice)." BTC</b>\n<code>--------------------------</code>\n<code>Monero  (XMR):</code> ".number_format($xmrpctlong*100)."%   ".number_format($xmrpctshort*100)."%\n<code>Ethereum(ETH):</code> ".number_format($ethpctlong*100)."%   ".number_format($ethpctshort*100)."%\n<code>Litecoin(LTC):</code> ".number_format($LTCpctlong*100)."%   ".number_format($LTCpctshort*100)."%\n<code>Zcash(ZEC)   :</code> ".number_format($ZECpctlong*100)."%   ".number_format($ZECpctshort*100)."%\n<code>EClassic(ETC):</code> ".number_format($etcpctlong*100)."%   ".number_format($etcpctshort*100)."%\n<code>DashCoin(DSH):</code> ".
+                sendMessage($chatId, "<b>Bfx Positions     LONG SHORT</b>\n<code>Bitcoin (BTC):</code> ".number_format($btcpctlong*100)."%   ".number_format($btcpctshort*100)."%\nLong: <b>".number_format($finexlongprice)." BTC</b>; Short: <b>".number_format($finexshortprice)." BTC</b>\n<code>--------------------------</code>\n<code>Monero  (XMR):</code> ".number_format($xmrpctlong*100)."%   ".number_format($xmrpctshort*100)."%\n<code>Ethereum(ETH):</code> ".number_format($ethpctlong*100)."%   ".number_format($ethpctshort*100)."%\n<code>Litecoin(LTC):</code> ".number_format($LTCpctlong*100)."%   ".number_format($LTCpctshort*100)."%\n<code>Zcash(ZEC)   :</code> ".number_format($ZECpctlong*100)."%   ".number_format($ZECpctshort*100)."%\n<code>EClassic(ETC):</code> ".number_format($etcpctlong*100)."%   ".number_format($etcpctshort*100)."%\n<code>DashCoin(DSH):</code> ".number_format($dshpctlong*100)."%   ".number_format($dshpctshort*100)."%\n".$currtimestamp);
+                break;
+
+        case "/bitfinex_margin_funding":
+sendMessageTypingAction($chatId);
+  
