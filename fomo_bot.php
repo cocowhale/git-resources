@@ -1402,4 +1402,9 @@ sendMessageTypingAction($chatId);
                 $usdmargarray = json_decode($grabusdmarg, true);
                 $usdmarglent = intval($usdmargarray[0]['amount_lent']);
                 $usdmargused = intval($usdmargarray[0]['amount_used']);
-                $margts = gmdate("Y-m-d\TH:i:s\Z",$usd
+                $margts = gmdate("Y-m-d\TH:i:s\Z",$usdmargarray[0]['timestamp']);
+                $usduseddiff=$usdmarglent - $usdmargused;
+                $usdusedperc=round(($usdmargused/$usdmarglent)*100,1);
+
+
+                $finexlong
