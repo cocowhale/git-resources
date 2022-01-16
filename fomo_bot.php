@@ -1407,4 +1407,6 @@ sendMessageTypingAction($chatId);
                 $usdusedperc=round(($usdmargused/$usdmarglent)*100,1);
 
 
-                $finexlong
+                $finexlong=file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/credits.size.sym:1m:fUSD:tBTCUSD/hist');
+                $finexlongarray = json_decode($finexlong,true);
+                $finexusdmargbt
