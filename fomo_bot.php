@@ -1427,4 +1427,6 @@ sendMessageTypingAction($chatId);
                 $finexlongarray = json_decode($finexlong,true);
                 $finexusdmargzecusd = intval($finexlongarray[0][1]);
 
-                $finexlong=file_get_contents('https://api2.bitfinex.com
+                $finexlong=file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/credits.size.sym:1m:fUSD:tXMRUSD/hist');
+                $finexlongarray = json_decode($finexlong,true);
+                $finexusdmargxmrusd = intval($finexlong
