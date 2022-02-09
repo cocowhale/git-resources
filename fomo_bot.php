@@ -1436,4 +1436,6 @@ sendMessageTypingAction($chatId);
                 $finexusdmargdshusd = intval($finexlongarray[0][1]);
 
                 $usdusedbtcusdperc=($finexusdmargbtcusd/$usdmargused)*100;
-                $usdused
+                $usdusedethusdperc=($finexusdmargethusd/$usdmargused)*100;
+                $usdusedetcusdperc=($finexusdmargetcusd/$usdmargused)*100;
+                $usdusedltcusdperc=($finexusdmargltcusd/$usdmarguse
