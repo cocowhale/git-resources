@@ -1438,4 +1438,7 @@ sendMessageTypingAction($chatId);
                 $usdusedbtcusdperc=($finexusdmargbtcusd/$usdmargused)*100;
                 $usdusedethusdperc=($finexusdmargethusd/$usdmargused)*100;
                 $usdusedetcusdperc=($finexusdmargetcusd/$usdmargused)*100;
-                $usdusedltcusdperc=($finexusdmargltcusd/$usdmarguse
+                $usdusedltcusdperc=($finexusdmargltcusd/$usdmargused)*100;
+                $usdusedzecusdperc=($finexusdmargzecusd/$usdmargused)*100;
+                $usdusedxmrusdperc=($finexusdmargxmrusd/$usdmargused)*100;
+                $usduseddshusdperc
