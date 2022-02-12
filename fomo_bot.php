@@ -1444,4 +1444,7 @@ sendMessageTypingAction($chatId);
                 $usduseddshusdperc=($finexusdmargdshusd/$usdmargused)*100;
 
                 $grabbtcmarg = file_get_contents('https://api.bitfinex.com/v1/lends/btc');
-                $btcmargarray = json_decode($grabbtcmarg
+                $btcmargarray = json_decode($grabbtcmarg, true);
+                $btcmarglent = intval($btcmargarray[0]['amount_lent']);
+                $btcmargused = intval($btcmargarray[0]['amount_used']);
+                $btcuseddiff=$btc
