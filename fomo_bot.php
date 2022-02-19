@@ -1459,4 +1459,8 @@ sendMessageTypingAction($chatId);
                 $finexlongarray = json_decode($finexlong,true);
                 $finexbtcmargethbtc = intval($finexlongarray[0][1]);
 
-                $finexlong=file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/credits.size.sym:1m:fBTC
+                $finexlong=file_get_contents('https://api2.bitfinex.com:3000/api/v2/stats1/credits.size.sym:1m:fBTC:tETCBTC/hist');
+                $finexlongarray = json_decode($finexlong,true);
+                $finexbtcmargetcbtc = intval($finexlongarray[0][1]);
+
+                $finexlong
