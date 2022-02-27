@@ -1483,4 +1483,6 @@ sendMessageTypingAction($chatId);
                 $btcusedethbtcperc=($finexbtcmargethbtc/$btcmargused)*100;
                 $btcusedetcbtcperc=($finexbtcmargetcbtc/$btcmargused)*100;
                 $btcusedltcbtcperc=($finexbtcmargltcbtc/$btcmargused)*100;
-                $btcusedzecbtcperc=($f
+                $btcusedzecbtcperc=($finexbtcmargzecbtc/$btcmargused)*100;
+                $btcusedxmrbtcperc=($finexbtcmargxmrbtc/$btcmargused)*100;
+                $btcuseddshbtcperc=($finexbtcmargdshbtc/
