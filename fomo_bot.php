@@ -1485,4 +1485,10 @@ sendMessageTypingAction($chatId);
                 $btcusedltcbtcperc=($finexbtcmargltcbtc/$btcmargused)*100;
                 $btcusedzecbtcperc=($finexbtcmargzecbtc/$btcmargused)*100;
                 $btcusedxmrbtcperc=($finexbtcmargxmrbtc/$btcmargused)*100;
-                $btcuseddshbtcperc=($finexbtcmargdshbtc/
+                $btcuseddshbtcperc=($finexbtcmargdshbtc/$btcmargused)*100;
+
+
+
+                $finex = file_get_contents('https://api.bitfinex.com/v1/pubticker/BTCUSD');
+                $finexarray = json_decode($finex,true);
+   
