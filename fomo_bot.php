@@ -1491,4 +1491,8 @@ sendMessageTypingAction($chatId);
 
                 $finex = file_get_contents('https://api.bitfinex.com/v1/pubticker/BTCUSD');
                 $finexarray = json_decode($finex,true);
-   
+                $finexprice = $finexarray['last_price'];
+                $btcmarglentusd=$btcmarglent*$finexprice;
+                $ratiolend=round($btcmarglentusd/$usdmarglent,2);
+
+  
