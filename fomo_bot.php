@@ -1495,4 +1495,4 @@ sendMessageTypingAction($chatId);
                 $btcmarglentusd=$btcmarglent*$finexprice;
                 $ratiolend=round($btcmarglentusd/$usdmarglent,2);
 
-  
+                sendMessage($chatId, "<b>Bitfinex Margin Funding Statistics</b>\n<code>USD lent: </code>$".number_format($usdmarglent)."\n<code>USD used: </code>$".number_format($usdmargused
