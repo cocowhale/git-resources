@@ -1501,4 +1501,6 @@ sendMessageTypingAction($chatId);
         case "/bitfinex_swap_rates":
 sendMessageTypingAction($chatId);
                 $btcffrjson = file_get_contents('https://api.bitfinex.com/v1/lendbook/BTC?limit_bids=1&limit_asks=0');
-                $btcffrarray = json_decode($btcffrjson, true
+                $btcffrarray = json_decode($btcffrjson, true);
+                $btcffrjson2 = file_get_contents('https://api.bitfinex.com/v1/lendbook/BTC?limit_bids=0&limit_asks=1');
+                $btcffrarray2 = json_decode($btcffrjson2, true);
