@@ -1517,4 +1517,9 @@ sendMessageTypingAction($chatId);
                 $btcffr2 = "N/A";
                 }
 
-                $grabbtcmarg = file_get_contents('https://api.bit
+                $grabbtcmarg = file_get_contents('https://api.bitfinex.com/v1/lends/btc');
+                $btcmargarray = json_decode($grabbtcmarg, true);
+                $thebtcffr = $btcmargarray[0]['rate'];
+                $thebtcffr1=round($thebtcffr/365,4);
+
+         
