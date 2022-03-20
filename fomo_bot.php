@@ -1533,4 +1533,7 @@ sendMessageTypingAction($chatId);
                 $usdffr = "N/A";
                 }
                 $usdffrjson2 = file_get_contents('https://api.bitfinex.com/v1/lendbook/USD?limit_bids=1&limit_asks=0');
-                $usdffrarray2 = json_decode($usdffr
+                $usdffrarray2 = json_decode($usdffrjson2, true);
+                if (isset($usdffrarray2)) {
+                $usdffr2 = round($usdffrarray2['bids'][0]['rate'],1);
+                $usdffr2d=round($
