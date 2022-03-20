@@ -1530,4 +1530,7 @@ sendMessageTypingAction($chatId);
                 $usdffr = round($usdffrarray['asks'][0]['rate'],1);
                 $usdffrd=round($usdffr/365,4);
                 } else {
-                $usdf
+                $usdffr = "N/A";
+                }
+                $usdffrjson2 = file_get_contents('https://api.bitfinex.com/v1/lendbook/USD?limit_bids=1&limit_asks=0');
+                $usdffrarray2 = json_decode($usdffr
