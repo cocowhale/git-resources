@@ -1522,4 +1522,7 @@ sendMessageTypingAction($chatId);
                 $thebtcffr = $btcmargarray[0]['rate'];
                 $thebtcffr1=round($thebtcffr/365,4);
 
-         
+                // USD swaps
+
+                $usdffrjson = file_get_contents('https://api.bitfinex.com/v1/lendbook/USD?limit_bids=0&limit_asks=1');
+                $usdffrarray = json_decode($usdffrjson, tr
