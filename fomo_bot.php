@@ -1541,4 +1541,9 @@ sendMessageTypingAction($chatId);
                 $usdffr2 = "N/A";
                 }
 
-                $grabusdmarg = file_get_contents('https://api.bitfinex.com/v1/lends/usd')
+                $grabusdmarg = file_get_contents('https://api.bitfinex.com/v1/lends/usd');
+                $usdmargarray = json_decode($grabusdmarg, true);
+                $theusdffr = $usdmargarray[0]['rate'];
+                $theusdffr1=round($theusdffr/365,4);
+
+                /
