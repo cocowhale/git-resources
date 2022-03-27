@@ -1557,4 +1557,8 @@ sendMessageTypingAction($chatId);
                 $ltcffr = "N/A";
                 }
                 $ltcffrjson2 = file_get_contents('https://api.bitfinex.com/v1/lendbook/LTC?limit_bids=1&limit_asks=0');
-                $ltcffrarray2 = json_
+                $ltcffrarray2 = json_decode($ltcffrjson2, true);
+                if (isset($ltcffrarray2)) {
+                $ltcffr2 = round($ltcffrarray2['bids'][0]['rate'],1);
+                $ltcffr2d=round($ltcffr2/365,4);
+      
