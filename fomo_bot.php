@@ -1565,4 +1565,10 @@ sendMessageTypingAction($chatId);
                 $ltcffr2 = "N/A";
                 }
                 $grabltcmarg = file_get_contents('https://api.bitfinex.com/v1/lends/ltc');
-                $lt
+                $ltcmargarray = json_decode($grabltcmarg, true);
+                $theltcffr = $ltcmargarray[0]['rate'];
+                $theltcffr1=round($theltcffr/365,4);
+
+                // ETH swaps
+
+                $ethffrjson = fil
