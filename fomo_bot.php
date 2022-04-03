@@ -1580,4 +1580,8 @@ sendMessageTypingAction($chatId);
                 $ethffr = "N/A";
                 }
                 $ethffrjson2 = file_get_contents('https://api.bitfinex.com/v1/lendbook/ETH?limit_bids=1&limit_asks=0');
-                $ethffrarray2 = jso
+                $ethffrarray2 = json_decode($ethffrjson2, true);
+                if (isset($ethffrarray2)) {
+                $ethffr2 = round($ethffrarray2['bids'][0]['rate'],1);
+                $ethffr2d=round($ethffr2/365,4);
+     
