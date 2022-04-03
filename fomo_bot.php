@@ -1584,4 +1584,8 @@ sendMessageTypingAction($chatId);
                 if (isset($ethffrarray2)) {
                 $ethffr2 = round($ethffrarray2['bids'][0]['rate'],1);
                 $ethffr2d=round($ethffr2/365,4);
-     
+                } else {
+                $ethffr2 = "N/A";
+                }
+                $grabethmarg = file_get_contents('https://api.bitfinex.com/v1/lends/eth');
+                $ethmargarray = jso
