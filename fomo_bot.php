@@ -1588,4 +1588,9 @@ sendMessageTypingAction($chatId);
                 $ethffr2 = "N/A";
                 }
                 $grabethmarg = file_get_contents('https://api.bitfinex.com/v1/lends/eth');
-                $ethmargarray = jso
+                $ethmargarray = json_decode($grabethmarg, true);
+                $theethffr = $ethmargarray[0]['rate'];
+                $theethffr1=round($theethffr/365,4);
+                // ETC swaps
+
+                $etcffrjson = 
