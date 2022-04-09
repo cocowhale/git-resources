@@ -1603,4 +1603,8 @@ sendMessageTypingAction($chatId);
                 }
                 $etcffrjson2 = file_get_contents('https://api.bitfinex.com/v1/lendbook/ETC?limit_bids=1&limit_asks=0');
                 $etcffrarray2 = json_decode($etcffrjson2, true);
-          
+                if (isset($etcffrarray2)) {
+                $etcffr2 = round($etcffrarray2['bids'][0]['rate'],1);
+                $etcffr2d=round($etcffr2/365,4);
+                } else {
+              
