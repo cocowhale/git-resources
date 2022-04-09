@@ -1607,4 +1607,7 @@ sendMessageTypingAction($chatId);
                 $etcffr2 = round($etcffrarray2['bids'][0]['rate'],1);
                 $etcffr2d=round($etcffr2/365,4);
                 } else {
-              
+                $etcffr2 = "N/A";
+                }
+                $grabetcmarg = file_get_contents('https://api.bitfinex.com/v1/lends/etc');
+                $etcmargarray = json_decod
