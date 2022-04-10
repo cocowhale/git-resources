@@ -1618,4 +1618,7 @@ sendMessageTypingAction($chatId);
 
                 $xmrffrjson = file_get_contents('https://api.bitfinex.com/v1/lendbook/xmr?limit_bids=0&limit_asks=1');
                 $xmrffrarray = json_decode($xmrffrjson, true);
-    
+                if (isset($xmrffrarray)) {
+                $xmrffr = round($xmrffrarray['asks'][0]['rate'],1);
+                $xmrffrd=round($xmrffr/365,4);
+ 
