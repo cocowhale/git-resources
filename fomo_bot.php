@@ -1624,4 +1624,7 @@ sendMessageTypingAction($chatId);
                 } else {
                 $xmrffr = "N/A";
                 }
-                $xmrffrjson2 = file_get_contents('https://api.bitfinex.com/v1/lendbook/xmr?limit_bids
+                $xmrffrjson2 = file_get_contents('https://api.bitfinex.com/v1/lendbook/xmr?limit_bids=1&limit_asks=0');
+                $xmrffrarray2 = json_decode($xmrffrjson2, true);
+                if (isset($xmrffrarray2)) {
+                $xmrffr2 = round($xmrffrarray2['bids'][0]
