@@ -1632,4 +1632,7 @@ sendMessageTypingAction($chatId);
                 } else {
                 $xmrffr2 = "N/A";
                 }
-                $grabxmrmarg = fi
+                $grabxmrmarg = file_get_contents('https://api.bitfinex.com/v1/lends/xmr');
+                $xmrmargarray = json_decode($grabxmrmarg, true);
+                $thexmrffr = $xmrmargarray[0]['rate'];
+                $thexmrffr1=roun
