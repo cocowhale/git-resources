@@ -1635,4 +1635,9 @@ sendMessageTypingAction($chatId);
                 $grabxmrmarg = file_get_contents('https://api.bitfinex.com/v1/lends/xmr');
                 $xmrmargarray = json_decode($grabxmrmarg, true);
                 $thexmrffr = $xmrmargarray[0]['rate'];
-                $thexmrffr1=roun
+                $thexmrffr1=round($thexmrffr/365,4);
+
+                // zec swaps
+
+                $zecffrjson = file_get_contents('https://api.bitfinex.com/v1/lendbook/zec?limit_bids=0&limit_asks=1');
+                $zecffrarray = js
