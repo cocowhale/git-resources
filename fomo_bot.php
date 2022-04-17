@@ -1640,4 +1640,8 @@ sendMessageTypingAction($chatId);
                 // zec swaps
 
                 $zecffrjson = file_get_contents('https://api.bitfinex.com/v1/lendbook/zec?limit_bids=0&limit_asks=1');
-                $zecffrarray = js
+                $zecffrarray = json_decode($zecffrjson, true);
+                if (isset($zecffrarray)) {
+                $zecffr = round($zecffrarray['asks'][0]['rate'],1);
+                $zecffrd=round($zecffr/365,4);
+     
