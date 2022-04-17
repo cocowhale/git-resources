@@ -1644,4 +1644,7 @@ sendMessageTypingAction($chatId);
                 if (isset($zecffrarray)) {
                 $zecffr = round($zecffrarray['asks'][0]['rate'],1);
                 $zecffrd=round($zecffr/365,4);
-     
+                } else {
+                $zecffr = "N/A";
+                }
+                $zecffrjson2 = file_get_contents('https://api.bitfinex.com/v1/lendbook/zec?limit_bi
