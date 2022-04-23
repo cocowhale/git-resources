@@ -1647,4 +1647,7 @@ sendMessageTypingAction($chatId);
                 } else {
                 $zecffr = "N/A";
                 }
-                $zecffrjson2 = file_get_contents('https://api.bitfinex.com/v1/lendbook/zec?limit_bi
+                $zecffrjson2 = file_get_contents('https://api.bitfinex.com/v1/lendbook/zec?limit_bids=1&limit_asks=0');
+                $zecffrarray2 = json_decode($zecffrjson2, true);
+                if (isset($zecffrarray2)) {
+                $zecffr2 = round($zecffrarray2['bids'][0]['rat
