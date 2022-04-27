@@ -1655,4 +1655,7 @@ sendMessageTypingAction($chatId);
                 } else {
                 $zecffr2 = "N/A";
                 }
-                $grabzecmarg = file_get_c
+                $grabzecmarg = file_get_contents('https://api.bitfinex.com/v1/lends/zec');
+                $zecmargarray = json_decode($grabzecmarg, true);
+                $thezecffr = $zecmargarray[0]['rate'];
+       
