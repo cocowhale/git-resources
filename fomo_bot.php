@@ -1658,4 +1658,8 @@ sendMessageTypingAction($chatId);
                 $grabzecmarg = file_get_contents('https://api.bitfinex.com/v1/lends/zec');
                 $zecmargarray = json_decode($grabzecmarg, true);
                 $thezecffr = $zecmargarray[0]['rate'];
-       
+                $thezecffr1=round($thezecffr/365,4);
+
+                // dash swaps
+
+                $dashffrjson = file_get_contents('https://api.bitfinex.com/v1/lendbook/dsh?limit_bids=0&limit_asks=1')
