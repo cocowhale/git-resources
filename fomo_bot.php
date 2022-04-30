@@ -1662,4 +1662,8 @@ sendMessageTypingAction($chatId);
 
                 // dash swaps
 
-                $dashffrjson = file_get_contents('https://api.bitfinex.com/v1/lendbook/dsh?limit_bids=0&limit_asks=1')
+                $dashffrjson = file_get_contents('https://api.bitfinex.com/v1/lendbook/dsh?limit_bids=0&limit_asks=1');
+                $dashffrarray = json_decode($dashffrjson, true);
+                if (isset($dashffrarray)) {
+                $dashffr = round($dashffrarray['asks'][0]['rate'],1);
+        
