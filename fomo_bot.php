@@ -1666,4 +1666,8 @@ sendMessageTypingAction($chatId);
                 $dashffrarray = json_decode($dashffrjson, true);
                 if (isset($dashffrarray)) {
                 $dashffr = round($dashffrarray['asks'][0]['rate'],1);
-        
+                $dashffrd=round($dashffr/365,4);
+                } else {
+                $dashffr = "N/A";
+                }
+                $dashffrjson2 = file_get_contents('https://api.bitfine
