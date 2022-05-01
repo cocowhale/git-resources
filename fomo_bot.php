@@ -1670,4 +1670,7 @@ sendMessageTypingAction($chatId);
                 } else {
                 $dashffr = "N/A";
                 }
-                $dashffrjson2 = file_get_contents('https://api.bitfine
+                $dashffrjson2 = file_get_contents('https://api.bitfinex.com/v1/lendbook/dsh?limit_bids=1&limit_asks=0');
+                $dashffrarray2 = json_decode($dashffrjson2, true);
+                if (isset($dashffrarray2)) {
+                $dashffr2
