@@ -1678,4 +1678,7 @@ sendMessageTypingAction($chatId);
                 } else {
                 $dashffr2 = "N/A";
                 }
-               
+                $grabdashmarg = file_get_contents('https://api.bitfinex.com/v1/lends/dsh');
+                $dashmargarray = json_decode($grabdashmarg, true);
+                $thedashffr = $dashmargarray[0]['rate'];
+                $th
