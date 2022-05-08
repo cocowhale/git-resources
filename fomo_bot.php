@@ -1681,4 +1681,6 @@ sendMessageTypingAction($chatId);
                 $grabdashmarg = file_get_contents('https://api.bitfinex.com/v1/lends/dsh');
                 $dashmargarray = json_decode($grabdashmarg, true);
                 $thedashffr = $dashmargarray[0]['rate'];
-                $th
+                $thedashffr1=round($thedashffr/365,4);
+
+                sendMessage($chatId, "<b>Bitfinex Margin Funding Daily Rates</b>\n<code>     Borrow  Lend    FFR</code>\n<code>BTC: </code>".number_format($btcffr2d, "
