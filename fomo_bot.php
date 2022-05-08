@@ -1683,4 +1683,4 @@ sendMessageTypingAction($chatId);
                 $thedashffr = $dashmargarray[0]['rate'];
                 $thedashffr1=round($thedashffr/365,4);
 
-                sendMessage($chatId, "<b>Bitfinex Margin Funding Daily Rates</b>\n<code>     Borrow  Lend    FFR</code>\n<code>BTC: </code>".number_format($btcffr2d, "
+                sendMessage($chatId, "<b>Bitfinex Margin Funding Daily Rates</b>\n<code>     Borrow  Lend    FFR</code>\n<code>BTC: </code>".number_format($btcffr2d, "4")."% : ".number_format($btcffr1d, "4")."% : ".number_format($thebtcffr1, "4")."%\n<code>USD: </code>".number_format($usdffrd, "4")."% : ".number_format($usdffr2d, "4")."% : ".number_format($the
