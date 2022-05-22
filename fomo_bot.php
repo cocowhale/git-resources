@@ -1688,3 +1688,6 @@ sendMessageTypingAction($chatId);
         
                 // sendMessage($chatId, "<b>Bitfinex margin funding rates</b>\n            Borrow              <b>Lend</b>              FFR\nBTC: ".$btcffr2d."% (".$btcffr2."%APY); :<b> ".$btcffr1d."% (".$btcffr1."%APY)</b>\nUSD: ".$usdffrd."% (".$usdffr."%APY); :<b> ".$usdffr2d."% (".$usdffr2."%APY)</b>\nLTC: ".$ltcffrd."% (".$ltcffr."%APY); :<b> ".$ltcffr2d."% (".$ltcffr2."%APY)</b>\nETH: ".$ethffrd."% (".$ethffr."%APY); : <b>".$ethffr2d."% (".$ethffr2."%APY)</b>");
   #              break;
+       # case "/getvolume":
+     #           $getvolumefinex = file_get_contents('https://api.bitfinex.com/v1/pubticker/btcusd');
+      #          $finexvolumearray = json_decode($ge
