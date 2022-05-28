@@ -1690,4 +1690,7 @@ sendMessageTypingAction($chatId);
   #              break;
        # case "/getvolume":
      #           $getvolumefinex = file_get_contents('https://api.bitfinex.com/v1/pubticker/btcusd');
-      #          $finexvolumearray = json_decode($ge
+      #          $finexvolumearray = json_decode($getvolumefinex, true);
+       #         $finexvolume=$finexvolumearray['volume'];
+#
+ #               $getvolumeokcn = file_get_contents('https://www.okcoin.cn/api/v1/ti
