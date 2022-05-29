@@ -1693,4 +1693,8 @@ sendMessageTypingAction($chatId);
       #          $finexvolumearray = json_decode($getvolumefinex, true);
        #         $finexvolume=$finexvolumearray['volume'];
 #
- #               $getvolumeokcn = file_get_contents('https://www.okcoin.cn/api/v1/ti
+ #               $getvolumeokcn = file_get_contents('https://www.okcoin.cn/api/v1/ticker.do?symbol=btc_cny');
+  #              $okcnvolumearray = json_decode($getvolumeokcn, true);
+   #             $okcnvolume=$okcnvolumearray['ticker']['vol'];
+#
+ #         
