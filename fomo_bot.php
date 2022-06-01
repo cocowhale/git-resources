@@ -1699,4 +1699,6 @@ sendMessageTypingAction($chatId);
 #
  #               $getvolumehuobi = file_get_contents('http://api.huobi.com/staticmarket/ticker_btc_json.js');
   #              $huobivolumearray = json_decode($getvolumehuobi, true);
-   #     
+   #             $huobivolume=$huobivolumearray['ticker']['vol'];
+#
+ #               $getvolumeokqt = file_get_contents('https://www.okcoin.com/api/v1/future_ticker.do?symbol=btc_usd&con
