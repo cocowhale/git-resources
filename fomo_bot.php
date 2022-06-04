@@ -1701,4 +1701,9 @@ sendMessageTypingAction($chatId);
   #              $huobivolumearray = json_decode($getvolumehuobi, true);
    #             $huobivolume=$huobivolumearray['ticker']['vol'];
 #
- #               $getvolumeokqt = file_get_contents('https://www.okcoin.com/api/v1/future_ticker.do?symbol=btc_usd&con
+ #               $getvolumeokqt = file_get_contents('https://www.okcoin.com/api/v1/future_ticker.do?symbol=btc_usd&contract_type=quarter');
+  #              $okqtvolumearray = json_decode($getvolumeokqt, true);
+   #             $okqtvolume=$okqtvolumearray['ticker']['vol'];
+#
+#
+ #               sendMessage($chatId
