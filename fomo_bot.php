@@ -1706,4 +1706,4 @@ sendMessageTypingAction($chatId);
    #             $okqtvolume=$okqtvolumearray['ticker']['vol'];
 #
 #
- #               sendMessage($chatId
+ #               sendMessage($chatId, "<b>Bitcoin 24hr volume on major exchanges</b>\n<code>Bitfinex: </code>".number_format($finexvolume)." BTC\n<code>OKcoinCN: </code>".number_format($okcnvolume)." BTC\n<code>Huobi   : </code>".numb
