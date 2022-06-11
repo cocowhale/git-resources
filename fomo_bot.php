@@ -1709,4 +1709,8 @@ sendMessageTypingAction($chatId);
  #               sendMessage($chatId, "<b>Bitcoin 24hr volume on major exchanges</b>\n<code>Bitfinex: </code>".number_format($finexvolume)." BTC\n<code>OKcoinCN: </code>".number_format($okcnvolume)." BTC\n<code>Huobi   : </code>".number_format($huobivolume)." BTC\n<code>OKqtly  : </code>".number_format($okqtvolume)." Conts");
   #              break;
    #     case "/getvolume@FOMO_bot":
-    #            $getvolumefinex = file
+    #            $getvolumefinex = file_get_contents('https://api.bitfinex.com/v1/pubticker/btcusd');
+     #           $finexvolumearray = json_decode($getvolumefinex, true);
+      #          $finexvolume=$finexvolumearray['volume'];
+#
+ #    
