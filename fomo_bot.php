@@ -1715,4 +1715,7 @@ sendMessageTypingAction($chatId);
 #
  #               $getvolumeokcn = file_get_contents('https://www.okcoin.cn/api/v1/ticker.do?symbol=btc_cny');
   #              $okcnvolumearray = json_decode($getvolumeokcn, true);
-   #             $okcn
+   #             $okcnvolume=$okcnvolumearray['ticker']['vol'];
+#
+ #               $getvolumehuobi = file_get_contents('http://api.huobi.com/staticmarket/ticker_btc_json.js');
+  #              $huobivolumear
