@@ -1718,4 +1718,7 @@ sendMessageTypingAction($chatId);
    #             $okcnvolume=$okcnvolumearray['ticker']['vol'];
 #
  #               $getvolumehuobi = file_get_contents('http://api.huobi.com/staticmarket/ticker_btc_json.js');
-  #              $huobivolumear
+  #              $huobivolumearray = json_decode($getvolumehuobi, true);
+   #             $huobivolume=$huobivolumearray['ticker']['vol'];
+#
+ #               $getvolumeokqt = file_get_contents('https://www.ok
