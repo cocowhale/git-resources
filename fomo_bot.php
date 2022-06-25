@@ -1723,4 +1723,7 @@ sendMessageTypingAction($chatId);
 #
  #               $getvolumeokqt = file_get_contents('https://www.okcoin.com/api/v1/future_ticker.do?symbol=btc_usd&contract_type=quarter');
   #              $okqtvolumearray = json_decode($getvolumeokqt, true);
-   #             $okqtvolume=$okqtvolumearray['ticker'
+   #             $okqtvolume=$okqtvolumearray['ticker']['vol'];
+#
+
+ #               sendMessage($chatId, "<b>Bitcoin 24hr volume on major exchanges</b>\n<code>Bitfinex: </code>".number_format($finexvolume)." BTC\n<code>OKcoinCN: </code>".number_format($okcnvolume)." BTC\n<code>
