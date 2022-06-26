@@ -1730,4 +1730,6 @@ sendMessageTypingAction($chatId);
   #              break;
        
     case "/bitfinex_premium":
-sendMessageTypi
+sendMessageTypingAction($chatId);
+                $finex = file_get_contents('https://api.bitfinex.com/v1/pubticker/BTCUSD');
+                $stamp = file_get_contents('https://www.bitstamp.net/a
