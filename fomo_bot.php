@@ -1748,4 +1748,8 @@ sendMessageTypingAction($chatId);
                 $stamparray = json_decode($stamp,true);
                 $gaydaxarray = json_decode($gaydax,true);
                 $btcearray = json_decode($btce,true);
-                $itbitarray = json_decode($itbit,tru
+                $itbitarray = json_decode($itbit,true);
+                $okcoinarray = json_decode($okcoin, true);
+                $geminiarray = json_decode($gemini, true);
+		$krakenarray = json_decode($kraken, true);
+$quoinearray = json
