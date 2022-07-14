@@ -1752,4 +1752,10 @@ sendMessageTypingAction($chatId);
                 $okcoinarray = json_decode($okcoin, true);
                 $geminiarray = json_decode($gemini, true);
 		$krakenarray = json_decode($kraken, true);
-$quoinearray = json
+$quoinearray = json_decode($quoine, true);
+
+
+                $finexvol = $finexarray['volume'];
+                $stampvol = $stamparray['volume'];
+                $gaydaxvol = $gaydaxarray['volume'];
+          
