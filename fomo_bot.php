@@ -1767,4 +1767,7 @@ $quoinearray = json_decode($quoine, true);
 $quoinevol = $quoinearray[0]['volume_24h'];
 
 
-        
+                $totalvol = $stampvol+$gaydaxvol+$btcevol+$itbitvol+$okcoinvol+$geminivol+$krakenvol+$quoinevol;
+
+                $finexprice = $finexarray['last_price'];
+                $s
