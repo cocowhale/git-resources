@@ -1761,3 +1761,10 @@ $quoinearray = json_decode($quoine, true);
                 $btcevol = $btcearray['btc_usd']['vol_cur'];
                 $itbitvol = $itbitarray['volume24h'];
                 $okcoinvol = $okcoinarray['ticker']['vol'];
+                $geminivol = $geminiarray['volume']['BTC'];
+                $krakenvol = $krakenarray['result']['XXBTZUSD']['v'][1];
+
+$quoinevol = $quoinearray[0]['volume_24h'];
+
+
+        
