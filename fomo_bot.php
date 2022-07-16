@@ -1773,4 +1773,7 @@ $quoinevol = $quoinearray[0]['volume_24h'];
                 $stampprice = $stamparray['last'];
                 $gaydaxprice = $gaydaxarray['price'];
                 $btceprice = $btcearray['btc_usd']['last'];
-                $itbitpric
+                $itbitprice = $itbitarray['lastPrice'];
+                $okcoinprice = $okcoinarray['ticker']['last'];
+                $geminiprice = $geminiarray['last'];
+                $krakenprice = $krakenarray['re
