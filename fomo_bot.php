@@ -1758,4 +1758,6 @@ $quoinearray = json_decode($quoine, true);
                 $finexvol = $finexarray['volume'];
                 $stampvol = $stamparray['volume'];
                 $gaydaxvol = $gaydaxarray['volume'];
-          
+                $btcevol = $btcearray['btc_usd']['vol_cur'];
+                $itbitvol = $itbitarray['volume24h'];
+                $okcoinvol = $okcoinarray['ticker']['vol'];
