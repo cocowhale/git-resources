@@ -1770,4 +1770,7 @@ $quoinevol = $quoinearray[0]['volume_24h'];
                 $totalvol = $stampvol+$gaydaxvol+$btcevol+$itbitvol+$okcoinvol+$geminivol+$krakenvol+$quoinevol;
 
                 $finexprice = $finexarray['last_price'];
-                $s
+                $stampprice = $stamparray['last'];
+                $gaydaxprice = $gaydaxarray['price'];
+                $btceprice = $btcearray['btc_usd']['last'];
+                $itbitpric
