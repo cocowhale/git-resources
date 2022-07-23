@@ -1786,4 +1786,7 @@ $quoineprice = $quoinearray[0]['last_traded_price'];
                 $itbitpremd=-1*($itbitprice -$finexprice);
                 $okcoinpremd=-1*($okcoinprice-$finexprice);
                 $geminipremd=-1*($geminiprice-$finexprice);
-                $krakenpremd=-1*
+                $krakenpremd=-1*($krakenprice-$finexprice);
+                $quoinepremd=-1*($quoineprice-$finexprice);
+
+                $avgnonfinex=($stampprice*($stampvol/$totalvol))+($gaydaxprice*($gaydaxvol/$totalv
