@@ -1776,4 +1776,8 @@ $quoinevol = $quoinearray[0]['volume_24h'];
                 $itbitprice = $itbitarray['lastPrice'];
                 $okcoinprice = $okcoinarray['ticker']['last'];
                 $geminiprice = $geminiarray['last'];
-                $krakenprice = $krakenarray['re
+                $krakenprice = $krakenarray['result']['XXBTZUSD']['c'][0];
+$quoineprice = $quoinearray[0]['last_traded_price'];
+
+                $finexpremd=$finexprice-$finexprice;
+                $stamppremd=
