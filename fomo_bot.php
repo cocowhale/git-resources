@@ -1780,4 +1780,7 @@ $quoinevol = $quoinearray[0]['volume_24h'];
 $quoineprice = $quoinearray[0]['last_traded_price'];
 
                 $finexpremd=$finexprice-$finexprice;
-                $stamppremd=
+                $stamppremd=-1*($stampprice-$finexprice);
+                $gaydaxpremd=-1*($gaydaxprice-$finexprice);
+                $btcepremd=-1*($btceprice -$finexprice);
+                $itbitpremd=-1*($itb
