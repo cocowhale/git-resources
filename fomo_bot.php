@@ -1789,4 +1789,12 @@ $quoineprice = $quoinearray[0]['last_traded_price'];
                 $krakenpremd=-1*($krakenprice-$finexprice);
                 $quoinepremd=-1*($quoineprice-$finexprice);
 
-                $avgnonfinex=($stampprice*($stampvol/$totalvol))+($gaydaxprice*($gaydaxvol/$totalvol))+($btceprice*($btcevol/$totalvol))+($itbitprice*($itbitvol/$totalvol))+($okcoinprice*($okcoinvol/$totalvol))+($geminiprice*($geminivol/$totalvol))+($krakenprice*($krakenvol/$totalvol))+($quoineprice*(
+                $avgnonfinex=($stampprice*($stampvol/$totalvol))+($gaydaxprice*($gaydaxvol/$totalvol))+($btceprice*($btcevol/$totalvol))+($itbitprice*($itbitvol/$totalvol))+($okcoinprice*($okcoinvol/$totalvol))+($geminiprice*($geminivol/$totalvol))+($krakenprice*($krakenvol/$totalvol))+($quoineprice*($quoinevol/$totalvol));
+
+		$now = time();
+		$your_date = strtotime("2017-04-18");
+		$datediff = $now - $your_date;
+
+		$numdays = floor($datediff / (60 * 60 * 24));
+
+              
