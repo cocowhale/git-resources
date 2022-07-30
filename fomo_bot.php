@@ -1797,4 +1797,8 @@ $quoineprice = $quoinearray[0]['last_traded_price'];
 
 		$numdays = floor($datediff / (60 * 60 * 24));
 
-              
+                $avgpremd=$finexprice-$avgnonfinex;
+
+                $finexprem = ($finexprice/$finexprice - 1)*100;
+                $stampprem = ($finexprice/$stampprice - 1)*100;
+                $gaydaxprem = ($f
