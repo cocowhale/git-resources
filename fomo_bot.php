@@ -1815,4 +1815,6 @@ $quoineprice = $quoinearray[0]['last_traded_price'];
 		    array('name' => 'Bitstamp', 'price' => $stampprice, 'premd' => $stamppremd, 'prem' => $stampprem),
 		    array('name' => 'GDAX    ', 'price' => $gaydaxprice, 'premd' => $gaydaxpremd, 'prem' => $gaydaxprem),
 		    array('name' => 'BTC-e   ', 'price' => $btceprice, 'premd' => $btcepremd, 'prem' => $btceprem),
-		    array('name' => 'itBit   ', 'price' => $i
+		    array('name' => 'itBit   ', 'price' => $itbitprice, 'premd' => $itbitpremd, 'prem' => $itbitprem),
+		    array('name' => 'OKCoin  ', 'price' => $okcoinprice, 'premd' => $okcoinpremd, 'prem' => $okcoinprem),
+		    array('name' => 'G
