@@ -1807,4 +1807,7 @@ $quoineprice = $quoinearray[0]['last_traded_price'];
                 $krakenprem = ($finexprice/$krakenprice - 1)*100;
                 $okcoinprem = ($finexprice/$okcoinprice - 1)*100;
                 $geminiprem = ($finexprice/$geminiprice - 1)*100;
-                $quoinepr
+                $quoineprem = ($finexprice/$quoineprice - 1)*100;
+                $nonbfxprem = ($finexprice/$avgnonfinex - 1)*100;
+
+#		    array('name' => 'Bitfinex', 'price' => $finexprice, 'premd' => $finexpremd, 'prem' => $finex
