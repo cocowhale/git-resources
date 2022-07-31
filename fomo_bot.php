@@ -1804,4 +1804,7 @@ $quoineprice = $quoinearray[0]['last_traded_price'];
                 $gaydaxprem = ($finexprice/$gaydaxprice - 1)*100;
                 $btceprem = ($finexprice/$btceprice - 1)*100;
                 $itbitprem = ($finexprice/$itbitprice - 1)*100;
-                $krakenprem = ($finexpr
+                $krakenprem = ($finexprice/$krakenprice - 1)*100;
+                $okcoinprem = ($finexprice/$okcoinprice - 1)*100;
+                $geminiprem = ($finexprice/$geminiprice - 1)*100;
+                $quoinepr
