@@ -1813,4 +1813,6 @@ $quoineprice = $quoinearray[0]['last_traded_price'];
 #		    array('name' => 'Bitfinex', 'price' => $finexprice, 'premd' => $finexpremd, 'prem' => $finexprem),
 		$data = array(
 		    array('name' => 'Bitstamp', 'price' => $stampprice, 'premd' => $stamppremd, 'prem' => $stampprem),
-		    array('name' => 'GDAX    ', 'price' => $gaydaxprice, 'p
+		    array('name' => 'GDAX    ', 'price' => $gaydaxprice, 'premd' => $gaydaxpremd, 'prem' => $gaydaxprem),
+		    array('name' => 'BTC-e   ', 'price' => $btceprice, 'premd' => $btcepremd, 'prem' => $btceprem),
+		    array('name' => 'itBit   ', 'price' => $i
