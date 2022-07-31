@@ -1810,4 +1810,7 @@ $quoineprice = $quoinearray[0]['last_traded_price'];
                 $quoineprem = ($finexprice/$quoineprice - 1)*100;
                 $nonbfxprem = ($finexprice/$avgnonfinex - 1)*100;
 
-#		    array('name' => 'Bitfinex', 'price' => $finexprice, 'premd' => $finexpremd, 'prem' => $finex
+#		    array('name' => 'Bitfinex', 'price' => $finexprice, 'premd' => $finexpremd, 'prem' => $finexprem),
+		$data = array(
+		    array('name' => 'Bitstamp', 'price' => $stampprice, 'premd' => $stamppremd, 'prem' => $stampprem),
+		    array('name' => 'GDAX    ', 'price' => $gaydaxprice, 'p
