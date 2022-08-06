@@ -1824,4 +1824,4 @@ $quoineprice = $quoinearray[0]['last_traded_price'];
 		usort($data, make_comparer('premd'));
 
 
-sendMessage($chatId, "<b>Bitfinex Premium to BTC/USD Spot Exchanges</b>\nIt has been <b>".$numdays."</b> days since all non-Taiwan fiat\nwithdrawals were halted on Bitf
+sendMessage($chatId, "<b>Bitfinex Premium to BTC/USD Spot Exchanges</b>\nIt has been <b>".$numdays."</b> days since all non-Taiwan fiat\nwithdrawals were halted on Bitfinex and Tether\n<code>Bitfinex: </code>$".number_format($finexprice,"0")." ($".number_format($finexpremd,"0")."; ".number_format($finexprem,"1")."%)\n<code>VolwtAvg: </code>$".numb
