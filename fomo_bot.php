@@ -1817,4 +1817,5 @@ $quoineprice = $quoinearray[0]['last_traded_price'];
 		    array('name' => 'BTC-e   ', 'price' => $btceprice, 'premd' => $btcepremd, 'prem' => $btceprem),
 		    array('name' => 'itBit   ', 'price' => $itbitprice, 'premd' => $itbitpremd, 'prem' => $itbitprem),
 		    array('name' => 'OKCoin  ', 'price' => $okcoinprice, 'premd' => $okcoinpremd, 'prem' => $okcoinprem),
-		    array('name' => 'G
+		    array('name' => 'Gemini  ', 'price' => $geminiprice, 'premd' => $geminipremd, 'prem' => $geminiprem),
+		    array('name' => 'Kraken  ', 'price' => $krakenprice, 'premd' => $krakenpremd, 'prem' => $krakenpr
