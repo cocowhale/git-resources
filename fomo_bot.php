@@ -1818,4 +1818,10 @@ $quoineprice = $quoinearray[0]['last_traded_price'];
 		    array('name' => 'itBit   ', 'price' => $itbitprice, 'premd' => $itbitpremd, 'prem' => $itbitprem),
 		    array('name' => 'OKCoin  ', 'price' => $okcoinprice, 'premd' => $okcoinpremd, 'prem' => $okcoinprem),
 		    array('name' => 'Gemini  ', 'price' => $geminiprice, 'premd' => $geminipremd, 'prem' => $geminiprem),
-		    array('name' => 'Kraken  ', 'price' => $krakenprice, 'premd' => $krakenpremd, 'prem' => $krakenpr
+		    array('name' => 'Kraken  ', 'price' => $krakenprice, 'premd' => $krakenpremd, 'prem' => $krakenprem),
+		    array('name' => 'Quoine  ', 'price' => $quoineprice, 'premd' => $quoinepremd, 'prem' => $quoineprem),
+		);
+		usort($data, make_comparer('premd'));
+
+
+send
