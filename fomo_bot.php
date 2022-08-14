@@ -1829,4 +1829,7 @@ sendMessage($chatId, "<b>Bitfinex Premium to BTC/USD Spot Exchanges</b>\nIt has 
 
         case "/futures_okcoin_longshort":
 sendMessageTypingAction($chatId);
-                $grabratios = file_get_contents('https://www.okcoin.com/future/getFu
+                $grabratios = file_get_contents('https://www.okcoin.com/future/getFuturePositionRatio.do?type=1&symbol=0');
+                $grabratiosarray = json_decode($grabratios, true);
+                $latestshort = $grabratiosarray['selldata'][19]*100;
+                $min90short = $g
