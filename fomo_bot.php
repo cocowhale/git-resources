@@ -1843,4 +1843,6 @@ sendMessageTypingAction($chatId);
                 break;
         case "/futures_okcoin_elite_sentiment":
 sendMessageTypingAction($chatId);
-                $grabratios = f
+                $grabratios = file_get_contents('https://www.okcoin.com/future/eliteScale.do?type=1&symbol=0');
+                $grabratiosarray = json_decode($grabratios, true);
+                $latestshort = 
