@@ -1845,4 +1845,9 @@ sendMessageTypingAction($chatId);
 sendMessageTypingAction($chatId);
                 $grabratios = file_get_contents('https://www.okcoin.com/future/eliteScale.do?type=1&symbol=0');
                 $grabratiosarray = json_decode($grabratios, true);
-                $latestshort = 
+                $latestshort = $grabratiosarray['selldata'][49]*100;
+                $latestlong = $grabratiosarray['buydata'][49]*100;
+
+                
+
+                sendMessage($chatId, "<b>OKCoin Top Trader
