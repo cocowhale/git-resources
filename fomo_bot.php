@@ -1851,4 +1851,9 @@ sendMessageTypingAction($chatId);
                 
 
                 sendMessage($chatId, "<b>OKCoin Top Trader Sentiment</b>\n<code>Long :</code> ".number_format($latestlong,"2")."%\n<code>Short:</code> ".number_format($latestshort,"2")."%\n".$currtimestamp);
-              
+                break;
+
+
+        case "/futures_bitmex_funding":
+sendMessageTypingAction($chatId);
+                $grabmex = file_get_contents('https://www.bitmex.com/api/v1/instrument?symbol=XBTUSD&count=100&r
