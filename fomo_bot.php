@@ -1859,4 +1859,7 @@ sendMessageTypingAction($chatId);
                 $grabmex = file_get_contents('https://www.bitmex.com/api/v1/instrument?symbol=XBTUSD&count=100&reverse=false');
                 $grabmexarray = json_decode($grabmex, true);
                 $fundingrate8hr = $grabmexarray[0]['fundingRate']*100;
-                $fundin
+                $fundingratedaily = (pow((1+($fundingrate8hr/100)),3)-1)*100;
+
+                $predictedfundingrate = $grabmexarray[0]['indicativeFundingRate']*100;
+                $fundingrateannual = (pow((
