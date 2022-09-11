@@ -1868,4 +1868,8 @@ sendMessageTypingAction($chatId);
                 $timetofunding = $nextfunding-$currentts;
                 $strtimetofunding=gmdate("H:i:s", $timetofunding);
                 $thehours=floor($timetofunding/60/60);
-                $theminute
+                $theminutes=floor($timetofunding/60)-($thehours*60);
+                $predictedtime=($timetofunding/60/60)+8;     
+
+		$indexprice = $grabmexarray[0]['indicativeSettlePrice'];
+		$markprice= $grab
