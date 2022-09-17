@@ -1872,4 +1872,8 @@ sendMessageTypingAction($chatId);
                 $predictedtime=($timetofunding/60/60)+8;     
 
 		$indexprice = $grabmexarray[0]['indicativeSettlePrice'];
-		$markprice= $grab
+		$markprice= $grabmexarray[0]['markPrice'];
+		$bidprice = $grabmexarray[0]['bidPrice'];
+		$askprice = $grabmexarray[0]['askPrice'];
+
+                sendMessage($chatId, "<b>BitMEX BTC/USD Swap Funding</
