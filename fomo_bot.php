@@ -1876,4 +1876,4 @@ sendMessageTypingAction($chatId);
 		$bidprice = $grabmexarray[0]['bidPrice'];
 		$askprice = $grabmexarray[0]['askPrice'];
 
-                sendMessage($chatId, "<b>BitMEX BTC/USD Swap Funding</b>\nPositive rate -> Longs pay shorts\nCurrent payment in: ".$thehours." hr ".$theminutes." min\n<code>Nominal(8-hour):</code> ".number_format($fundingrate8hr,"4")."%\n<code>Daily 
+                sendMessage($chatId, "<b>BitMEX BTC/USD Swap Funding</b>\nPositive rate -> Longs pay shorts\nCurrent payment in: ".$thehours." hr ".$theminutes." min\n<code>Nominal(8-hour):</code> ".number_format($fundingrate8hr,"4")."%\n<code>Daily Rate     :</code> ".number_format($fundingratedaily, "3")."%\n<code>Next predicted :</code> ".number_format($predictedfundingrate,"4")."% (in ".number_format($predictedtime)." hours)\n<code>Bid / Ask Price
