@@ -1880,4 +1880,6 @@ sendMessageTypingAction($chatId);
                 break;
 
 
-        ca
+        case "/futures_bitmex_premiums":
+sendMessageTypingAction($chatId);
+                $grabmex = file_get_contents('https://www.bitmex.com/api/v1/instrument?filter=%7B%22state%22%3A%20%22Open%2
