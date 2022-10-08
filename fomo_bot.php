@@ -1887,4 +1887,9 @@ sendMessageTypingAction($chatId);
                
 		foreach ($grabmexarray as $x) {
 			if ($x['symbol'] == "XBTM17") {
-			$b
+			$btcsymbol=$x['symbol'];
+			$btcindex=$x['indicativeSettlePrice'];
+			$btcquote=$x['midPrice'];
+			$qtlyexpire=strtotime($x['expiry']);
+			$bmtimestamp=strtotime($x['timestamp']);
+			} elseif 
