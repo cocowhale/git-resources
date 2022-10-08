@@ -1882,4 +1882,9 @@ sendMessageTypingAction($chatId);
 
         case "/futures_bitmex_premiums":
 sendMessageTypingAction($chatId);
-                $grabmex = file_get_contents('https://www.bitmex.com/api/v1/instrument?filter=%7B%22state%22%3A%20%22Open%2
+                $grabmex = file_get_contents('https://www.bitmex.com/api/v1/instrument?filter=%7B%22state%22%3A%20%22Open%22%7D&count=100&reverse=false');
+                $grabmexarray = json_decode($grabmex, true);
+               
+		foreach ($grabmexarray as $x) {
+			if ($x['symbol'] == "XBTM17") {
+			$b
