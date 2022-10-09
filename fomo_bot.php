@@ -1892,4 +1892,9 @@ sendMessageTypingAction($chatId);
 			$btcquote=$x['midPrice'];
 			$qtlyexpire=strtotime($x['expiry']);
 			$bmtimestamp=strtotime($x['timestamp']);
-			} elseif 
+			} elseif ($x['symbol'] == "DASHM17") {
+			$dashsymbol=$x['symbol'];
+			$dashindex=$x['indicativeSettlePrice'];
+			$dashquote=$x['midPrice'];
+			} elseif ($x['symbol'] == "ETHM17") {
+			$ethsymbol=$x['symbol'
