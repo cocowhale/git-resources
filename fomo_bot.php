@@ -1897,4 +1897,11 @@ sendMessageTypingAction($chatId);
 			$dashindex=$x['indicativeSettlePrice'];
 			$dashquote=$x['midPrice'];
 			} elseif ($x['symbol'] == "ETHM17") {
-			$ethsymbol=$x['symbol'
+			$ethsymbol=$x['symbol'];
+			$ethindex=$x['indicativeSettlePrice'];
+			$ethquote=$x['midPrice'];
+			} elseif ($x['symbol'] == "ETC7D") {
+			$etcsymbol=$x['symbol'];
+			$etcindex=$x['indicativeSettlePrice'];
+			$etcquote=$x['midPrice'];
+			$w
