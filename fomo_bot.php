@@ -1904,4 +1904,9 @@ sendMessageTypingAction($chatId);
 			$etcsymbol=$x['symbol'];
 			$etcindex=$x['indicativeSettlePrice'];
 			$etcquote=$x['midPrice'];
-			$w
+			$wklyexpire=strtotime($x['expiry']);
+			} elseif ($x['symbol'] == "REP7D") {
+			$repsymbol=$x['symbol'];
+			$repindex=$x['indicativeSettlePrice'];
+			$repquote=$x['midPrice'];
+			} elseif ($x['
