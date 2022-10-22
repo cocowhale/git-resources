@@ -1920,4 +1920,10 @@ sendMessageTypingAction($chatId);
 			} elseif ($x['symbol'] == "XMRM17") {
 			$xmrsymbol=$x['symbol'];
 			$xmrindex=$x['indicativeSettlePrice'];
-			$
+			$xmrquote=$x['midPrice'];
+			} elseif ($x['symbol'] == "ZECM17") {
+			$zecsymbol=$x['symbol'];
+			$zecindex=$x['indicativeSettlePrice'];
+			$zecquote=$x['midPrice'];
+			} elseif ($x['symbol'] == "XRPM17") {
+			
