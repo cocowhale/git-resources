@@ -1915,4 +1915,9 @@ sendMessageTypingAction($chatId);
 			$fctquote=$x['midPrice'];
 			} elseif ($x['symbol'] == "LTCM17") {
 			$ltcsymbol=$x['symbol'];
-			$ltcindex=
+			$ltcindex=$x['indicativeSettlePrice'];
+			$ltcquote=$x['midPrice'];
+			} elseif ($x['symbol'] == "XMRM17") {
+			$xmrsymbol=$x['symbol'];
+			$xmrindex=$x['indicativeSettlePrice'];
+			$
