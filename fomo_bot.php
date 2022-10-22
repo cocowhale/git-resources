@@ -1909,4 +1909,10 @@ sendMessageTypingAction($chatId);
 			$repsymbol=$x['symbol'];
 			$repindex=$x['indicativeSettlePrice'];
 			$repquote=$x['midPrice'];
-			} elseif ($x['
+			} elseif ($x['symbol'] == "FCTM17") {
+			$fctsymbol=$x['symbol'];
+			$fctindex=$x['indicativeSettlePrice'];
+			$fctquote=$x['midPrice'];
+			} elseif ($x['symbol'] == "LTCM17") {
+			$ltcsymbol=$x['symbol'];
+			$ltcindex=
