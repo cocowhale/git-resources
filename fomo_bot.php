@@ -1926,4 +1926,12 @@ sendMessageTypingAction($chatId);
 			$zecindex=$x['indicativeSettlePrice'];
 			$zecquote=$x['midPrice'];
 			} elseif ($x['symbol'] == "XRPM17") {
-			
+			$xrpsymbol=$x['symbol'];
+			$xrpindex=$x['indicativeSettlePrice'];
+			$xrpquote=$x['midPrice'];
+			}
+		}
+
+
+                $timetoqtr = $qtlyexpire-$bmtimestamp;
+                $timetowk
