@@ -1934,4 +1934,10 @@ sendMessageTypingAction($chatId);
 
 
                 $timetoqtr = $qtlyexpire-$bmtimestamp;
-                $timetowk
+                $timetowk = $wklyexpire-$bmtimestamp;
+		$daystoqtr=$timetoqtr/60/60/24;
+		$daystowk=$timetowk/60/60/24;
+
+		$btcprem=$btcquote-$btcindex;
+		$btcpremp=100*(($btcquote/$btcindex)-1);
+              
