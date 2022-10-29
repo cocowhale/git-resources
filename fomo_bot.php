@@ -1940,4 +1940,9 @@ sendMessageTypingAction($chatId);
 
 		$btcprem=$btcquote-$btcindex;
 		$btcpremp=100*(($btcquote/$btcindex)-1);
-              
+                $btcprempa =(pow(($btcquote/$btcindex),(365/$daystoqtr))-1)*100;
+
+
+		$dashprem=$dashquote-$dashindex;
+		$dashpremp=100*(($dashquote/$dashindex)-1);
+                $dashprempa =(pow(($dashquote
