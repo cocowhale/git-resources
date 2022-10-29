@@ -1945,4 +1945,10 @@ sendMessageTypingAction($chatId);
 
 		$dashprem=$dashquote-$dashindex;
 		$dashpremp=100*(($dashquote/$dashindex)-1);
-                $dashprempa =(pow(($dashquote
+                $dashprempa =(pow(($dashquote/$dashindex),(365/$daystoqtr))-1)*100;
+
+	$ethprem=$ethquote-$ethindex;
+		$ethpremp=100*(($ethquote/$ethindex)-1);
+                $ethprempa =(pow(($ethquote/$ethindex),(365/$daystoqtr))-1)*100;
+
+	$etcprem
