@@ -1951,4 +1951,9 @@ sendMessageTypingAction($chatId);
 		$ethpremp=100*(($ethquote/$ethindex)-1);
                 $ethprempa =(pow(($ethquote/$ethindex),(365/$daystoqtr))-1)*100;
 
-	$etcprem
+	$etcprem=$btcquote-$etcindex;
+		$etcpremp=100*(($etcquote/$etcindex)-1);
+                $etcprempa =(pow(($etcquote/$etcindex),(365/$daystowk))-1)*100;
+
+	$fctprem=$fctquote-$fctindex;
+		$fctpremp=100*(($fctqu
