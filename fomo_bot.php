@@ -1956,4 +1956,9 @@ sendMessageTypingAction($chatId);
                 $etcprempa =(pow(($etcquote/$etcindex),(365/$daystowk))-1)*100;
 
 	$fctprem=$fctquote-$fctindex;
-		$fctpremp=100*(($fctqu
+		$fctpremp=100*(($fctquote/$fctindex)-1);
+                $fctprempa =(pow(($fctquote/$fctindex),(365/$daystoqtr))-1)*100;
+
+	$ltcprem=$ltcquote-$ltcindex;
+		$ltcpremp=100*(($ltcquote/$ltcindex)-1);
+         
