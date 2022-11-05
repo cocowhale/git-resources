@@ -1965,4 +1965,8 @@ sendMessageTypingAction($chatId);
 
 	$xmrprem=$xmrquote-$xmrindex;
 		$xmrpremp=100*(($xmrquote/$xmrindex)-1);
-                $xmrprempa =(pow(($x
+                $xmrprempa =(pow(($xmrquote/$xmrindex),(365/$daystoqtr))-1)*100;
+
+	$zecprem=$zecquote-$zecindex;
+		$zecpremp=100*(($zecquote/$zecindex)-1);
+                $zecprempa =(pow(($zecquote/$zecindex),(365/$daystoqtr))-1)*1
