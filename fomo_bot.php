@@ -1961,4 +1961,8 @@ sendMessageTypingAction($chatId);
 
 	$ltcprem=$ltcquote-$ltcindex;
 		$ltcpremp=100*(($ltcquote/$ltcindex)-1);
-         
+                $ltcprempa =(pow(($ltcquote/$ltcindex),(365/$daystoqtr))-1)*100;
+
+	$xmrprem=$xmrquote-$xmrindex;
+		$xmrpremp=100*(($xmrquote/$xmrindex)-1);
+                $xmrprempa =(pow(($x
