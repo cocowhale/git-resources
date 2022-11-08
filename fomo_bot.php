@@ -1969,4 +1969,10 @@ sendMessageTypingAction($chatId);
 
 	$zecprem=$zecquote-$zecindex;
 		$zecpremp=100*(($zecquote/$zecindex)-1);
-                $zecprempa =(pow(($zecquote/$zecindex),(365/$daystoqtr))-1)*1
+                $zecprempa =(pow(($zecquote/$zecindex),(365/$daystoqtr))-1)*100;
+
+	$xrpprem=$xrpquote-$xrpindex;
+		$xrppremp=100*(($xrpquote/$xrpindex)-1);
+                $xrpprempa =(pow(($xrpquote/$xrpindex),(365/$daystoqtr))-1)*100;
+
+	$repprem=$repquo
