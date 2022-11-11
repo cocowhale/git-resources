@@ -1975,4 +1975,10 @@ sendMessageTypingAction($chatId);
 		$xrppremp=100*(($xrpquote/$xrpindex)-1);
                 $xrpprempa =(pow(($xrpquote/$xrpindex),(365/$daystoqtr))-1)*100;
 
-	$repprem=$repquo
+	$repprem=$repquote-$repindex;
+		$reppremp=100*(($repquote/$repindex)-1);
+                $repprempa =(pow(($repquote/$repindex),(365/$daystoqtr))-1)*100;
+
+
+         
+                sendMessage($chatId, "<b>B
