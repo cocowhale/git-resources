@@ -1981,4 +1981,4 @@ sendMessageTypingAction($chatId);
 
 
          
-                sendMessage($chatId, "<b>B
+                sendMessage($chatId, "<b>BitMEX Futures Premiums</b>\nDays to qtr expiry: ".number_format($daystoqtr,"0")."\nDays to wkl expiry: ".number_format($daystowk,"0")."\n<code>Symbol  Price Index Nom APY</code>\n<code>".$btcsym
