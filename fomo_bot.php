@@ -1985,3 +1985,5 @@ sendMessageTypingAction($chatId);
                 break;
  
         case "/offtopic":
+sendMessageTypingAction($chatId);
+                sendMessage($chatId, "Keep WhalePool chat on topic: crypto, markets, and trading. For offtopic and uncensored chat go here: http://offtopic.
