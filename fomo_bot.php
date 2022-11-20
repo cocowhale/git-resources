@@ -1986,4 +1986,8 @@ sendMessageTypingAction($chatId);
  
         case "/offtopic":
 sendMessageTypingAction($chatId);
-                sendMessage($chatId, "Keep WhalePool chat on topic: crypto, markets, and trading. For offtopic and uncensored chat go here: http://offtopic.
+                sendMessage($chatId, "Keep WhalePool chat on topic: crypto, markets, and trading. For offtopic and uncensored chat go here: http://offtopic.whalepool.io");
+                break;
+        case "/offtopic@FOMO_bot":
+sendMessageTypingAction($chatId);
+                sendMessage($chatId, "Keep WhalePool chat on topic: crypto, markets, and tra
