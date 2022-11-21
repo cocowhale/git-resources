@@ -1994,4 +1994,4 @@ sendMessageTypingAction($chatId);
                 break;
         case "/teamspeak":
 sendMessageTypingAction($chatId);
-                sendMessage($c
+                sendMessage($chatId, "Teamspeak is the core of the Whalepool community. 24/7 audio crypto chatter. The market never sleeps and neither do we. Open to all! Setup instructions here: https://whalepool.io/connect/te
