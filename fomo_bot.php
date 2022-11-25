@@ -1999,4 +1999,10 @@ sendMessageTypingAction($chatId);
         case "/teamspeak@FOMO_bot":
 sendMessageTypingAction($chatId);
                 sendMessage($chatId, "Teamspeak is the core of the Whalepool community. 24/7 audio crypto chatter. The market never sleeps and neither do we. Open to all! Setup instructions here: https://whalepool.io/connect/teamspeak");
-          
+                break;
+        case "/shill":
+sendMessageTypingAction($chatId);
+                break;
+        case "/shill@FOMO_bot":
+sendMessageTypingAction($chatId);
+                sendMessa
