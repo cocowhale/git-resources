@@ -2005,4 +2005,4 @@ sendMessageTypingAction($chatId);
                 break;
         case "/shill@FOMO_bot":
 sendMessageTypingAction($chatId);
-                sendMessa
+                sendMessage($chatId, "<b>Exchange Discounts</b>\n<b>--</b>Trade bitcoin/altcoins up to 100x leverage using bitcoin at https://www.bitmex.com/register/cXII6U BitMEX\n<b>--</b>Use bitcoin to trade FOR
