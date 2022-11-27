@@ -2007,4 +2007,7 @@ sendMessageTypingAction($chatId);
 sendMessageTypingAction($chatId);
                 sendMessage($chatId, "<b>Exchange Discounts</b>\n<b>--</b>Trade bitcoin/altcoins up to 100x leverage using bitcoin at https://www.bitmex.com/register/cXII6U BitMEX\n<b>--</b>Use bitcoin to trade FOREX, stocks, indices, gold, and more at 1Broker: https://1broker.com/?r=10262 Also lets you share trades and profit off ppl copying your trades\n<b>--</b>Bitfinex is the highest volume BTC/USD spot exchange that has 3x leverage margin trading and allows earning interest on swaps! https://www.bitfinex.com/?refcode=nmTrK52qJE");
                 break;
-        case "/top_ten_al
+        case "/top_ten_altcoins":
+sendMessageTypingAction($chatId);
+                $coinmarketcap = file_get_contents('https://api.coinmarketcap.com/v1/ticker/?limit=15');
+                $wsi = json_decode($coinmar
