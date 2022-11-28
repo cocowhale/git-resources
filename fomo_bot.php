@@ -2010,4 +2010,10 @@ sendMessageTypingAction($chatId);
         case "/top_ten_altcoins":
 sendMessageTypingAction($chatId);
                 $coinmarketcap = file_get_contents('https://api.coinmarketcap.com/v1/ticker/?limit=15');
-                $wsi = json_decode($coinmar
+                $wsi = json_decode($coinmarketcap, true);
+
+                $marketcaptotal=0;
+                $i=0;
+                #sum the marketcaps
+                foreach(range(1,15) as $x) { 
+                if (in_array($wsi
