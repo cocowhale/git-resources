@@ -2020,4 +2020,9 @@ sendMessageTypingAction($chatId);
                    continue;
                 $i++;
                 $marketcaptotal=$marketcaptotal+$wsi[$x]['market_cap_usd']; 
-             
+                if ($i == 10)
+                   break;
+                }
+	
+                $marketcaptotal=floor($marketcaptotal);
+                #WSI is just marketcap standardized to 1 billion 
