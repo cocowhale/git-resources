@@ -2016,4 +2016,8 @@ sendMessageTypingAction($chatId);
                 $i=0;
                 #sum the marketcaps
                 foreach(range(1,15) as $x) { 
-                if (in_array($wsi
+                if (in_array($wsi[$x]['symbol'], array('USDT', 'PIVX')))
+                   continue;
+                $i++;
+                $marketcaptotal=$marketcaptotal+$wsi[$x]['market_cap_usd']; 
+             
