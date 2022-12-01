@@ -2025,4 +2025,11 @@ sendMessageTypingAction($chatId);
                 }
 	
                 $marketcaptotal=floor($marketcaptotal);
-                #WSI is just marketcap standardized to 1 billion 
+                #WSI is just marketcap standardized to 1 billion to 1000 pts
+                $wsivalue=($marketcaptotal/1000000000)*1000;
+
+
+
+
+                $polograb = file_get_contents('https://poloniex.com/public?command=returnTicker');
+                $polotic
