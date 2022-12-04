@@ -2032,4 +2032,10 @@ sendMessageTypingAction($chatId);
 
 
                 $polograb = file_get_contents('https://poloniex.com/public?command=returnTicker');
-                $polotic
+                $poloticker = json_decode($polograb, true);
+
+
+                $i=0;
+                $weightedpct=0;
+                foreach(range(1,15) as $x) { 
+                if (in_array($wsi[$x]['symbol'], array(
