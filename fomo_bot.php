@@ -2038,4 +2038,8 @@ sendMessageTypingAction($chatId);
                 $i=0;
                 $weightedpct=0;
                 foreach(range(1,15) as $x) { 
-                if (in_array($wsi[$x]['symbol'], array(
+                if (in_array($wsi[$x]['symbol'], array('USDT', 'PIVX')))
+                   continue;
+                $i++;
+                $weightedpct=$weightedpct+( ($wsi[$x]['percent_change_24h'])*($wsi[$x]['market_cap_usd'])/$marketcaptotal);
+   
