@@ -2042,4 +2042,10 @@ sendMessageTypingAction($chatId);
                    continue;
                 $i++;
                 $weightedpct=$weightedpct+( ($wsi[$x]['percent_change_24h'])*($wsi[$x]['market_cap_usd'])/$marketcaptotal);
-   
+                if ($i == 10)
+                   break;
+                }
+
+                #build individual message
+                if ($weightedpct < 0):
+                    $wsistring="<b>
