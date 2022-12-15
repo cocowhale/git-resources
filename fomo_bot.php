@@ -2048,4 +2048,5 @@ sendMessageTypingAction($chatId);
 
                 #build individual message
                 if ($weightedpct < 0):
-                    $wsistring="<b>
+                    $wsistring="<b>Whalepool Shitcoin Index (WSI 10)</b>\n<b>         ".number_format($wsivalue,"2")." pts (".number_format($weightedpct,"2")."%) </b>\n<code> Name Value(BTC) 24Hr Chg</code>\n";
+        
