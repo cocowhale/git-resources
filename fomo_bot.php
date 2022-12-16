@@ -2050,4 +2050,8 @@ sendMessageTypingAction($chatId);
                 if ($weightedpct < 0):
                     $wsistring="<b>Whalepool Shitcoin Index (WSI 10)</b>\n<b>         ".number_format($wsivalue,"2")." pts (".number_format($weightedpct,"2")."%) </b>\n<code> Name Value(BTC) 24Hr Chg</code>\n";
                 else:
-                    $wsistring="<b>Whalepool Shitcoin Index (WSI 10)</b>\n<b>         ".number_format($wsivalue,"2")." pts (+".number_format($weightedpct,"2
+                    $wsistring="<b>Whalepool Shitcoin Index (WSI 10)</b>\n<b>         ".number_format($wsivalue,"2")." pts (+".number_format($weightedpct,"2")."%) </b>\n<code> Name Value(BTC) 24Hr Chg</code>\n";
+                endif;
+                $i=0;
+                foreach(range(1,15) as $x) { 
+                if (in_array($wsi[$x]['symbol'], a
