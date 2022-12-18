@@ -2058,4 +2058,7 @@ sendMessageTypingAction($chatId);
                    continue;
                 $i++;
                 $wsirank=$wsi[$x]['rank']-1;
-                $polopricechg=round($poloticker['BTC_'.$wsi[$x]['symbol'
+                $polopricechg=round($poloticker['BTC_'.$wsi[$x]['symbol']]['percentChange']*100,2);
+                $poloprice=$poloticker['BTC_'.$wsi[$x]['symbol']]['last'];
+                if ($poloprice < 0):
+                    #$wsistring=$wsi
