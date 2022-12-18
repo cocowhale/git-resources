@@ -2054,4 +2054,8 @@ sendMessageTypingAction($chatId);
                 endif;
                 $i=0;
                 foreach(range(1,15) as $x) { 
-                if (in_array($wsi[$x]['symbol'], a
+                if (in_array($wsi[$x]['symbol'], array('USDT', 'PIVX')))
+                   continue;
+                $i++;
+                $wsirank=$wsi[$x]['rank']-1;
+                $polopricechg=round($poloticker['BTC_'.$wsi[$x]['symbol'
