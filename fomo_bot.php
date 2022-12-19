@@ -2064,4 +2064,5 @@ sendMessageTypingAction($chatId);
                     #$wsistring=$wsistring.$wsirank.". <code>".$wsi[$x]['symbol']."</code>: ".number_format($wsi[$x]['price_btc'],8)." (".number_format($wsi[$x]['percent_change_24h'],2)."%)\n";
                     $wsistring=$wsistring.$i.". <code>".$wsi[$x]['symbol']."</code>: ".number_format($poloprice,8)." (".number_format($polopricechg,2)."%)\n";
                 else:
-                    #$wsistring=$wsistring
+                    #$wsistring=$wsistring.$wsirank.". <code>".$wsi[$x]['symbol']."</code>: ".number_format($wsi[$x]['price_btc'],8)." (+".number_format($wsi[$x]['percent_change_24h'],2)."%)\n";
+           
