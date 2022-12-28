@@ -2073,4 +2073,7 @@ sendMessageTypingAction($chatId);
 
                 sendMessage($chatId, $wsistring."\n".$currtimestamp);
                 break;
-        case "/top_bitcoin_miners"
+        case "/top_bitcoin_miners":
+sendMessageTypingAction($chatId);
+                $grabtopminers = file_get_contents('https://api.blockchain.info/pools?timespan=1days');
+                $topminers = json_decode($grabtopminers,
