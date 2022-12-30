@@ -2076,4 +2076,10 @@ sendMessageTypingAction($chatId);
         case "/top_bitcoin_miners":
 sendMessageTypingAction($chatId);
                 $grabtopminers = file_get_contents('https://api.blockchain.info/pools?timespan=1days');
-                $topminers = json_decode($grabtopminers,
+                $topminers = json_decode($grabtopminers, true);
+                arsort($topminers);
+                $minercount=count($topminers);
+
+                #sum the blocks mined in past 24 hr
+                $blocksinday=0;
+                $minercount2=$minerco
