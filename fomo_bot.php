@@ -2087,4 +2087,6 @@ sendMessageTypingAction($chatId);
                 $blocksinday=$blocksinday+$topminers[array_keys($topminers)[$x]]; 
                 }
 	
-           
+                $minerstring="<b>Miners of Bitcoin blocks past 24 Hours</b>\n<code>Name        Blocks    Share</code>\n";
+                foreach(range(0,$minercount2) as $x) {
+                
