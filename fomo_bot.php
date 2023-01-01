@@ -2102,4 +2102,7 @@ sendMessageTypingAction($chatId);
                 else:
                     $numblocks=str_pad($numblocks,11);
                 endif;
-                if ($mi
+                if ($minershare<5):
+                $minerstring=$minerstring; 
+                else:
+                $minerstring=$minerstring."<code>".$minername."</code>".$numblock
