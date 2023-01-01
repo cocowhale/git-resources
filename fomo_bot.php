@@ -2092,4 +2092,9 @@ sendMessageTypingAction($chatId);
                 $minershare=($topminers[array_keys($topminers)[$x]]/$blocksinday)*100;
                 $minername=array_keys($topminers)[$x];
                 if ($minershare<10):
-                    $minername=str_pa
+                    $minername=str_pad($minername, 16);
+                else:
+                    $minername=str_pad($minername, 15);   
+                endif;
+                $numblocks=$topminers[array_keys($topminers)[$x]];
+                if 
