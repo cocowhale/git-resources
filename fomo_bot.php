@@ -2089,4 +2089,7 @@ sendMessageTypingAction($chatId);
 	
                 $minerstring="<b>Miners of Bitcoin blocks past 24 Hours</b>\n<code>Name        Blocks    Share</code>\n";
                 foreach(range(0,$minercount2) as $x) {
-                
+                $minershare=($topminers[array_keys($topminers)[$x]]/$blocksinday)*100;
+                $minername=array_keys($topminers)[$x];
+                if ($minershare<10):
+                    $minername=str_pa
