@@ -2105,4 +2105,11 @@ sendMessageTypingAction($chatId);
                 if ($minershare<5):
                 $minerstring=$minerstring; 
                 else:
-                $minerstring=$minerstring."<code>".$minername."</code>".$numblock
+                $minerstring=$minerstring."<code>".$minername."</code>".$numblocks."    ".number_format($minershare,"0")."%\n"; 
+                endif;
+
+                }
+
+                sendMessage($chatId, $minerstring."\n".$currtimestamp);
+                break;
+
