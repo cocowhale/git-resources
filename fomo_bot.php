@@ -2113,3 +2113,7 @@ sendMessageTypingAction($chatId);
                 sendMessage($chatId, $minerstring."\n".$currtimestamp);
                 break;
 
+         case "/segwit_statistics":
+sendMessageTypingAction($chatId);
+                $grabsegwit = file_get_contents('http://api.qbit.ninja/versionstats');
+                $segwit = json_decode($grabs
