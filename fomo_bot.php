@@ -2122,4 +2122,6 @@ sendMessageTypingAction($chatId);
                 $segcount2=count($segwit['last144']['stats']);
 
                
-           
+                foreach(range(0,$segcount) as $x) { 
+                if ($segwit['last2016']['stats'][$x]['proposal']=="SEGWIT"):
+                $segwitperc=$segwit['last2016']['sta
