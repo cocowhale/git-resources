@@ -2116,4 +2116,10 @@ sendMessageTypingAction($chatId);
          case "/segwit_statistics":
 sendMessageTypingAction($chatId);
                 $grabsegwit = file_get_contents('http://api.qbit.ninja/versionstats');
-                $segwit = json_decode($grabs
+                $segwit = json_decode($grabsegwit, true);
+                
+                $segcount=count($segwit['last2016']['stats']);
+                $segcount2=count($segwit['last144']['stats']);
+
+               
+           
