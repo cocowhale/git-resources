@@ -2130,4 +2130,9 @@ sendMessageTypingAction($chatId);
                 }
                 foreach(range(0,$segcount2) as $x) { 
                 if ($segwit['last144']['stats'][$x]['proposal']=="SEGWIT"):
-                $segwitperc2
+                $segwitperc2=$segwit['last144']['stats'][$x]['percentage'];
+
+                endif;
+                }
+
+                sendMessage($chatId, "<code>Current SegWit signal percentage</code>\n<b>".round($segwitperc,2)."% 
