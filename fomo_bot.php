@@ -2138,4 +2138,6 @@ sendMessageTypingAction($chatId);
                 sendMessage($chatId, "<code>Current SegWit signal percentage</code>\n<b>".round($segwitperc,2)."% (last 2016 blocks)</b>\n".round($segwitperc2,2)."% (last 144 blocks)\nSource: https://bitcoincore.org/en/segwit_adoption/\n".$currtimestamp);
                 break;
          case "/bu_statistics":
-se
+sendMessageTypingAction($chatId);
+                $grabbu = file_get_contents('https://api.blockchain.info/charts/bitcoin-unlimited-share?format=json');
+                $bu = 
