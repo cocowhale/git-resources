@@ -2135,4 +2135,7 @@ sendMessageTypingAction($chatId);
                 endif;
                 }
 
-                sendMessage($chatId, "<code>Current SegWit signal percentage</code>\n<b>".round($segwitperc,2)."% 
+                sendMessage($chatId, "<code>Current SegWit signal percentage</code>\n<b>".round($segwitperc,2)."% (last 2016 blocks)</b>\n".round($segwitperc2,2)."% (last 144 blocks)\nSource: https://bitcoincore.org/en/segwit_adoption/\n".$currtimestamp);
+                break;
+         case "/bu_statistics":
+se
