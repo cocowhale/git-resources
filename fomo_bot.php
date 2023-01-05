@@ -2140,4 +2140,12 @@ sendMessageTypingAction($chatId);
          case "/bu_statistics":
 sendMessageTypingAction($chatId);
                 $grabbu = file_get_contents('https://api.blockchain.info/charts/bitcoin-unlimited-share?format=json');
-                $bu = 
+                $bu = json_decode($grabbu, true);
+                
+                $bucount=count($bu['values']);
+                
+                $buperc=$bu['values'][$bucount-1]['y'];
+
+	        #sendMessage($chatId, "test");  
+ 
+       
