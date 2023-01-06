@@ -2160,4 +2160,12 @@ sendMessageTypingAction($chatId);
                 $nonce=time();
                 $path = "/api/v1/user/margin";
                 $data = "";
-                $
+                $message = $verb.$path.$nonce.$data;
+
+
+                $signature = hash_hmac('sha256', $message, $API_SECRET);
+
+
+                $opts = array(
+                  'http'=>array(
+                
