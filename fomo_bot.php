@@ -2154,4 +2154,10 @@ sendMessageTypingAction($chatId);
 sendMessageTypingAction($chatId);
                 $API_KEY = "";
                 $API_SECRET = "";
-         
+                
+                #build call
+                $verb = "GET";
+                $nonce=time();
+                $path = "/api/v1/user/margin";
+                $data = "";
+                $
