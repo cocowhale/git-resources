@@ -2148,4 +2148,10 @@ sendMessageTypingAction($chatId);
 
 	        #sendMessage($chatId, "test");  
  
-                sendMessage($chatId, "<code>Current Bitcoin Unlimited signal percentage:</code><b>".$buperc."%</b>\nSource: https://blockchain.info/charts/bitcoin-unlimited-share?timespan=30
+                sendMessage($chatId, "<code>Current Bitcoin Unlimited signal percentage:</code><b>".$buperc."%</b>\nSource: https://blockchain.info/charts/bitcoin-unlimited-share?timespan=30days\n".$currtimestamp);
+                break;
+         case "/affiliate_balances":
+sendMessageTypingAction($chatId);
+                $API_KEY = "";
+                $API_SECRET = "";
+         
