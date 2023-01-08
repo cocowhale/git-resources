@@ -2168,4 +2168,7 @@ sendMessageTypingAction($chatId);
 
                 $opts = array(
                   'http'=>array(
-                
+                    'method'=>"GET",
+                    'header'=>"api-nonce: ".$nonce."\r\n" .
+                              "api-key: ".$API_KEY."\r\n" .
+                              "api-signature: ".$signature."\r
