@@ -2180,4 +2180,6 @@ sendMessageTypingAction($chatId);
 
 
                 // Open the file using the HTTP headers set above
-             
+                $file = file_get_contents('https://www.bitmex.com/api/v1/user/margin', false, $context);
+                $comaccounts = json_decode($file, true);
+                $bitmexbalance=$comaccounts['wa
