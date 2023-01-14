@@ -2182,4 +2182,9 @@ sendMessageTypingAction($chatId);
                 // Open the file using the HTTP headers set above
                 $file = file_get_contents('https://www.bitmex.com/api/v1/user/margin', false, $context);
                 $comaccounts = json_decode($file, true);
-                $bitmexbalance=$comaccounts['wa
+                $bitmexbalance=$comaccounts['walletBalance']/100000000;
+
+
+                $grab1b = file_get_contents('https://1broker.com/api/v2/user/overview.php?token=');
+                $brokerreq = json_decode($grab1b, true);
+    
