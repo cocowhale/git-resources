@@ -2187,4 +2187,11 @@ sendMessageTypingAction($chatId);
 
                 $grab1b = file_get_contents('https://1broker.com/api/v2/user/overview.php?token=');
                 $brokerreq = json_decode($grab1b, true);
-    
+                $brokerbalance=$brokerreq['response']['net_worth'];
+
+                // BItfinex balances
+
+
+		$bfxapi_key = '';
+		$bfxapi_secret = '';
+		$bfx = new Bitfinex($bfxapi_key, $bfxapi_secre
