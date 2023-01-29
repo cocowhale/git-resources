@@ -2194,4 +2194,11 @@ sendMessageTypingAction($chatId);
 
 		$bfxapi_key = '';
 		$bfxapi_secret = '';
-		$bfx = new Bitfinex($bfxapi_key, $bfxapi_secre
+		$bfx = new Bitfinex($bfxapi_key, $bfxapi_secret);
+
+		$getbalances=$bfx->get_balances();
+		$bfxcount=count($getbalances)-1;
+		$bfxbtc=0;
+		$bfxusd=0;
+		foreach(range(0,$bfxcount) as $x) {
+		 if ($getbalances[$x]['currency'] == "btc") $bfxbt
