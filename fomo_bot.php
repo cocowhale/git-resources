@@ -2208,4 +2208,7 @@ sendMessageTypingAction($chatId);
 		$bfxbtc=number_format($bfxbtc,"2");
 		$bfxusd=number_format($bfxusd,"0");
 
-		#$bf
+		#$bfxbtcbalance=$getbalances[0]['amount'];
+		
+
+                $donationaddie = file_get_contents('https://blockchain.info/q/addressbalance/175oRbKiLtdY7RVC8hSX7KD69WQs8PcRJA?confirmations=0')/1000000
