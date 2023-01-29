@@ -2201,4 +2201,11 @@ sendMessageTypingAction($chatId);
 		$bfxbtc=0;
 		$bfxusd=0;
 		foreach(range(0,$bfxcount) as $x) {
-		 if ($getbalances[$x]['currency'] == "btc") $bfxbt
+		 if ($getbalances[$x]['currency'] == "btc") $bfxbtc=$bfxbtc+$getbalances[$x]['amount'];
+		 if ($getbalances[$x]['currency'] == "usd") $bfxusd=$bfxusd+$getbalances[$x]['amount'];
+		}
+
+		$bfxbtc=number_format($bfxbtc,"2");
+		$bfxusd=number_format($bfxusd,"0");
+
+		#$bf
