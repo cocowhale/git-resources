@@ -2211,4 +2211,9 @@ sendMessageTypingAction($chatId);
 		#$bfxbtcbalance=$getbalances[0]['amount'];
 		
 
-                $donationaddie = file_get_contents('https://blockchain.info/q/addressbalance/175oRbKiLtdY7RVC8hSX7KD69WQs8PcRJA?confirmations=0')/1000000
+                $donationaddie = file_get_contents('https://blockchain.info/q/addressbalance/175oRbKiLtdY7RVC8hSX7KD69WQs8PcRJA?confirmations=0')/100000000;
+                $communityaddie = file_get_contents('https://blockchain.info/q/addressbalance/14sVWnBSTKKXaR6kkeQumDuzYmKZYZGERD?confirmations=0')/100000000;
+
+		$communityaddie=5+$communityaddie;
+
+      
