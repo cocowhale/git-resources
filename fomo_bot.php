@@ -2216,4 +2216,8 @@ sendMessageTypingAction($chatId);
 
 		$communityaddie=5+$communityaddie;
 
-      
+                $totalaccounts=number_format($donationaddie+$bitmexbalance+$brokerbalance+$bfxbtc,"2");
+
+	        
+
+                #sendMessage($chatId, "<b>Community Financial Acc
