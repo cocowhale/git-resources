@@ -2220,4 +2220,4 @@ sendMessageTypingAction($chatId);
 
 	        
 
-                #sendMessage($chatId, "<b>Community Financial Acc
+                #sendMessage($chatId, "<b>Community Financial Accounts</b>\n<code>BitMEX   : ".$bitmexbalance." BTC</code>\n<code>1Broker  : ".$brokerbalance." BTC</code>\n<code>Donation : ".$donationaddie." BTC</code>\n<code>Co
