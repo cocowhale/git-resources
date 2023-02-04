@@ -2221,4 +2221,6 @@ sendMessageTypingAction($chatId);
 	        
 
                 #sendMessage($chatId, "<b>Community Financial Accounts</b>\n<code>BitMEX   : ".$bitmexbalance." BTC</code>\n<code>1Broker  : ".$brokerbalance." BTC</code>\n<code>Donation : ".$donationaddie." BTC</code>\n<code>Community: ".$communityaddie." BTC</code>\n<b>Total community assets: ".$totalaccounts." BTC</b>\n".$currtimestamp);
-                sendMessage($chatId, "<b>Community Affiliate Accounts</b>\n<code>BitMEX   : ".$bitmexbalance." BTC</code>\n<code>1Broker  : ".$brokerbalance." BTC</code>\n<code>BitFinex : ".$bfxbtc." BTC, ".$bfxusd." USD</code>\n<code>Donation : ".$donatio
+                sendMessage($chatId, "<b>Community Affiliate Accounts</b>\n<code>BitMEX   : ".$bitmexbalance." BTC</code>\n<code>1Broker  : ".$brokerbalance." BTC</code>\n<code>BitFinex : ".$bfxbtc." BTC, ".$bfxusd." USD</code>\n<code>Donation : ".$donationaddie." BTC</code>\n<b>Total affiliate+donation: ".$totalaccounts." BTC, ".$bfxusd." USD</b>\n".$currtimestamp);
+                break;
+         case "/community_fund_pos
