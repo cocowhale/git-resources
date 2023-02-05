@@ -2236,4 +2236,8 @@ $obtotalpnl=0;
 		foreach(range(0,$poscountob) as $x) {
 		if (strlen($resp[$x]['symbol'])<3)continue;
 		$ordvalue=round($resp[$x]['margin']*3,2);
-		$pnlperc=round
+		$pnlperc=round($resp[$x]['profit_loss_percent']/3,2);
+		$current=round((1+$pnlperc/100)*$resp[$x]['entry_price'],4);
+		$pnl=round($resp[$x]['profit_loss'],3);
+$obtotalpos=$obtotalpos+$ordvalue;
+$obto
