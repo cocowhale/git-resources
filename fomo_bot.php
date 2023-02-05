@@ -2232,4 +2232,8 @@ sendMessageTypingAction($chatId);
 
 $obtotalpos=0;
 $obtotalpnl=0;
-		$onebpos="<code>S
+		$onebpos="<code>Symbol Side Entry Current Notional PNL   PNL%</code>\n";
+		foreach(range(0,$poscountob) as $x) {
+		if (strlen($resp[$x]['symbol'])<3)continue;
+		$ordvalue=round($resp[$x]['margin']*3,2);
+		$pnlperc=round
