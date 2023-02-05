@@ -2243,4 +2243,12 @@ $obtotalpos=$obtotalpos+$ordvalue;
 $obtotalpnl=$obtotalpnl+$pnl;
 		$onebpos = $onebpos.$resp[$x]['symbol']." | ";
 		$onebpos = $onebpos.$resp[$x]['direction']." | ";
-		$onebpos = $onebpos.$resp[$x]['entry_price']." |
+		$onebpos = $onebpos.$resp[$x]['entry_price']." | ";
+		$onebpos = $onebpos.$current." | ";
+		$onebpos = $onebpos.$ordvalue." BTC | ";
+		$onebpos = $onebpos.$pnl." BTC | ";
+		$onebpos = $onebpos.$pnlperc." % \n";
+		}
+ 
+
+  
