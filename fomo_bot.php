@@ -2226,4 +2226,10 @@ sendMessageTypingAction($chatId);
          case "/community_fund_positions":
 sendMessageTypingAction($chatId);
                 $file = file_get_contents('https://1broker.com/api/v2/position/open.php?token=A658d1505484522f580475d7194980f4');
-     
+                $response = json_decode($file, true);
+                $resp=$response['response'];
+                $poscountob=count($resp)-1;
+
+$obtotalpos=0;
+$obtotalpnl=0;
+		$onebpos="<code>S
