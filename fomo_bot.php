@@ -2240,4 +2240,7 @@ $obtotalpnl=0;
 		$current=round((1+$pnlperc/100)*$resp[$x]['entry_price'],4);
 		$pnl=round($resp[$x]['profit_loss'],3);
 $obtotalpos=$obtotalpos+$ordvalue;
-$obto
+$obtotalpnl=$obtotalpnl+$pnl;
+		$onebpos = $onebpos.$resp[$x]['symbol']." | ";
+		$onebpos = $onebpos.$resp[$x]['direction']." | ";
+		$onebpos = $onebpos.$resp[$x]['entry_price']." |
