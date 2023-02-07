@@ -2251,4 +2251,14 @@ $obtotalpnl=$obtotalpnl+$pnl;
 		}
  
 
-  
+    
+$API_KEY = '';
+$API_SECRET = '';
+
+#build call
+$verb = "GET";
+$nonce=time();
+$path = "/api/v1/position?filter=%7B%22isOpen%22%3A%20true%7D";
+$data = '';
+
+$message = $verb.$path.$nonce.$d
