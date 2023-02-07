@@ -2261,4 +2261,11 @@ $nonce=time();
 $path = "/api/v1/position?filter=%7B%22isOpen%22%3A%20true%7D";
 $data = '';
 
-$message = $verb.$path.$nonce.$d
+$message = $verb.$path.$nonce.$data;
+
+                $signature = hash_hmac('sha256', $message, $API_SECRET);
+
+
+                $opts = array(
+                  'http'=>array(
+                    'm
