@@ -2268,4 +2268,7 @@ $message = $verb.$path.$nonce.$data;
 
                 $opts = array(
                   'http'=>array(
-                    'm
+                    'method'=>"GET",
+                    'header'=>"api-nonce: ".$nonce."\r\n" .
+                              "api-key: ".$API_KEY."\r\n" .
+                              "api-signature:
