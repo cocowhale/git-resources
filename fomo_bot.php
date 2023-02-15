@@ -2280,4 +2280,6 @@ $message = $verb.$path.$nonce.$data;
 
 
                 // Open the file using the HTTP headers set above
-        
+                $file = file_get_contents('https://www.bitmex.com/api/v1/position?filter=%7B%22isOpen%22%3A%20true%7D', false, $context);
+                $positions = json_decode($file, true);
+$poscountbm=count($posi
