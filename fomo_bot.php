@@ -2282,4 +2282,10 @@ $message = $verb.$path.$nonce.$data;
                 // Open the file using the HTTP headers set above
                 $file = file_get_contents('https://www.bitmex.com/api/v1/position?filter=%7B%22isOpen%22%3A%20true%7D', false, $context);
                 $positions = json_decode($file, true);
-$poscountbm=count($posi
+$poscountbm=count($positions)-1;
+$bitmpos="";
+$bmtotalpos=0;
+$bmtotalpnl=0;
+foreach(range(0,$poscountbm) as $x) {
+if (strlen($positions[$x]['symbol'])<3)continue;
+$posbtc=abs($positions[$x]['posCost']/10000
