@@ -2293,4 +2293,11 @@ $pnlbtc=$positions[$x]['unrealisedPnl']/100000000;
 $bmtotalpos=$bmtotalpos+$posbtc;
 $bmtotalpnl=$bmtotalpnl+$pnlbtc;
 $bmpnlperc=$positions[$x]['unrealisedPnlPcnt']*100;
-if ($position
+if ($positions[$x]['currentQty']>0):
+$direction="Long";
+else:
+$direction="Short";
+endif;
+$bitmpos=$bitmpos.$positions[$x]['symbol']." | ";
+$bitmpos=$bitmpos.$direction." | ";
+$bitmpos=$bitmpos.$pos
