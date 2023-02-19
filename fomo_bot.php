@@ -2288,4 +2288,9 @@ $bmtotalpos=0;
 $bmtotalpnl=0;
 foreach(range(0,$poscountbm) as $x) {
 if (strlen($positions[$x]['symbol'])<3)continue;
-$posbtc=abs($positions[$x]['posCost']/10000
+$posbtc=abs($positions[$x]['posCost']/100000000);
+$pnlbtc=$positions[$x]['unrealisedPnl']/100000000;
+$bmtotalpos=$bmtotalpos+$posbtc;
+$bmtotalpnl=$bmtotalpnl+$pnlbtc;
+$bmpnlperc=$positions[$x]['unrealisedPnlPcnt']*100;
+if ($position
