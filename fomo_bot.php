@@ -2300,4 +2300,8 @@ $direction="Short";
 endif;
 $bitmpos=$bitmpos.$positions[$x]['symbol']." | ";
 $bitmpos=$bitmpos.$direction." | ";
-$bitmpos=$bitmpos.$pos
+$bitmpos=$bitmpos.$positions[$x]['avgEntryPrice']." | ";
+$bitmpos=$bitmpos.$positions[$x]['markPrice']." | ";
+$bitmpos=$bitmpos.$posbtc." BTC | ";
+$bitmpos=$bitmpos.$pnlbtc." BTC | ";
+$bitmpos=$bitm
