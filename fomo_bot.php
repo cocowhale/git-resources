@@ -2304,4 +2304,11 @@ $bitmpos=$bitmpos.$positions[$x]['avgEntryPrice']." | ";
 $bitmpos=$bitmpos.$positions[$x]['markPrice']." | ";
 $bitmpos=$bitmpos.$posbtc." BTC | ";
 $bitmpos=$bitmpos.$pnlbtc." BTC | ";
-$bitmpos=$bitm
+$bitmpos=$bitmpos.$bmpnlperc." % \n";
+
+}
+
+$totalpos=round($bmtotalpos+$obtotalpos,2);
+$totalpnl=round($bmtotalpnl+$obtotalpnl,4);
+$totalpnlperc=round(($totalpnl/$totalpos)*100,2);
+	        #sendMessage($chatId, "test");        
