@@ -2316,4 +2316,8 @@ $totalpnlperc=round(($totalpnl/$totalpos)*100,2);
 
 		$totposcount=$poscountbm+$poscountob+2;
 		if ($totposcount == 0) {
-                sendMessage($chatId, "<b>No 
+                sendMessage($chatId, "<b>No positions open on 1Broker or BitMEX currently</b>\n".$currtimestamp);
+                break;
+		} else {
+
+                sendMessage($chatId, "<b>Community Fund Positions</b>\n".$onebpos.$bitmpos."\n
