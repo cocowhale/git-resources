@@ -2320,4 +2320,8 @@ $totalpnlperc=round(($totalpnl/$totalpos)*100,2);
                 break;
 		} else {
 
-                sendMessage($chatId, "<b>Community Fund Positions</b>\n".$onebpos.$bitmpos."\n
+                sendMessage($chatId, "<b>Community Fund Positions</b>\n".$onebpos.$bitmpos."\nTotal position size: ".$totalpos." BTC (PNL: ".$totalpnl." ; ".$totalpnlperc."%)\n".$currtimestamp);
+                break;
+} 
+         case "/commands":
+	                sendMessage
