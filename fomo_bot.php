@@ -2312,3 +2312,8 @@ $totalpos=round($bmtotalpos+$obtotalpos,2);
 $totalpnl=round($bmtotalpnl+$obtotalpnl,4);
 $totalpnlperc=round(($totalpnl/$totalpos)*100,2);
 	        #sendMessage($chatId, "test");        
+                #sendMessage($chatId, $bitmexbalance);
+
+		$totposcount=$poscountbm+$poscountob+2;
+		if ($totposcount == 0) {
+                sendMessage($chatId, "<b>No 
