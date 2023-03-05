@@ -2330,4 +2330,8 @@ $totalpnlperc=round(($totalpnl/$totalpos)*100,2);
 /china_ticker - grabs China BTCCNY exchange prices\n
 <b>Japan-related Commands</b>
 /japan_premium - displays premium in Japanese exchanges (JPY) to BTC/USD index
-/japan_ticker - grabs Japan BTCJPY e
+/japan_ticker - grabs Japan BTCJPY exchange prices\n
+<b>Korea-related Commands</b>
+/korea_premium - displays premium in Korean exchanges (JPY) to BTC/USD index
+/korea_ticker - grabs Korea BTCKRW exchange prices\n
+<b
