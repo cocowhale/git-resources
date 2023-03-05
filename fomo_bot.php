@@ -2327,4 +2327,7 @@ $totalpnlperc=round(($totalpnl/$totalpos)*100,2);
 	                sendMessageTypingAction($chatId);
                 sendMessage($chatId, "<b>China-related Commands</b>
 /china_premium - displays premium in Chinese exchanges (CNY) to BTC/USD index
-/china_ticker - g
+/china_ticker - grabs China BTCCNY exchange prices\n
+<b>Japan-related Commands</b>
+/japan_premium - displays premium in Japanese exchanges (JPY) to BTC/USD index
+/japan_ticker - grabs Japan BTCJPY e
