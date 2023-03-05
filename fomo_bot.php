@@ -2324,4 +2324,7 @@ $totalpnlperc=round(($totalpnl/$totalpos)*100,2);
                 break;
 } 
          case "/commands":
-	                sendMessage
+	                sendMessageTypingAction($chatId);
+                sendMessage($chatId, "<b>China-related Commands</b>
+/china_premium - displays premium in Chinese exchanges (CNY) to BTC/USD index
+/china_ticker - g
