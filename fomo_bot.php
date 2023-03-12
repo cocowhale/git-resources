@@ -2336,4 +2336,6 @@ $totalpnlperc=round(($totalpnl/$totalpos)*100,2);
 /korea_ticker - grabs Korea BTCKRW exchange prices\n
 <b>Bitfinex-related Commands</b>
 /bitfinex_swap_rates - grabs current Bitfinex swap lending rates (bid, ask, FFR) for BTC, USD, ETH, LTC
-/bitfinex_premium - while Bitfinex has USD withdraw prob
+/bitfinex_premium - while Bitfinex has USD withdraw problems, shows premium of Bfx price to non-bfx BTC/USD exchanges
+/bitfinex_margin_funding - grabs the margin funding taken out on bitfinex for each currency
+/bitfinex_longshort - gr
