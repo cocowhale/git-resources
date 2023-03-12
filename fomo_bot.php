@@ -2338,4 +2338,7 @@ $totalpnlperc=round(($totalpnl/$totalpos)*100,2);
 /bitfinex_swap_rates - grabs current Bitfinex swap lending rates (bid, ask, FFR) for BTC, USD, ETH, LTC
 /bitfinex_premium - while Bitfinex has USD withdraw problems, shows premium of Bfx price to non-bfx BTC/USD exchanges
 /bitfinex_margin_funding - grabs the margin funding taken out on bitfinex for each currency
-/bitfinex_longshort - gr
+/bitfinex_longshort - grab positions of Finex long vs short\n
+<b>Futures-related Commands</b>
+/futures_okcoin_settlement_time - grabs settlement for top futures exchanges
+/futures_okcoin_premium - displays premiums
