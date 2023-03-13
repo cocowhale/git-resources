@@ -2341,4 +2341,6 @@ $totalpnlperc=round(($totalpnl/$totalpos)*100,2);
 /bitfinex_longshort - grab positions of Finex long vs short\n
 <b>Futures-related Commands</b>
 /futures_okcoin_settlement_time - grabs settlement for top futures exchanges
-/futures_okcoin_premium - displays premiums
+/futures_okcoin_premium - displays premiums on futures market to their respective indices
+/futures_okcoin_longshort - grab OKCoin futures long/short margin usage
+/futures_okcoin_elite_sentiment - grab OKCoin futures top trader elite sentim
