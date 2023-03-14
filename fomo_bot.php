@@ -2343,4 +2343,7 @@ $totalpnlperc=round(($totalpnl/$totalpos)*100,2);
 /futures_okcoin_settlement_time - grabs settlement for top futures exchanges
 /futures_okcoin_premium - displays premiums on futures market to their respective indices
 /futures_okcoin_longshort - grab OKCoin futures long/short margin usage
-/futures_okcoin_elite_sentiment - grab OKCoin futures top trader elite sentim
+/futures_okcoin_elite_sentiment - grab OKCoin futures top trader elite sentiment
+/futures_okcoin_top_holders - gets OKCoin futures top 10 contract holders
+/futures_bitmex_premiums - grabs BitMEX premiums
+/futures_bitmex_funding - grabs BitMEX's BTCUSD perpetual sw
