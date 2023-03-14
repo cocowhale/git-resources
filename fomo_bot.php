@@ -2346,4 +2346,7 @@ $totalpnlperc=round(($totalpnl/$totalpos)*100,2);
 /futures_okcoin_elite_sentiment - grab OKCoin futures top trader elite sentiment
 /futures_okcoin_top_holders - gets OKCoin futures top 10 contract holders
 /futures_bitmex_premiums - grabs BitMEX premiums
-/futures_bitmex_funding - grabs BitMEX's BTCUSD perpetual sw
+/futures_bitmex_funding - grabs BitMEX's BTCUSD perpetual swap funding\n
+<b>Affiliate/Managed Fund</b>
+/affiliate_balances - show the current affiliate and donation balance
+/community_fund_positions - show the current open positions on
