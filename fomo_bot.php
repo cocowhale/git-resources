@@ -2349,4 +2349,8 @@ $totalpnlperc=round(($totalpnl/$totalpos)*100,2);
 /futures_bitmex_funding - grabs BitMEX's BTCUSD perpetual swap funding\n
 <b>Affiliate/Managed Fund</b>
 /affiliate_balances - show the current affiliate and donation balance
-/community_fund_positions - show the current open positions on
+/community_fund_positions - show the current open positions on active managed community fund\n
+<b>Other Commands</b>
+/btcusd_ticker - grabs BTCUSD spot exchange prices and volume
+/btceur_ticker - grabs BTCEUR spot exchange prices and volume
+/top_ten_altcoi
