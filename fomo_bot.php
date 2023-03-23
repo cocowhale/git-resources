@@ -2355,4 +2355,7 @@ $totalpnlperc=round(($totalpnl/$totalpos)*100,2);
 /btceur_ticker - grabs BTCEUR spot exchange prices and volume
 /top_ten_altcoins - grab marketcap-ranked top 10 shitcoins, computing the Whalepool Shitcoin Index (WSI 10)
 /top_bitcoin_miners - grabs Bitcoin's top miners and share of blocks mined in past 24 hours
-/segwit_sta
+/segwit_statistics - grab segwit signal percantage currently (95% needed for activation)
+/bu_statistics - grab bitcoin unlimited signal % (intent to fork at 75%)");
+                break;
+case "/start
