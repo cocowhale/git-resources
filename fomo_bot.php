@@ -2353,4 +2353,6 @@ $totalpnlperc=round(($totalpnl/$totalpos)*100,2);
 <b>Other Commands</b>
 /btcusd_ticker - grabs BTCUSD spot exchange prices and volume
 /btceur_ticker - grabs BTCEUR spot exchange prices and volume
-/top_ten_altcoi
+/top_ten_altcoins - grab marketcap-ranked top 10 shitcoins, computing the Whalepool Shitcoin Index (WSI 10)
+/top_bitcoin_miners - grabs Bitcoin's top miners and share of blocks mined in past 24 hours
+/segwit_sta
