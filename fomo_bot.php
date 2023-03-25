@@ -2360,4 +2360,4 @@ $totalpnlperc=round(($totalpnl/$totalpos)*100,2);
                 break;
 case "/start":
 sendMessageTypingAction($chatId);
-                sendMessage($chatId, "Welcome to <b>FOMO (FEAR OF MISSING OUT) BOT</b>: The best bitcoin market data resource on Telegram. We are based in @wha
+                sendMessage($chatId, "Welcome to <b>FOMO (FEAR OF MISSING OUT) BOT</b>: The best bitcoin market data resource on Telegram. We are based in @whalepoolbtc but are open to anyone to use!\n\nTo get started, type /commands to see the commands that I respond to. \n\nIf you leave this window open, you will receive pushed market alerts 
