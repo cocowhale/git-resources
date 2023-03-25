@@ -2358,4 +2358,6 @@ $totalpnlperc=round(($totalpnl/$totalpos)*100,2);
 /segwit_statistics - grab segwit signal percantage currently (95% needed for activation)
 /bu_statistics - grab bitcoin unlimited signal % (intent to fork at 75%)");
                 break;
-case "/start
+case "/start":
+sendMessageTypingAction($chatId);
+                sendMessage($chatId, "Welcome to <b>FOMO (FEAR OF MISSING OUT) BOT</b>: The best bitcoin market data resource on Telegram. We are based in @wha
