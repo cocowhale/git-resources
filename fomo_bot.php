@@ -2371,4 +2371,11 @@ if (strpos($message, '@FOMO_bot') !== false and  strpos($message, 'offtopic') ==
     sendMessage($chatId, "Public commands currently disabled, PM me @FOMO_BOT (click) for unlimited command access for data");
 } else {
 if ($chatId !== -1001012147388) { 
-sendMessage($chatId, "We j
+sendMessage($chatId, "We just updated the /commands list to be more intuitive and organized. Click /commands to see the new command structure in a hopefully more organized list.");
+}
+}
+                break;               
+}    
+
+ 
+function se
