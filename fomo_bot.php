@@ -2368,4 +2368,7 @@ case "/help":
                 break;
         default:
 if (strpos($message, '@FOMO_bot') !== false and  strpos($message, 'offtopic') == false and strpos($message, 'teamspeak') == false and strpos($message, 'shill') == false)   {
-   
+    sendMessage($chatId, "Public commands currently disabled, PM me @FOMO_BOT (click) for unlimited command access for data");
+} else {
+if ($chatId !== -1001012147388) { 
+sendMessage($chatId, "We j
