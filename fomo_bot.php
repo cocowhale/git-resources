@@ -2367,4 +2367,5 @@ case "/help":
                 sendMessage($chatId, "Welcome to <b>FOMO (FEAR OF MISSING OUT) BOT</b>: The best bitcoin market data resource on Telegram. We are based in @whalepoolbtc but are open to anyone to use!\n\nTo get started, type /commands to see the commands that I respond to. \n\nIf you leave this window open, you will receive pushed market alerts for bitcoin futures and spot exchanges.");
                 break;
         default:
-if (strpos
+if (strpos($message, '@FOMO_bot') !== false and  strpos($message, 'offtopic') == false and strpos($message, 'teamspeak') == false and strpos($message, 'shill') == false)   {
+   
