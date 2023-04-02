@@ -2378,4 +2378,8 @@ sendMessage($chatId, "We just updated the /commands list to be more intuitive an
 }    
 
  
-function se
+function sendMessage ($chatId, $message) {
+       
+        $url = $GLOBALS[website]."/sendMessage?chat_id=".$chatId."&text=".urlencode($message)."&parse_mode=HTML";
+        file_get_contents($url);
+ 
