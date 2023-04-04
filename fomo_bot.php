@@ -2382,4 +2382,18 @@ function sendMessage ($chatId, $message) {
        
         $url = $GLOBALS[website]."/sendMessage?chat_id=".$chatId."&text=".urlencode($message)."&parse_mode=HTML";
         file_get_contents($url);
+       
+}
+
+function sendMessageTypingAction ($chatId) {
+       
+        $url = $GLOBALS[website]."/sendChatAction?chat_id=".$chatId."&action=typing";
+        file_get_contents($url);
+       
+}
  
+ 
+ 
+ 
+ 
+?>
